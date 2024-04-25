@@ -1,7 +1,6 @@
 import { useRef, useEffect } from "react";
-//import classNames from "classnames";
 
-const EqualHeightFlexContainer = ({ children }) => {
+const EqualHeightFlexContainer = ({ children, addedClass }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -33,7 +32,7 @@ const EqualHeightFlexContainer = ({ children }) => {
     };
   }, [children.length]);
   return (
-    <div className="flex" ref={containerRef}>
+    <div className={`flex ${addedClass ? addedClass : ""}`} ref={containerRef}>
       {children}
     </div>
   );

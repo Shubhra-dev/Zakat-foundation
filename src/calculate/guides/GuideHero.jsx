@@ -1,22 +1,20 @@
-import nisabHero from "../../assets/nisabHero.png";
-
-function NisabHero() {
+import guideHero from "../../assets/guideHero.png";
+function GuideHero() {
   return (
     <div
       className="bg-cover bg-center w-full"
-      style={{ backgroundImage: `url(${nisabHero})` }}
+      style={{ backgroundImage: `url(${guideHero})` }}
     >
       <div className="h-full w-full bg-black/60 pt-[10%] pb-[8%] text-center">
         <h2 className="text-primary font-semibold text-[70px] font-pally">
-          Live Nisab Rates
+          Get yourself Zakat-ready!
         </h2>
         <p className="text-2xl font-light text-primary w-1/2 m-auto pb-6">
-          Current Nisab Value: Stay Updated with Today’s Gold and Silver Rates
-          for Zakat Calculation
+          Our handy Zakat guides are free to download and give you all the info
+          you need to start calculating your Zakat with confidence.
         </p>
       </div>
     </div>
   );
 }
-
-export default NisabHero;
+export default GuideHero;

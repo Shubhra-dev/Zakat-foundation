@@ -3,6 +3,7 @@ import Home from "./ui/Home";
 import AppLayout from "./ui/AppLayout";
 import Calculator from "./calculate/calculator/Calculator";
 import Nisab from "./calculate/nisab/Nisab";
+import ZakatGuides from "./calculate/guides/ZakatGuides";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/todays_nisab",
         element: <Nisab />,
+      },
+      {
+        path: "/zakat_guides",
+        element: <ZakatGuides />,
       },
     ],
   },
