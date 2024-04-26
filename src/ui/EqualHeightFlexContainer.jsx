@@ -1,7 +1,8 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 const EqualHeightFlexContainer = ({ children, addedClass }) => {
   const containerRef = useRef(null);
+  const [containerHeight, setContainerHeight] = useState(0);
 
   useEffect(() => {
     const setEqualHeight = () => {
@@ -14,6 +15,7 @@ const EqualHeightFlexContainer = ({ children, addedClass }) => {
           const childHeight = children[i].clientHeight;
           if (childHeight > maxHeight) {
             maxHeight = childHeight;
+            setContainerHeight(maxHeight);
           }
         }
 
@@ -30,7 +32,7 @@ const EqualHeightFlexContainer = ({ children, addedClass }) => {
     return () => {
       window.removeEventListener("resize", setEqualHeight);
     };
-  }, [children.length]);
+  }, [containerHeight]);
   return (
     <div className={`flex ${addedClass ? addedClass : ""}`} ref={containerRef}>
       {children}
