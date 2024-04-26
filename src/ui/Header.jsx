@@ -2,7 +2,7 @@ import Button from "./Button";
 import logo from "../assets/logo.png";
 function Header() {
   return (
-    <div className="w-full h-[110px] bg-gray-900 fixed top-0 left-0">
+    <div className="w-full h-[110px] bg-gray-900 fixed top-0 left-0 z-50">
       <div className="w-5/6 h-full m-auto flex justify-between items-center text-primary">
         <div className="w-2/5">
           <img src={logo} alt="logo" className="h-[80px]" />
