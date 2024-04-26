@@ -1,7 +1,7 @@
 function RoundedButton({ children, bg, textColor, padding }) {
   return (
     <button
-      className={`${bg ? bg : "bg-acctenRed"} ${
+      className={`${bg ? bg : "bg-accentRed"} ${
         padding ? padding : " px-6 py-3"
       } ${
         textColor ? textColor : "text-primary"
