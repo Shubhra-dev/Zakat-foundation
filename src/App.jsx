@@ -6,6 +6,7 @@ import Nisab from "./calculate/nisab/Nisab";
 import ZakatGuides from "./calculate/guides/ZakatGuides";
 import AskQuestion from "./calculate/askQuestion/AskQuestion";
 import GiveZakat from "./give/giveZakat/GiveZakat";
+import Sadaqah from "./give/giveSadaqah/Sadaqah";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/give_zakat",
         element: <GiveZakat />,
+      },
+      {
+        path: "/give_sadaqah",
+        element: <Sadaqah />,
       },
     ],
   },

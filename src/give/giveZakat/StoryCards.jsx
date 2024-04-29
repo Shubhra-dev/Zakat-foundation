@@ -6,11 +6,11 @@ import StoryCardItem from "./StoryCardItem";
 
 function StoryCards() {
   return (
-    <div className="bg-primary py-[4%] w-full text-center">
+    <div className="bg-primary p-[4%] w-full text-center">
       <h2 className="text-secondary font-semibold text-6xl font-pally pb-[5%]">
         How you’ve impacted peoples lives
       </h2>
-      <div className="px-[3%] pb-[5%] flex items-center  gap-4">
+      <div className="pb-[5%] flex items-center  gap-4">
         <StoryCardItem
           img={helpStory1}
           alt={"zain"}
@@ -28,7 +28,7 @@ function StoryCards() {
           }
         />
       </div>
-      <div className="p-[3%] flex items-center  gap-4">
+      <div className="py-[3%] flex items-center  gap-4">
         <StoryCardItem
           img={helpStory3}
           alt={"alia"}

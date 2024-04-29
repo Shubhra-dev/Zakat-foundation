@@ -1,10 +1,11 @@
 import RoundedButton from "../../ui/RoundedButton";
 import zakatNeed from "../../assets/zakatNeed.png";
+import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
 function WhyNeed() {
   return (
-    <div className="bg-primary p-[4%] flex items-center">
-      <div className="w-3/4 px-[5%]">
-        <h2 className="text-secondary font-semibold text-6xl font-pally w-2/4 pb-4">
+    <EqualHeightFlexContainer addedClass="bg-primary p-[4%] items-center">
+      <div className="w-3/5 px-[3%]">
+        <h2 className="text-secondary font-semibold text-6xl font-pally w-3/4 pb-4">
           Why your Zakat is needed here
         </h2>
         <p className="text-neutral-800/80 text-xl font-normal w-3/4 py-2">
@@ -21,14 +22,11 @@ function WhyNeed() {
           Find out more
         </RoundedButton>
       </div>
-      <div className="w-1/4">
-        <img
-          src={zakatNeed}
-          alt="thinking"
-          className=" object-contain w-[80%]"
-        />
-      </div>
-    </div>
+      <div
+        className="w-2/5 rounded-xl bg-cover bg-top"
+        style={{ backgroundImage: `url(${zakatNeed})` }}
+      ></div>
+    </EqualHeightFlexContainer>
   );
 }
 

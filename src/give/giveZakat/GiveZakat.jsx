@@ -1,4 +1,5 @@
 import GiveLayout from "../GiveLayout";
+import ApplyHelp from "./ApplyHelp";
 import GiveCards from "./GiveCards";
 import GiveZakatHero from "./GiveZakatHero";
 import StoryCards from "./StoryCards";
@@ -15,6 +16,7 @@ function GiveZakat() {
       <ZakatNumbers />
       <WhyNeed />
       <StoryCards />
+      <ApplyHelp />
     </GiveLayout>
   );
 }
