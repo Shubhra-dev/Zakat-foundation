@@ -1,6 +1,7 @@
 {
   "name": "zakat-foundation",
   "private": true,
+  "homepage": "https://zakat.kinbeki.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

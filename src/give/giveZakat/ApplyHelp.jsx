@@ -1,8 +1,15 @@
-import GradientBallBG from "../../ui/GradientBallBG";
 import RoundedButton from "../../ui/RoundedButton";
 function ApplyHelp() {
   return (
-    <GradientBallBG bg={"accentCyan"}>
+    <div
+      className={`bg-accentCyan m-[4%] py-[5%] rounded-xl -z-20 relative overflow-hidden`}
+    >
+      <div
+        className={`h-[350px] w-[350px] absolute -z-10 -bottom-14 -left-14 bg-gradient-to-t from-accentCyan to-primary/20 rounded-full`}
+      ></div>
+      <div
+        className={`h-[350px] w-[350px] absolute -z-10 -top-14 -right-14 bg-gradient-to-b from-accentCyan to-primary/20 rounded-full`}
+      ></div>
       <div className="w-7/12 m-auto text-center">
         <h2 className="text-primary font-bold text-[50px] font-pally">
           Helping you bring Zakat to life where you live
@@ -22,7 +29,7 @@ function ApplyHelp() {
           Apply for Help
         </RoundedButton>
       </div>
-    </GradientBallBG>
+    </div>
   );
 }
 

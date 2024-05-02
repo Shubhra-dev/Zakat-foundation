@@ -1,11 +1,15 @@
 import hand from "../assets/hand.png";
 import { FaQuoteLeft } from "react-icons/fa";
+import EqualHeightFlexContainer from "./EqualHeightFlexContainer";
 function Tomorrow() {
   return (
     <div className="bg-accentCyan/10">
-      <div className="flex items-start w-5/6 mx-auto mb-[8%]">
-        <div className="w-2/5 rounded-md -mb-[8%] mt-[8%]">
-          <img src={hand} alt="hand" className="h-full w-[70%] object-cover" />
+      <EqualHeightFlexContainer addedClass="items-start w-5/6 mx-auto mb-[8%]">
+        <div
+          className="w-2/5 rounded-md -mb-[8%] mt-[8%] bg-cover bg-center mr-[10%]"
+          style={{ backgroundImage: `url(${hand})` }}
+        >
+          {/* <img src={hand} alt="hand" className="h-full w-[70%] object-cover" /> */}
         </div>
         <div className="w-3/5 pt-[8%]">
           <h2 className="text-2xl text-accentCyan font font-semibold">
@@ -23,7 +27,7 @@ function Tomorrow() {
             vitae pretium dolor. Nulla dui et lacus aenean elit. Et elit amet
             justo fringilla.
           </p>
-          <div className="relative bg-accentRed py-4 rounded-md w-3/4 -ml-[25%] -mb-[20%]">
+          <div className="relative bg-accentRed py-4 rounded-md w-full laptop:w-3/4 -ml-[25%] -mb-[10%]">
             <FaQuoteLeft className="text-[120px] text-primary/15 absolute left-[10%]" />
             <div className="flex items-center">
               <div className="w-1/5"></div>
@@ -39,7 +43,7 @@ function Tomorrow() {
             </div>
           </div>
         </div>
-      </div>
+      </EqualHeightFlexContainer>
     </div>
   );
 }
