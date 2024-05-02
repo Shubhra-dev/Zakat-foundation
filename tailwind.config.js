@@ -16,6 +16,9 @@ export default {
         pally: ["Pally", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
       },
+      screens: {
+        laptop: "1300px",
+      },
     },
   },
   plugins: [],

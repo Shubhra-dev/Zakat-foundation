@@ -6,7 +6,7 @@ function AppLayout() {
   return (
     <div className="font-outfit">
       <Header />
-      <div className="w-full h-[110px]"></div>
+      <div className="w-full h-[88px]"></div>
       <Outlet />
       <Footer />
     </div>

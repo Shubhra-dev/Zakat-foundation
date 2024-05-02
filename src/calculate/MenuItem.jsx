@@ -1,6 +1,14 @@
-function MenuItem({ text, active, children }) {
+import { useNavigate } from "react-router-dom";
+
+function MenuItem({ text, active, children, link }) {
+  const navigate = useNavigate();
+  function handleClick() {
+    if (!link) return;
+    navigate(`/${link}`);
+  }
   return (
     <div
+      onClick={handleClick}
       className={`flex flex-col  justify-center items-center ${
         active
           ? "bg-accentCyan text-primary font-semibold"

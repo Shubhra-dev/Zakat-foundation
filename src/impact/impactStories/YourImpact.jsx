@@ -4,7 +4,7 @@ import ImpactNumbers from "../ImpactNumbers";
 import ImpactHero from "./ImpactHero";
 import Reasons from "./Reasons";
 
-function ImpactSories() {
+function YourImpact() {
   return (
     <ImpactLayout tab={1}>
       <ImpactHero />
@@ -25,4 +25,4 @@ function ImpactSories() {
   );
 }
 
-export default ImpactSories;
+export default YourImpact;
