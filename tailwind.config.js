@@ -18,6 +18,7 @@ export default {
       },
       screens: {
         laptop: "1300px",
+        large: "1440px",
       },
     },
   },

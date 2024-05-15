@@ -17,7 +17,11 @@ function ImpactLayout({ children, tab }) {
             }`}
           />
         </MenuItem>
-        <MenuItem text={"Impact Stories"} active={tab === 2}>
+        <MenuItem
+          text={"Impact Stories"}
+          active={tab === 2}
+          link={"impact_stories"}
+        >
           <PiFlowerBold
             className={`text-2xl ${
               tab === 2 ? "text-primary" : "text-accentRed"

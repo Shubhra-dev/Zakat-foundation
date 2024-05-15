@@ -3,9 +3,9 @@ import CounterCardItem from "../give/giveZakat/CounterCardItem";
 import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 import RoundedButton from "../ui/RoundedButton";
 
-function ImpactNumbers() {
+function ImpactNumbers({ bg }) {
   return (
-    <div className="py-[3.5%] bg-primary">
+    <div className={`py-[3.5%] ${bg ? bg : "bg-primary"}`}>
       <h2 className="text-secondary font-semibold text-[55px] font-pally pb-4  text-center">
         Your Impact In Numbers
       </h2>

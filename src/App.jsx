@@ -8,7 +8,8 @@ import AskQuestion from "./calculate/askQuestion/AskQuestion";
 import GiveZakat from "./give/giveZakat/GiveZakat";
 import Sadaqah from "./give/giveSadaqah/Sadaqah";
 import GivingFAQ from "./give/givingfaq/GivingFAQ";
-import YourImpact from "./impact/impactStories/YourImpact";
+import YourImpact from "./impact/your_Impact/YourImpact";
+import ImpactStories from "./impact/impactStories/ImpactStories";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/your_impact",
         element: <YourImpact />,
+      },
+      {
+        path: "/impact_stories",
+        element: <ImpactStories />,
       },
     ],
   },
