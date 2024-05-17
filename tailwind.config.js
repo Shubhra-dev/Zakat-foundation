@@ -12,6 +12,10 @@ export default {
         gold: "#FFD700",
         silver: "#C0C0C0",
       },
+      fontSize: {
+        title: "53px",
+        paragraph: "25px",
+      },
       fontFamily: {
         pally: ["Pally", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
