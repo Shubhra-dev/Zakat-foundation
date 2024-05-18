@@ -28,14 +28,18 @@ function ImpactLayout({ children, tab }) {
             }`}
           />
         </MenuItem>
-        <MenuItem text={"How You Help"} active={tab === 3}>
+        <MenuItem
+          text={"How You Help"}
+          active={tab === 3}
+          link={"how_you_help"}
+        >
           <GiRecycle
             className={`text-3xl ${
               tab === 3 ? "text-primary" : "text-accentRed"
             }`}
           />
         </MenuItem>
-        <MenuItem text={"The Need"} active={tab === 4}>
+        <MenuItem text={"The Need"} active={tab === 4} link={"the_need"}>
           <TbSunLow
             className={`text-3xl ${
               tab === 4 ? "text-primary" : "text-accentRed"
