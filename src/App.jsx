@@ -12,6 +12,7 @@ import YourImpact from "./impact/your_Impact/YourImpact";
 import ImpactStories from "./impact/impactStories/ImpactStories";
 import HowYouHelp from "./impact/how you help/HowYouHelp";
 import TheNeed from "./impact/the need/TheNeed";
+import ApplyForHelp from "./apply/apply for help/ApplyForHelp";
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/the_need",
         element: <TheNeed />,
+      },
+      {
+        path: "/apply_help",
+        element: <ApplyForHelp />,
       },
     ],
   },

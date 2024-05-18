@@ -41,7 +41,7 @@ const menu = [
       "housing fund",
       "work & education fund",
     ],
-    link: ["", "", "", ""],
+    link: ["apply_help", "", "", ""],
   },
   {
     id: "5",

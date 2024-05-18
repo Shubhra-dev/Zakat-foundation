@@ -15,6 +15,8 @@ export default {
       fontSize: {
         title: "53px",
         paragraph: "25px",
+        h3: "34px",
+        light: "15px",
       },
       fontFamily: {
         pally: ["Pally", "sans-serif"],

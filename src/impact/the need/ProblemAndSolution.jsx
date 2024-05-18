@@ -1,6 +1,7 @@
 import ImageCard from "../../ui/ImageCard";
 import needImage1 from "../../assets/needImage1.jpg";
 import needImage2 from "../../assets/needImage2.jpg";
+import needImage3 from "../../assets/needImage3.jpg";
 function ProblemAndSolution() {
   return (
     <>
@@ -65,6 +66,29 @@ function ProblemAndSolution() {
             Zakat will reach its intended recipients and be utilized
             appropriately, right here in Bangladesh.
           </p>
+        </ImageCard>
+        <ImageCard
+          img={needImage3}
+          w1={"w-2/3"}
+          w2={"w-1/3"}
+          bg={"bg-secondary/10"}
+        >
+          <h2 className="font-bold text-title font-pally leading-tight pb-4 text-secondary">
+            Your role
+          </h2>
+          <p className="font-light text-paragraph text-secondary/60 pb-4">
+            By giving Zakat through ZF BD, you’re part of the solution.
+          </p>
+          <ul className="px-6 list-disc font-light text-paragraph text-secondary/60">
+            <li>You re helping people unlock their potential.</li>
+            <li>
+              You’re helping create a thriving, closer Muslim community around
+              Britain.
+            </li>
+            <li>
+              And you’re part of an exciting movement for positive change.
+            </li>
+          </ul>
         </ImageCard>
       </div>
     </>
