@@ -1,8 +1,9 @@
-import { FaHouse, FaMoneyBillTrendUp } from "react-icons/fa6";
+import StoryContainer from "../../impact/your_Impact/StoryContainer";
 import ApplyLayout from "../ApplyLayout";
+import ApplyCardContainer from "./ApplyCardContainer";
 import ApplyHero from "./ApplyHero";
-
-import { IoSchoolSharp } from "react-icons/io5";
+import Partnerships from "./Partnerships";
+import ApplyHelp from "../../give/giveZakat/ApplyHelp";
 
 function ApplyForHelp() {
   return (
@@ -21,40 +22,10 @@ function ApplyForHelp() {
           the internet.
         </p>
       </div>
-      <div className="px-6 pb-6 flex justify-between gap-6">
-        <div className="h-[450px] w-1/3 rounded-xl ">
-          <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl relative px-4 py-3">
-            <div className="bg-primary w-full h-[50%] absolute -bottom-7 right-3 rotate-[3deg]"></div>
-            <FaMoneyBillTrendUp className="text-4xl text-primary" />
-          </div>
-          <div className="h-[70%] py-2 px-4">
-            <h3 className="text-h3 font-pally text-secondary font-medium">
-              Hardship Relief
-            </h3>
-            <p className="text-light font-normal text-secondary/60 pt-2">
-              This fund gives grants for basic costs and help with small debts
-              to vulnerable Muslims in the UK who are unable to pay for basic
-              living costs.
-            </p>
-          </div>
-          <div className="h-[15%] bg-blue-100"></div>
-        </div>
-        <div className="h-[450px] w-1/3 rounded-xl ">
-          <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl px-4 py-3">
-            <FaHouse className="text-4xl text-primary" />
-          </div>
-          <div className="h-[70%]"></div>
-          <div className="h-[15%] bg-blue-100"></div>
-        </div>
-        <div className="h-[450px] w-1/3 rounded-xl ">
-          <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl relative px-4 py-3">
-            <div className="bg-primary w-full h-[50%] absolute -bottom-7 left-3 -rotate-[3deg]"></div>
-            <IoSchoolSharp className="text-4xl text-primary" />
-          </div>
-          <div className="h-[70%]"></div>
-          <div className="h-[15%] bg-blue-100"></div>
-        </div>
-      </div>
+      <ApplyCardContainer />
+      <Partnerships />
+      <StoryContainer />
+      <ApplyHelp />
     </ApplyLayout>
   );
 }
