@@ -5,7 +5,7 @@ function ImageCard({ children, img, imgPosition, w1, w2, bg, rounded }) {
     <EqualHeightFlexContainer addedClass={"pb-[5%]"}>
       {(imgPosition === "right" || !imgPosition) && (
         <>
-          <div className={`${bg ? bg : ""} p-6 ${w1 ? w1 : "w-1/2"}`}>
+          <div className={`${bg ? bg : ""} p-8 ${w1 ? w1 : "w-1/2"}`}>
             {children}
           </div>
 
@@ -25,7 +25,7 @@ function ImageCard({ children, img, imgPosition, w1, w2, bg, rounded }) {
             } bg-cover bg-top`}
             style={{ backgroundImage: `url(${img})` }}
           ></div>
-          <div className={`${bg ? bg : ""} p-6 ${w1 ? w1 : "w-1/2"}`}>
+          <div className={`${bg ? bg : ""} p-8 ${w1 ? w1 : "w-1/2"}`}>
             {children}
           </div>
         </>

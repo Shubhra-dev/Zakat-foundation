@@ -7,8 +7,8 @@ import { IoSchoolSharp } from "react-icons/io5";
 
 function ApplyLayout({ children, tab }) {
   return (
-    <EqualHeightFlexContainer>
-      <div className="w-1/6 bg-slate-100 px-10 pt-8 h-full flex-grow">
+    <EqualHeightFlexContainer addedClass={"h-screen"}>
+      <div className="w-1/6 bg-slate-100 px-10 pt-8 h-full flex-grow overflow-y-scroll scrollbar-hide">
         <MenuItem text={"Apply"} active={tab === 1} link={"apply_help"}>
           <RiMailSendFill
             className={`text-2xl ${
@@ -50,7 +50,9 @@ function ApplyLayout({ children, tab }) {
           />
         </MenuItem>
       </div>
-      <div className="w-5/6 flex-grow">{children}</div>
+      <div className="w-5/6 flex-grow overflow-y-scroll scrollbar-hide">
+        {children}
+      </div>
     </EqualHeightFlexContainer>
   );
 }
