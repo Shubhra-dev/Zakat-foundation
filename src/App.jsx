@@ -14,7 +14,8 @@ import HowYouHelp from "./impact/how you help/HowYouHelp";
 import TheNeed from "./impact/the need/TheNeed";
 import ApplyForHelp from "./apply/apply for help/ApplyForHelp";
 import HardshipRelief from "./apply/hardship relief/HardshipRelief";
-import Housing from "./apply/hosing/Housing";
+import Housing from "./apply/housing/Housing";
+import WorkEducation from "./apply/work and edu/WorkEducation";
 
 const router = createBrowserRouter([
   {
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
       {
         path: "/housing_fund",
         element: <Housing />,
+      },
+      {
+        path: "/work_and_education",
+        element: <WorkEducation />,
       },
     ],
   },
