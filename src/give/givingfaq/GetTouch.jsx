@@ -13,10 +13,10 @@ function GetTouch({ my, button1, button2 }) {
       <div
         className={`h-[350px] w-[350px] absolute -top-14 -right-14 bg-gradient-to-b from-accentPurple to-primary/20 rounded-full`}
       ></div>
-      <h2 className="w-3/5 m-auto text-center text-primary text-[50px] font-bold font-pally py-6">
+      <h2 className="w-3/5 m-auto text-center text-primary text-[50px] font-bold font-pally py-6 relative">
         Do you still have questions? Get in touch with our team
       </h2>
-      <div className="w-max m-auto flex items-center gap-6">
+      <div className="w-max m-auto flex items-center gap-6 relative">
         <RoundedButton bg={"bg-primary"} textColor={"text-accentPurple"}>
           {`${button1 ? button1 : "Get in Touch"}`}
         </RoundedButton>

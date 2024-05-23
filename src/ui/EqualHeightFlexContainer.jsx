@@ -1,14 +1,9 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, Children } from "react";
 
 const EqualHeightFlexContainer = ({ children, addedClass }) => {
   const containerRef = useRef(null);
-  const [path, setPath] = useState(window.location.pathname);
 
   useEffect(() => {
-    if (path !== window.location.pathname) {
-      setPath(() => window.location.pathname);
-      console.log(path);
-    }
     const setEqualHeight = () => {
       if (containerRef.current) {
         const children = containerRef.current.children;
@@ -29,15 +24,25 @@ const EqualHeightFlexContainer = ({ children, addedClass }) => {
       }
     };
 
-    // Call setEqualHeight initially and on window resize
-    setEqualHeight();
-    window.addEventListener("resize", setEqualHeight);
+    // Create a ResizeObserver to detect changes in the container's size
+    const resizeObserver = new ResizeObserver(() => {
+      setEqualHeight();
+    });
+
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+
+    // Cleanup observer on component unmount
     return () => {
-      window.removeEventListener("resize", setEqualHeight);
+      if (containerRef.current) {
+        resizeObserver.unobserve(containerRef.current);
+      }
     };
-  }, [path]);
+  }, []);
+
   return (
-    <div className={`flex ${addedClass ? addedClass : ""}`} ref={containerRef}>
+    <div className={`flex ${addedClass}`} ref={containerRef}>
       {children}
     </div>
   );
