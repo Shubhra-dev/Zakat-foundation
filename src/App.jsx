@@ -16,6 +16,7 @@ import ApplyForHelp from "./apply/apply for help/ApplyForHelp";
 import HardshipRelief from "./apply/hardship relief/HardshipRelief";
 import Housing from "./apply/housing/Housing";
 import WorkEducation from "./apply/work and edu/WorkEducation";
+import AboutZakat from "./apply/about zakat/about/AboutZakat";
 
 const router = createBrowserRouter([
   {
@@ -83,6 +84,18 @@ const router = createBrowserRouter([
       },
       {
         path: "/work_and_education",
+        element: <WorkEducation />,
+      },
+      {
+        path: "/about_zakat",
+        element: <AboutZakat />,
+      },
+      {
+        path: "/zakat_purpose",
+        element: <WorkEducation />,
+      },
+      {
+        path: "/how_it_works",
         element: <WorkEducation />,
       },
     ],

@@ -1,6 +1,6 @@
 import Button from "./Button";
 import about from "../assets/about.png";
-function AboutZakat() {
+function AboutZakatSection() {
   return (
     <div className="py-12 w-5/6 m-auto flex justify-between items-center">
       <div className="w-3/5">
@@ -32,4 +32,4 @@ function AboutZakat() {
   );
 }
 
-export default AboutZakat;
+export default AboutZakatSection;

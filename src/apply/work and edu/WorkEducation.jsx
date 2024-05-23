@@ -8,7 +8,7 @@ import WorkHero from "./WorkHero";
 
 function WorkEducation() {
   return (
-    <ApplyLayout tab={3}>
+    <ApplyLayout tab={4}>
       <WorkHero />
       <TitleSection buttonText={"apply"} title="Work & Education Fund">
         <p className="w-4/5 m-auto font-normal text-paragraph text-secondary/80 pb-2">

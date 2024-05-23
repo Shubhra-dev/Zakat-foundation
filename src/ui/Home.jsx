@@ -1,4 +1,4 @@
-import AboutZakat from "./AboutZakat";
+import AboutZakat from "./AboutZakatSection";
 import Cards from "./Cards";
 import CareSection from "./CareSection";
 import Explore from "./Explore";

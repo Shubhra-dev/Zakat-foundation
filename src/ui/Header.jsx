@@ -41,18 +41,23 @@ const menu = [
       "housing fund",
       "work & education fund",
     ],
-    link: ["apply_help", "", "", ""],
+    link: [
+      "apply_help",
+      "hardship_relief",
+      "housing_fund",
+      "work_and_education",
+    ],
   },
   {
     id: "5",
     title: "about zakat",
     subMenu: [
-      "about zakat",
+      "aboout zakat",
       "purpose of zakat",
       "how zakat works",
       "community hub",
     ],
-    link: ["", "", "", ""],
+    link: ["about_zakat", "zakat_purpose", "how_it_works", ""],
   },
 ];
 function Header() {

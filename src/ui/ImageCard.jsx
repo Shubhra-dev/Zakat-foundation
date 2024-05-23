@@ -1,8 +1,17 @@
 import EqualHeightFlexContainer from "./EqualHeightFlexContainer";
 
-function ImageCard({ children, img, imgPosition, w1, w2, bg, rounded }) {
+function ImageCard({
+  children,
+  img,
+  imgPosition,
+  w1,
+  w2,
+  bg,
+  rounded,
+  padding,
+}) {
   return (
-    <EqualHeightFlexContainer addedClass={"pb-[5%]"}>
+    <EqualHeightFlexContainer addedClass={`${padding ? padding : "pb-[5%]"}`}>
       {(imgPosition === "right" || !imgPosition) && (
         <>
           <div className={`${bg ? bg : ""} p-8 ${w1 ? w1 : "w-1/2"}`}>
