@@ -1,7 +1,7 @@
 import { TbInfoOctagon, TbSettingsQuestion } from "react-icons/tb";
 import { GoPeople } from "react-icons/go";
-import MenuItem from "../../calculate/MenuItem";
-import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
+import MenuItem from "../calculate/MenuItem";
+import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 import { PiTargetBold } from "react-icons/pi";
 
 function ZakatLayout({ children, tab }) {

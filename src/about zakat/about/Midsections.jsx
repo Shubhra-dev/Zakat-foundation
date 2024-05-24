@@ -1,9 +1,9 @@
-import ImageCard from "../../../ui/ImageCard";
-import abz1 from "../../../assets/abz1.jpg";
-import abz2 from "../../../assets/abz2.jpg";
-import abz3 from "../../../assets/abz3.jpg";
-import Title from "../../../ui/Title";
-import P from "../../../ui/P";
+import abz1 from "../../assets/abz1.jpg";
+import abz2 from "../../assets/abz2.jpg";
+import abz3 from "../../assets/abz3.jpg";
+import Title from "../../ui/Title";
+import ImageCard from "../../ui/ImageCard";
+import P from "../../ui/P";
 function Midsections() {
   return (
     <>

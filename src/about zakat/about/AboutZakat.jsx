@@ -1,7 +1,6 @@
+import GetTouch from "../../give/givingfaq/GetTouch";
 import ZakatLayout from "../ZakatLayout";
 import AboutZakatHero from "./AboutZakatHero";
-
-import GetTouch from "../../../give/givingfaq/GetTouch";
 import Midsections from "./Midsections";
 
 function AboutZakat() {

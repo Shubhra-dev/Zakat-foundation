@@ -1,4 +1,4 @@
-import { useRef, useEffect, Children } from "react";
+import { useRef, useEffect } from "react";
 
 const EqualHeightFlexContainer = ({ children, addedClass }) => {
   const containerRef = useRef(null);

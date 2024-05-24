@@ -16,8 +16,9 @@ import ApplyForHelp from "./apply/apply for help/ApplyForHelp";
 import HardshipRelief from "./apply/hardship relief/HardshipRelief";
 import Housing from "./apply/housing/Housing";
 import WorkEducation from "./apply/work and edu/WorkEducation";
-import AboutZakat from "./apply/about zakat/about/AboutZakat";
-import PurposeOfZakat from "./apply/about zakat/purpose/PurposeOfZakat";
+import AboutZakat from "./about zakat/about/AboutZakat";
+import PurposeOfZakat from "./about zakat/purpose/PurposeOfZakat";
+import HowZakatWorks from "./about zakat/how zakat/HowZakatWorks";
 
 const router = createBrowserRouter([
   {
@@ -97,7 +98,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/how_it_works",
-        element: <WorkEducation />,
+        element: <HowZakatWorks />,
       },
     ],
   },
