@@ -19,6 +19,7 @@ import WorkEducation from "./apply/work and edu/WorkEducation";
 import AboutZakat from "./about zakat/about/AboutZakat";
 import PurposeOfZakat from "./about zakat/purpose/PurposeOfZakat";
 import HowZakatWorks from "./about zakat/how zakat/HowZakatWorks";
+import Contact from "./contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
       {
         path: "/how_it_works",
         element: <HowZakatWorks />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

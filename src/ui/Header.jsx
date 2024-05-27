@@ -78,7 +78,10 @@ function Header() {
             <MenuItemHeader item={item} key={item.id} />
           ))}
           <div className="cursor-pointer">
-            <h4 className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan">
+            <h4
+              onClick={() => navigate("/contact")}
+              className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan"
+            >
               Contact Us
             </h4>
           </div>

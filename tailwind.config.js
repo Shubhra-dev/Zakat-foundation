@@ -14,7 +14,7 @@ export default {
       },
       fontSize: {
         title: "53px",
-        paragraph: "25px",
+        paragraph: "22px",
         h3: "34px",
         light: "15px",
       },

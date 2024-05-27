@@ -17,24 +17,24 @@ function Midsection() {
           religion.
         </li>
       </ul>
-      <div className="w-5/6 m-auto flex items-end pt-4">
-        <ul className="w-1/2 laptop:w-[60%] flex flex-col h-full list-disc font-normal text-paragraph text-secondary/80">
+      <div className="w-5/6 m-auto flex items-center pt-4">
+        <ul className="w-1/2 laptop:w-[60%] list-disc font-normal text-paragraph text-secondary/80">
           <li>
             By giving Zakat Muslims cleanse their own wealth. Zakat helps to
             keep the economy flowing by freeing people from burden and giving
             them the chance to reach their potential. Find out more about the
             objective of Zakat.
           </li>
-          <li className="pt-4 flex-grow">
+          <li className="pt-4">
             Zakat, when it works properly, should have a long-term impact for
             the state of the whole Muslim community.
           </li>
         </ul>
-        <div className="w-1/2 laptop:w-[40%] h-min">
+        <div className="w-1/2 laptop:w-[40%] h-full">
           <img
             src={Purpose}
             alt="purpose"
-            className="h-fullw-full object-fit"
+            className="h-full w-full object-fit"
           />
         </div>
       </div>

@@ -32,7 +32,7 @@ function HowMidsection() {
           <img
             src={Purpose}
             alt="purpose"
-            className="h-fullw-full object-fit"
+            className="h-full w-full object-fit"
           />
         </div>
       </div>

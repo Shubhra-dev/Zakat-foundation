@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 function AppLayout() {
   return (
-    <div className="font-outfit  m-auto">
+    <div className="font-outfit m-auto min-h-screen">
       <Header />
       <div className="w-full h-[88px]"></div>
       <Outlet />

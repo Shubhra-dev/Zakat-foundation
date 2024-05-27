@@ -1,6 +1,10 @@
-export default function P({ children }) {
+export default function P({ children, textColor, p }) {
   return (
-    <p className="text-paragraph font-nomal text-secondary/80 pb-[3%]">
+    <p
+      className={`text-paragraph font-nomal ${
+        textColor ? textColor : "text-secondary/80"
+      } ${p ? p : "pb-[3%]"}`}
+    >
       {children}
     </p>
   );
