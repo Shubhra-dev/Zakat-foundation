@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import heroCal from "../../assets/heroCal.png";
 import RoundedButton from "../../ui/RoundedButton";
 function CalculatorHero() {
+  const navigate = useNavigate();
   return (
     <div
       className="bg-cover bg-center w-full"
@@ -14,7 +16,9 @@ function CalculatorHero() {
           Our user-friendly calculator provides precise guidance on the amount
           you should contribute based on your current holdings
         </p>
-        <RoundedButton>Calculate my Zakat</RoundedButton>
+        <RoundedButton onClick={() => navigate("/zakat_calculator")}>
+          Calculate my Zakat
+        </RoundedButton>
       </div>
     </div>
   );

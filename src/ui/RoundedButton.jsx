@@ -1,6 +1,7 @@
-function RoundedButton({ children, bg, textColor, padding }) {
+function RoundedButton({ children, bg, textColor, padding, onClick }) {
   return (
     <button
+      onClick={onClick}
       className={`${bg ? bg : "bg-accentRed"} ${
         padding ? padding : "px-6 py-3"
       } ${
