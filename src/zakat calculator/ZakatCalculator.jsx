@@ -8,6 +8,9 @@ import GoldSilver from "./GoldSilver";
 import Shares from "./Shares";
 import Pensions from "./Pensions";
 import ZakatCheckBox from "./ZakatCheckBox";
+import BusinessAsset from "./BusinessAsset";
+import Trusts from "./Trusts";
+import ItemsOwe from "./ItemsOwe";
 function ZakatCalculator() {
   const [itemsOwn, setItemsOwn] = useState({
     cash: false,
@@ -51,7 +54,7 @@ function ZakatCalculator() {
           information will follow to help you decide.
         </P>
         <div className="border border-green-800 p-3 bg-primary rounded-xl">
-          <H2 textColor={"text-green-800"} font={"font-pally leading-tight"}>
+          <H2 textColor={"text-green-700"} font={"font-pally leading-tight"}>
             What I Own
           </H2>
           <div className=" flex flex-col text-paragraph">
@@ -84,7 +87,7 @@ function ZakatCalculator() {
         </div>
       </div>
       <div className="w-2/4 p-6 px-10 overflow-y-scroll scrollbar-hide">
-        <H2 textColor={"text-green-800"} font={"font-pally text-center"}>
+        <H2 textColor={"text-secondary"} font={"font-pally text-center"}>
           I&apos;m ready to work out my Zakat
         </H2>
         <P add={"text-center"} p={"p-0"}>
@@ -99,6 +102,11 @@ function ZakatCalculator() {
         {itemsOwn.goldSilver && <GoldSilver />}
         {itemsOwn.shares && <Shares />}
         {itemsOwn.pensions && <Pensions />}
+        {itemsOwn.businessAssets && <BusinessAsset />}
+        {itemsOwn.isasAndTrusts && <Trusts />}
+        {Object.values(itemsOwe).some((value) => value === true) && (
+          <ItemsOwe items={itemsOwe} />
+        )}
       </div>
       <div className="w-1/4 p-6 px-8 bg-slate-100">
         <div className="rounded-xl bg-green-900 p-4 text-primary">
