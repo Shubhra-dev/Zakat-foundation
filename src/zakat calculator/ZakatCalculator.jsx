@@ -1,12 +1,13 @@
 import { useState } from "react";
 import H2 from "../ui/H2";
 import P from "../ui/P";
-import CheckBox from "./CheckBox";
 import { oweArray, ownArray } from "./arrays";
 import Cash from "./Cash";
 import MoneyOwed from "./MoneyOwed";
 import GoldSilver from "./GoldSilver";
 import Shares from "./Shares";
+import Pensions from "./Pensions";
+import ZakatCheckBox from "./ZakatCheckBox";
 function ZakatCalculator() {
   const [itemsOwn, setItemsOwn] = useState({
     cash: false,
@@ -43,7 +44,7 @@ function ZakatCalculator() {
 
   return (
     <div className="flex h-screen">
-      <div className="w-1/4 py-6 px-8 bg-slate-100">
+      <div className="w-1/4 py-6 px-8 bg-slate-100 overflow-y-scroll scrollbar-hide">
         <P add={"text-center"}>
           Please select the options that you think may apply to you. If
           you&apos;re not sure about an option, select it anyway and more
@@ -55,7 +56,7 @@ function ZakatCalculator() {
           </H2>
           <div className=" flex flex-col text-paragraph">
             {ownArray.map((item) => (
-              <CheckBox
+              <ZakatCheckBox
                 name={item.name}
                 label={item.label}
                 key={item.name}
@@ -71,7 +72,7 @@ function ZakatCalculator() {
           </H2>
           <div className=" flex flex-col text-paragraph">
             {oweArray.map((item) => (
-              <CheckBox
+              <ZakatCheckBox
                 name={item.name}
                 label={item.label}
                 key={item.name}
@@ -97,6 +98,7 @@ function ZakatCalculator() {
         {itemsOwn.moneyOwed && <MoneyOwed />}
         {itemsOwn.goldSilver && <GoldSilver />}
         {itemsOwn.shares && <Shares />}
+        {itemsOwn.pensions && <Pensions />}
       </div>
       <div className="w-1/4 p-6 px-8 bg-slate-100">
         <div className="rounded-xl bg-green-900 p-4 text-primary">

@@ -13,9 +13,10 @@ export default {
         silver: "#C0C0C0",
       },
       fontSize: {
-        title: "53px",
-        paragraph: "22px",
-        h3: "34px",
+        title: "48px",
+        h2: "36px",
+        h3: "30px",
+        paragraph: "18px",
         light: "15px",
       },
       fontFamily: {

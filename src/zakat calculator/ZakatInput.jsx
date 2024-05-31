@@ -1,10 +1,12 @@
 import P from "../ui/P";
-function ZakatInput({ label, name, placeholder, grams }) {
+function ZakatInput({ label, name, placeholder, grams, wd }) {
   return (
-    <div className="w-3/4 m-auto pb-2">
-      <P p={"p-0"} add={"font-semibold"}>
-        {label}:
-      </P>
+    <div className={`${wd ? wd : "w-3/4"} m-auto pb-2`}>
+      {label && (
+        <P p={"p-0"} add={"font-semibold"}>
+          {label}:
+        </P>
+      )}
       <div className="flex items-center bg-white w-full rounded-xl border border-gray-300">
         <P
           add={
