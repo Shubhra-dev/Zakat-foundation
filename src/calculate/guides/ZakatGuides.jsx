@@ -11,10 +11,10 @@ function ZakatGuides() {
     <CalculateLaoyout tab={3}>
       <GuideHero />
       <div className="text-center pb-[4%]">
-        <h3 className="uppercase text-secondary/80 text-xl font-normal py-[4%]">
+        <h3 className="uppercase text-secondary/80 text-light sm:text-s2 font-normal py-[4%]">
           knowledge
         </h3>
-        <h2 className="text-secondary font-bold text-6xl font-pally">
+        <h2 className="text-secondary font-bold text-h3 sm:text-title font-pally">
           It&apos;s easy when you know how
         </h2>
       </div>

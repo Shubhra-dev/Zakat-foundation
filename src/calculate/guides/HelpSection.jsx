@@ -2,8 +2,8 @@ import HelpCards from "./HelpCards";
 function HelpSection() {
   return (
     <div className="py-[5%] px-[2%]">
-      <h2 className="text-secondary font-bold text-6xl font-pally  text-center pb-[2%]">
-        Our Zakat guides will help you to...
+      <h2 className="text-secondary font-bold text-h3 sm:text-title font-pally text-center px-6 sm:px-0 pb-[2%]">
+        Our Zakat guides will help you to..
       </h2>
       <HelpCards
         bg="bg-accentRed"

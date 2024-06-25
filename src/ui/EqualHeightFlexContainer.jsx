@@ -42,10 +42,7 @@ const EqualHeightFlexContainer = ({ children, addedClass }) => {
   }, []);
 
   return (
-    <div
-      className={`flex flex-col sm:flex-row ${addedClass}`}
-      ref={containerRef}
-    >
+    <div className={`flex ${addedClass}`} ref={containerRef}>
       {children}
     </div>
   );
