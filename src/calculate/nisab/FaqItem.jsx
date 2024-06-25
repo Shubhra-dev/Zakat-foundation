@@ -10,7 +10,7 @@ function FaqItem({ item, handleClickFAQ, active }) {
           <div className="rounded-full w-max p-2 bg-secondary/20 text-2xl text-accentRed">
             <FaAngleDoubleRight className="text-xl" />
           </div>
-          <h3 className="text-3xl font-semibold text-secondary px-4">
+          <h3 className="text-light sm:text-h3 font-semibold text-secondary px-4">
             {item.ques}
           </h3>
         </div>
@@ -20,12 +20,14 @@ function FaqItem({ item, handleClickFAQ, active }) {
           onClick={() => handleClickFAQ(item.id)}
           className="px-[5%] py-[3%] bg-accentRed border border-gray-200 shadow-[1px_1px_25px_1px_rgba(0,0,0,0.15)] rounded-2xl flex items-center cursor-pointer"
         >
-          <div className="rounded-full w-max p-2 bg-primary text-2xl text-accentRed">
+          <div className="rounded-full w-max p-2 bg-primary text-accentRed">
             <FaAngleDoubleUp className="text-xl" />
           </div>
           <div className="px-4 text-primary">
-            <h3 className="text-3xl font-semibold pb-4">{item.ques}</h3>
-            <p className="font-normal text-sm">{item.ans}</p>
+            <h3 className="text-light sm:text-h3 font-semibold pb-4">
+              {item.ques}
+            </h3>
+            <p className="font-normal text-small sm:text-light">{item.ans}</p>
           </div>
         </div>
       )}

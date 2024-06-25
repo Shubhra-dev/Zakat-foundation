@@ -9,7 +9,7 @@ import { TbMessage2Question } from "react-icons/tb";
 function CalculateLaoyout({ children, tab }) {
   return (
     <>
-      <div className="h-screen block sm:flex">
+      <div className="sm:h-screen sm:flex">
         <div className="overflow-x-scroll flex sm:block gap-2 sm:w-1/6 bg-slate-100 px-2 sm:px-10 pt-3 sm:pt-8 sm:h-full flex-grow sm:overflow-y-scroll scrollbar-hide">
           <MenuItem text={"Calculator"} active={tab === 1} link={"calculate"}>
             <ImCalculator

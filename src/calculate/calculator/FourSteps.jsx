@@ -4,14 +4,14 @@ import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
 function FourSteps() {
   return (
     <EqualHeightFlexContainer>
-      <div className="rounded-xl">
+      <div className="rounded-xl hidden sm:block">
         <img
           src={steps}
           alt="steps"
           className="object-fill h-full object-center"
         />
       </div>
-      <div className="px-[7%] flex-grow h-full flex flex-col gap-2 justify-between">
+      <div className="px-8 sm:px-[7%] flex-grow sm:h-full flex flex-col gap-3 sm:gap-2 sm:justify-between">
         <StepItem num={"1"} text={"Work out what you own."} />
         <StepItem num={"2"} text={"Then take off what you owe."} />
         <StepItem

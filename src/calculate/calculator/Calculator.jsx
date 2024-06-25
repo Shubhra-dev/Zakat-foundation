@@ -7,16 +7,16 @@ function Calculator() {
   return (
     <CalculateLaoyout tab={1}>
       <CalculatorHero />
-      <div className="py-10 text-center">
-        <h2 className="text-secondary font-semibold text-[55px] font-pally pb-4">
+      <div className="py-6 sm:py-10 text-center">
+        <h2 className="text-secondary font-semibold text-h3 sm:text-title font-pally pb-4">
           Calculating your Zakat
         </h2>
-        <p className="w-3/5 m-auto font-normal text-xl text-secondary/80 pb-6">
+        <p className="w-4/5 sm:w-3/5 m-auto font-normal text-small sm:text-s2 text-secondary/80 pb-2 sm:pb-6">
           Eliminate the hassle of calculating your Zakat. With just your asset
           details at your fingertips, you can swiftly determine your required
           contribution amount.
         </p>
-        <h2 className="text-secondary font-semibold text-[55px] font-pally py-8 w-3/5 m-auto leading-[60px]">
+        <h2 className="text-secondary font-semibold text-h3 sm:text-title font-pally py-2 sm:py-8 sm:w-3/5 m-auto sm:leading-[60px]">
           Four straightforward steps to calculating your Zakat
         </h2>
         <FourSteps />
