@@ -2,6 +2,8 @@ import Button from "./Button";
 import logo from "../assets/logo.png";
 import MenuItemHeader from "./MenuItemHeader";
 import { useNavigate } from "react-router-dom";
+import { MdClose, MdOutlineMenu } from "react-icons/md";
+import { useState } from "react";
 const menu = [
   {
     id: "1",
@@ -62,33 +64,63 @@ const menu = [
 ];
 function Header() {
   const navigate = useNavigate();
+  const [mobMenuOpen, setMobMenuOpen] = useState(false);
   return (
-    <div className="w-full h-[88px] bg-gray-900 fixed top-0 left-0 z-50">
-      <div className="w-11/12 h-full m-auto flex justify-between items-center text-primary">
-        <div className="w-1/5 ">
-          <img
-            src={logo}
-            alt="logo"
-            className="h-[65px] cursor-pointer"
-            onClick={() => navigate("/")}
-          />
-        </div>
-        <div className="w-4/5 laptop:w-3/5 flex justify-between items-center text-primary leading-tight">
-          {menu.map((item) => (
-            <MenuItemHeader item={item} key={item.id} />
-          ))}
-          <div className="cursor-pointer">
-            <h4
-              onClick={() => navigate("/contact")}
-              className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan"
-            >
-              Contact Us
-            </h4>
+    <>
+      <div className="w-full h-[88px] bg-gray-900 fixed top-0 left-0 z-20">
+        <div className="w-11/12 h-full m-auto flex justify-between items-center text-primary">
+          <div className="w-1/5 ">
+            <img
+              src={logo}
+              alt="logo"
+              className="h-[65px] cursor-pointer"
+              onClick={() => navigate("/")}
+            />
           </div>
-          <Button bg={"bg-accentCyan"}>give zakat</Button>
+          <div className="hidden sm:flex w-4/5 laptop:w-3/5  justify-between items-center text-primary leading-tight">
+            {menu.map((item) => (
+              <MenuItemHeader item={item} key={item.id} />
+            ))}
+            <div className="cursor-pointer">
+              <h4
+                onClick={() => navigate("/contact")}
+                className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan"
+              >
+                Contact Us
+              </h4>
+            </div>
+            <Button bg={"bg-accentCyan"}>give zakat</Button>
+          </div>
+          <div
+            className="sm:hidden cursor-pointer"
+            onClick={() => setMobMenuOpen(true)}
+          >
+            <MdOutlineMenu className="text-3xl" />
+          </div>
         </div>
       </div>
-    </div>
+      {mobMenuOpen && (
+        <div className="fixed w-3/5 top-0 right-0 h-screen z-50 bg-gray-900">
+          <div className="p-3" onClick={() => setMobMenuOpen(false)}>
+            <MdClose className="text-3xl text-primary" />
+          </div>
+          <div className="flex flex-col gap-6 w-full justify-between items-end px-6 py-4 text-primary leading-tight">
+            {menu.map((item) => (
+              <MenuItemHeader item={item} key={item.id} />
+            ))}
+            <div className="cursor-pointer">
+              <h4
+                onClick={() => navigate("/contact")}
+                className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan"
+              >
+                Contact Us
+              </h4>
+            </div>
+            <Button bg={"bg-accentCyan"}>give zakat</Button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

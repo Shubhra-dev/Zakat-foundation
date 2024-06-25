@@ -14,10 +14,14 @@ export default {
       },
       fontSize: {
         title: "48px",
+        s1: "34px",
+        s2: "20px",
         h2: "36px",
         h3: "30px",
         paragraph: "18px",
         light: "15px",
+        small: "10px",
+        xsmall: "8px",
       },
       fontFamily: {
         pally: ["Pally", "sans-serif"],

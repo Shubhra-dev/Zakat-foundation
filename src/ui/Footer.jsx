@@ -11,9 +11,9 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-full text-primary bg-gray-900 py-[2%]">
-        <div className="w-11/12 flex items-start m-auto pb-4 border-b border-b-primary">
-          <div className="w-1/4">
+      <div className="w-full text-primary bg-gray-900 py-[2%] z-50">
+        <div className="w-11/12 flex flex-col gap-2 sm:gap-0 sm:flex-row items-center justify-center sm:items-start m-auto pb-4 border-b border-b-primary">
+          <div className="w-full sm:w-1/4">
             <img
               src={logo}
               alt="logo"
@@ -34,7 +34,7 @@ function Footer() {
               <h5 className="text-sm font-light">+880 1XXX XXXXXX</h5>
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="hidden sm:block w-1/4">
             <h1 className="text-primary text-xl font-semibold leading-relaxed">
               Quick Links
             </h1>
@@ -54,7 +54,7 @@ function Footer() {
               </h5>
             ))}
           </div>
-          <div className="w-1/4">
+          <div className="hidden sm:block w-1/4">
             <h1 className="text-primary text-xl font-semibold leading-relaxed">
               Support Links
             </h1>
@@ -72,7 +72,47 @@ function Footer() {
               </h5>
             ))}
           </div>
-          <div className="w-1/4">
+          <div className="sm:hidden flex justify-between w-full">
+            <div className="w-full sm:w-1/4">
+              <h1 className="text-primary text-xl font-semibold leading-relaxed">
+                Quick Links
+              </h1>
+              {[
+                "zakat calculator",
+                "today's nisab",
+                "give zakat",
+                "zakat guides",
+                "impact stories",
+                "purpose of zakat",
+              ].map((item) => (
+                <h5
+                  className="text-sm cursor-pointer font-normal pt-2 capitalize"
+                  key={item}
+                >
+                  {item}
+                </h5>
+              ))}
+            </div>
+            <div className="w-full sm:w-1/4">
+              <h1 className="text-primary text-xl font-semibold leading-relaxed">
+                Support Links
+              </h1>
+              {[
+                "terms & conditions",
+                "privacy policy",
+                "cookie policy",
+                "get in touch",
+              ].map((item) => (
+                <h5
+                  className="text-sm cursor-pointer font-normal pt-2 capitalize"
+                  key={item}
+                >
+                  {item}
+                </h5>
+              ))}
+            </div>
+          </div>
+          <div className="w-full sm:w-1/4">
             <h1 className="text-primary text-xl font-semibold leading-relaxed">
               Sign up to the ZF BD newsletter
             </h1>

@@ -13,10 +13,10 @@ function MenuItem({ text, active, children, link }) {
         active
           ? "bg-accentCyan text-primary font-semibold"
           : "bg-primary text-secondary shadow-sm font-medium hover:bg-accentCyan hover:text-primary"
-      } rounded-xl py-8 px-4 text-center cursor-pointer mb-[10%]`}
+      } rounded-xl p-2 sm:py-8 sm:px-4 text-center cursor-pointer mb-3 sm:mb-[10%]`}
     >
       {children}
-      <h2 className="text-xl pt-2">{text}</h2>
+      <h2 className="text-light sm:text-s2 pt-2">{text}</h2>
     </div>
   );
 }
