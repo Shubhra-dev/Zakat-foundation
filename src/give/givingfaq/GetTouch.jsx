@@ -8,12 +8,12 @@ function GetTouch({ my, button1, button2 }) {
       } rounded-xl relative overflow-hidden`}
     >
       <div
-        className={`h-[350px] w-[350px] absolute -bottom-14 -left-14 bg-gradient-to-t from-accentPurple to-primary/20 rounded-full`}
+        className={`h-[150px] sm:h-[350px] w-[150px] sm:w-[350px] absolute -bottom-14 -left-14 bg-gradient-to-t from-accentPurple to-primary/20 rounded-full`}
       ></div>
       <div
-        className={`h-[350px] w-[350px] absolute -top-14 -right-14 bg-gradient-to-b from-accentPurple to-primary/20 rounded-full`}
+        className={`h-[150px] sm:h-[350px] w-[150px] sm:w-[350px] absolute -top-14 -right-14 bg-gradient-to-b from-accentPurple to-primary/20 rounded-full`}
       ></div>
-      <h2 className="w-3/5 m-auto text-center text-primary text-[50px] font-bold font-pally py-6 relative">
+      <h2 className="w-5/6 sm:w-3/5 m-auto text-center text-primary text-h3 sm:text-title font-bold font-pally py-6 relative">
         Do you still have questions? Get in touch with our team
       </h2>
       <div className="w-max m-auto flex items-center gap-6 relative">

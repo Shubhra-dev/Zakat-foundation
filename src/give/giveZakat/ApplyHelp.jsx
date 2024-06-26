@@ -14,7 +14,7 @@ function ApplyHelp() {
         <h2 className="text-primary font-bold text-[28px] sm:text-title font-pally">
           Helping you bring Zakat to life where you live
         </h2>
-        <p className="text-primary text-[12px] sm:text-s1 font-light py-4">
+        <p className="text-primary text-s3 sm:text-s1 font-light py-4">
           We invite you to explore our annual report for a comprehensive
           overview of our activities and achievements. Discover in detail how
           your Zakat is creating lasting change in communities across the

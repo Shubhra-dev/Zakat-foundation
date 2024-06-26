@@ -7,10 +7,10 @@ function GivingFAQHero() {
       style={{ backgroundImage: `url(${giveHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[8%] text-center">
-        <h2 className="text-primary font-semibold text-[70px] font-pally">
+        <h2 className="text-primary font-semibold text-h3 sm:text-[70px] font-pally">
           Giving FAQ’s
         </h2>
-        <p className="text-2xl font-light text-primary w-1/2 m-auto py-4">
+        <p className="text-s3 sm:text-s2 font-light text-primary w-5/6 sm:w-1/2 m-auto py-4">
           Everything you need to know about giving through Zakat Foundation
           Bangladesh
         </p>
