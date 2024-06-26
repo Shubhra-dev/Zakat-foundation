@@ -5,37 +5,40 @@ import RoundedButton from "../../ui/RoundedButton";
 function ZakatNumbers() {
   return (
     <div className="py-[3.5%] bg-accentRed/10">
-      <h2 className="text-secondary font-semibold text-[55px] font-pally pb-4  text-center">
+      <h2 className="text-secondary font-semibold text-h3 sm:text-title font-pally pb-4  text-center">
         This is what your Zakat is doing
       </h2>
-      <EqualHeightFlexContainer addedClass="justify-between gap-6 w-5/6 m-auto items-center">
+      <EqualHeightFlexContainer addedClass="flex-col sm:flex-row justify-between gap-6 w-11/12 sm:w-5/6 m-auto items-center">
         <CounterCardItem
-          width={"w-5/12"}
+          width={"w-4/5 sm:w-5/12"}
           text={"Amount of Zakat distributed in February"}
         >
           <CountUp
             prefix="৳ "
             duration={3}
             end={112908}
-            className="text-accentRed text-6xl font-bold"
+            className="text-accentRed text-s2 sm:text-6xl font-bold"
           />
         </CounterCardItem>
 
         <CounterCardItem
-          width={"w-4/12"}
+          width={"w-4/5 sm:w-4/12"}
           text={"Number of people helped in February"}
         >
           <CountUp
             duration={3}
             end={1606}
-            className="text-accentRed text-6xl font-bold"
+            className="text-accentRed text-s2 sm:text-6xl font-bold"
           />
         </CounterCardItem>
-        <CounterCardItem width={"w-3/12"} text={"Number of people helped 2024"}>
+        <CounterCardItem
+          width={"w-4/5 sm:w-3/12"}
+          text={"Number of people helped 2024"}
+        >
           <CountUp
             duration={3}
             end={3382}
-            className="text-accentRed text-6xl font-bold"
+            className="text-accentRed text-s2 sm:text-6xl font-bold"
           />
         </CounterCardItem>
       </EqualHeightFlexContainer>

@@ -11,7 +11,7 @@ function AskQuestion() {
       <Summary />
       <QuestionForm />
       <div className="text-center pb-[5%]">
-        <h2 className="w-3/5 m-auto text-secondary font-semibold text-[50px] font-pally py-[4%] leading-tight">
+        <h2 className="w-5/6 sm:w-3/5 m-auto text-secondary font-semibold text-h3 sm:text-title font-pally py-[4%] leading-tight">
           Ready to word out your Zakat?
         </h2>
         <RoundedButton>Calculate my zakat</RoundedButton>

@@ -7,7 +7,7 @@ import helpStory4 from "../assets/helpStory4.png";
 function StoryItems() {
   return (
     <>
-      <div className="pb-[5%] flex items-center  gap-4">
+      <div className="pb-2 sm:pb-[5%] flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
         <StoryCardItem
           img={helpStory1}
           alt={"zain"}
@@ -25,7 +25,7 @@ function StoryItems() {
           }
         />
       </div>
-      <div className="py-[3%] flex items-center  gap-4">
+      <div className="pb-2 sm:py-[3%] flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
         <StoryCardItem
           img={helpStory3}
           alt={"alia"}
