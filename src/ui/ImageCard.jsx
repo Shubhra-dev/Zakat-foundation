@@ -11,17 +11,21 @@ function ImageCard({
   padding,
 }) {
   return (
-    <EqualHeightFlexContainer addedClass={`${padding ? padding : "pb-[5%]"}`}>
+    <EqualHeightFlexContainer
+      addedClass={`${
+        padding ? padding : "pb-0 sm:pb-[5%]"
+      } flex-col sm:flex-row bg-gray-300`}
+    >
       {(imgPosition === "right" || !imgPosition) && (
         <>
-          <div className={`${bg ? bg : ""} p-8 ${w1 ? w1 : "w-1/2"}`}>
+          <div className={`${bg ? bg : ""} p-8 ${w1 ? w1 : "w-full sm:w-1/2"}`}>
             {children}
           </div>
 
           <div
-            className={`${w2 ? w2 : "w-1/2"} ${
+            className={`${w2 ? w2 : "w-full sm:w-1/2"} ${
               rounded ? "rounded-xl" : ""
-            } bg-cover bg-top`}
+            } bg-cover bg-center sm:bg-top`}
             style={{ backgroundImage: `url(${img})` }}
           ></div>
         </>
@@ -29,7 +33,7 @@ function ImageCard({
       {imgPosition == "left" && (
         <>
           <div
-            className={`${w2 ? w2 : "w-1/2"} ${
+            className={`${w2 ? w2 : "w-full sm:w-1/2"} ${
               rounded ? "rounded-xl" : ""
             } bg-cover bg-top`}
             style={{ backgroundImage: `url(${img})` }}
