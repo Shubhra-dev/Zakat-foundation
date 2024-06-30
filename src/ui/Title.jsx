@@ -3,7 +3,9 @@ function Title({ children, textColor, add }) {
     <h1
       className={`${
         textColor ? textColor : "text-primary"
-      } font-pally text-[70px] leading-tight font-bold ${add ? add : ""}`}
+      } font-pally text-h3 sm:text-[70px] leading-tight font-bold ${
+        add ? add : ""
+      }`}
     >
       {children}
     </h1>

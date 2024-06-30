@@ -13,8 +13,8 @@ function Midsections() {
           bg={"bg-accentCyan/10"}
           imgPosition={"left"}
           rounded={true}
-          w1={"w-[60%]"}
-          w2={"w-[40%]"}
+          w1={"w-full sm:w-[60%]"}
+          w2={"w-full sm:w-[40%]"}
           padding={"pb-0"}
         >
           <Title textColor={"text-secondary"}>What is Zakat</Title>
@@ -33,8 +33,8 @@ function Midsections() {
           bg={"bg-accentRed/10"}
           imgPosition={"right"}
           rounded={true}
-          w1={"w-[60%]"}
-          w2={"w-[40%]"}
+          w1={"w-full sm:w-[60%]"}
+          w2={"w-full sm:w-[40%] hidden sm:block"}
           padding={"pb-0"}
         >
           <Title textColor={"text-secondary"}>Purpose of Zakat</Title>
@@ -45,7 +45,7 @@ function Midsections() {
             faith and uphold the religion of Islam by providing a safety net for
             certain set categories of Muslims.
           </P>
-          <h3 className="text-accentRed font-bold text-paragraph cursor-pointer py-2">
+          <h3 className="text-accentRed font-bold text-s3 am:text-paragraph cursor-pointer py-2">
             Read More
           </h3>
         </ImageCard>
@@ -56,8 +56,8 @@ function Midsections() {
           bg={"bg-accentPurple/10"}
           imgPosition={"left"}
           rounded={true}
-          w1={"w-[60%]"}
-          w2={"w-[40%]"}
+          w1={"w-full sm:w-[60%]"}
+          w2={"w-full sm:w-[40%]"}
           padding={"pb-0"}
         >
           <Title textColor={"text-secondary"}>How Zakat Works</Title>
@@ -68,7 +68,7 @@ function Midsections() {
             how Zakat works to positively change the lives of Muslims as
             individuals and to create a thriving, closer Muslim community.
           </P>
-          <h3 className="text-accentRed font-bold text-paragraph cursor-pointer py-2">
+          <h3 className="text-accentRed font-bold text-s3 am:text-paragraph cursor-pointer py-2">
             Read More
           </h3>
         </ImageCard>

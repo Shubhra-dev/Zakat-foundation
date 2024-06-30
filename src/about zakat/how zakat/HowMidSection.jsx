@@ -3,15 +3,15 @@ import Purpose from "../../assets/Purpose.png";
 
 function HowMidsection() {
   return (
-    <div className="py-[3%]">
+    <div className="py-[3%] px-6 sm:px-0">
       <Title textColor={"text-secondary"} add={"text-center"}>
         Who should be getting Zakat?
       </Title>
-      <p className="w-4/6 m-auto list-disc pt-4 font-normal text-paragraph text-secondary/80">
+      <p className="w-full sm:w-4/6 m-auto list-disc pt-4 font-normal text-s3 sm:text-paragraph text-secondary/80">
         The Qur’an tells us eight groups of people who should be given Zakat:
       </p>
-      <div className="w-5/6 m-auto flex items-end">
-        <p className="w-1/2 laptop:w-[60%] pt-4 font-normal text-paragraph text-secondary/80">
+      <div className="w-full sm:w-5/6 m-auto flex flex-col sm:flex-row items-end">
+        <p className="w-full sm:w-1/2 laptop:w-[60%] pt-4 font-normal text-s3 sm:text-paragraph text-secondary/80">
           Indeed, Zakat expenditures are only for
           <span className="block">[1] the poor and</span>
           <span className="block">[2] the needy, and</span>
@@ -28,7 +28,7 @@ function HowMidsection() {
           </span>{" "}
           All-Wise.”
         </p>
-        <div className="w-1/2 laptop:w-[40%] h-full">
+        <div className="w-full sm:w-1/2 laptop:w-[40%] h-full">
           <img
             src={Purpose}
             alt="purpose"
@@ -36,7 +36,7 @@ function HowMidsection() {
           />
         </div>
       </div>
-      <p className="w-5/6 m-auto list-disc pt-4 font-normal text-paragraph text-secondary/80">
+      <p className="w-5/6 m-auto list-disc pt-4 font-normal text-s3 sm:text-paragraph text-secondary/80">
         (Qur’an, Chapter 9, Verse 60)
       </p>
     </div>

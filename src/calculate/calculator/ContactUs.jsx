@@ -10,11 +10,11 @@ function ContactUs({ textColor, buttonBg, bg }) {
         <h2
           className={`${
             textColor ? textColor : "text-accentCyan"
-          } font-semibold text-title leading-tight font-pally text-center sm:text-left sm:w-2/4`}
+          } font-semibold text-h3 sm:text-title leading-tight font-pally text-center sm:text-left sm:w-2/4`}
         >
           Do you still have Questions?
         </h2>
-        <p className="text-neutral-800/80 text-xl font-normal sm:w-3/4 py-6">
+        <p className="text-neutral-800/80 text-s3 sm:text-s2 font-normal sm:w-3/4 py-6">
           If you have any other questions about calculating your Zakat or need
           extra support, get in touch to find out how else
           <strong> Zakat Foundation Bangladesh</strong> can help.

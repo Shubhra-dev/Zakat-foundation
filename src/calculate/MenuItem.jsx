@@ -16,7 +16,7 @@ function MenuItem({ text, active, children, link }) {
       } rounded-xl p-2 sm:py-8 sm:px-4 text-center cursor-pointer mb-3 sm:mb-[10%]`}
     >
       {children}
-      <h2 className="text-light sm:text-s2 pt-2">{text}</h2>
+      <h2 className="text-light sm:text-s2 px-2 sm:px-0 pt-2">{text}</h2>
     </div>
   );
 }

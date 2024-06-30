@@ -1,13 +1,13 @@
 import { TbInfoOctagon, TbSettingsQuestion } from "react-icons/tb";
 import { GoPeople } from "react-icons/go";
 import MenuItem from "../calculate/MenuItem";
-import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
+// import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 import { PiTargetBold } from "react-icons/pi";
 
 function ZakatLayout({ children, tab }) {
   return (
-    <EqualHeightFlexContainer addedClass={"h-screen"}>
-      <div className="w-1/6 bg-slate-100 px-10 pt-8 h-full flex-grow overflow-y-scroll scrollbar-hide">
+    <div className="sm:h-screen sm:flex">
+      <div className="overflow-x-scroll flex sm:block gap-2 sm:w-1/6 bg-slate-100 px-2 sm:px-10 pt-3 sm:pt-8 sm:h-full flex-grow sm:overflow-y-scroll scrollbar-hide">
         <MenuItem text={"About Zakat"} active={tab === 1} link={"about_zakat"}>
           <TbInfoOctagon
             className={`text-2xl ${
@@ -45,10 +45,10 @@ function ZakatLayout({ children, tab }) {
           />
         </MenuItem>
       </div>
-      <div className="w-5/6 flex-grow overflow-y-scroll scrollbar-hide">
+      <div className="w-full sm:w-5/6 flex-grow overflow-y-scroll scrollbar-hide">
         {children}
       </div>
-    </EqualHeightFlexContainer>
+    </div>
   );
 }
 

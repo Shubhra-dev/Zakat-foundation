@@ -25,11 +25,11 @@ function FAQSection() {
   }
   return (
     <div className="bg-slate-100">
-      <h2 className="text-accentPurple font-semibold text-[50px] font-pally pt-8 text-center">
+      <h2 className="text-accentPurple font-semibold text-h3 sm:text-title font-pally pt-2 sm:pt-8 text-center">
         Frequently Asked Questions
       </h2>
-      <div className="py-[3%] px-[2%] flex gap-6 w-full">
-        <div className="w-1/2">
+      <div className="py-[3%] px-4 sm:px-[2%] flex flex-col sm:flex-row gap-1 sm:gap-6 w-full">
+        <div className="w-full sm:w-1/2">
           {ques1.map((item) => (
             <GivingFAQItem
               key={item.id}
@@ -40,7 +40,7 @@ function FAQSection() {
             />
           ))}
         </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           {ques2.map((item) => (
             <GivingFAQItem
               key={item.id}

@@ -13,8 +13,8 @@ function ImageCard({
   return (
     <EqualHeightFlexContainer
       addedClass={`${
-        padding ? padding : "pb-0 sm:pb-[5%]"
-      } flex-col sm:flex-row bg-gray-300`}
+        padding ? padding : "pb-0"
+      } flex-col sm:flex-row bg-gray-300 rounded-xl`}
     >
       {(imgPosition === "right" || !imgPosition) && (
         <>

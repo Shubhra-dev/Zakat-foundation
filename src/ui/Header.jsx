@@ -68,7 +68,7 @@ function Header() {
   return (
     <>
       <div className="w-full h-[88px] bg-gray-900 fixed top-0 left-0 z-20">
-        <div className="w-11/12 h-full m-auto flex justify-between items-center text-primary">
+        <div className="w-11/12 large:w-5/6 large:m-auto h-full m-auto flex justify-between items-center text-primary">
           <div className="w-1/5 ">
             <img
               src={logo}

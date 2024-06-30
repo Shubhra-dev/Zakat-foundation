@@ -1,5 +1,5 @@
 import MenuItem from "../calculate/MenuItem";
-import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
+// import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 import { RiMailSendFill } from "react-icons/ri";
 import { BsFillFileSpreadsheetFill } from "react-icons/bs";
 import { PiHouseLine } from "react-icons/pi";
@@ -7,11 +7,11 @@ import { IoSchoolSharp } from "react-icons/io5";
 
 function ApplyLayout({ children, tab }) {
   return (
-    <EqualHeightFlexContainer addedClass={"h-screen"}>
-      <div className="w-1/6 bg-slate-100 px-10 pt-8 h-full flex-grow overflow-y-scroll scrollbar-hide">
+    <div className="sm:h-screen sm:flex">
+      <div className="overflow-x-scroll flex sm:block gap-2 sm:w-1/6 bg-slate-100 px-2 sm:px-10 pt-3 sm:pt-8 sm:h-full flex-grow sm:overflow-y-scroll scrollbar-hide">
         <MenuItem text={"Apply"} active={tab === 1} link={"apply_help"}>
           <RiMailSendFill
-            className={`text-2xl ${
+            className={`text-xl sm:text-2xl ${
               tab === 1 ? "text-primary" : "text-accentRed"
             }`}
           />
@@ -22,7 +22,7 @@ function ApplyLayout({ children, tab }) {
           link={"hardship_relief"}
         >
           <BsFillFileSpreadsheetFill
-            className={`text-2xl ${
+            className={`text-xl sm:text-2xl ${
               tab === 2 ? "text-primary" : "text-accentRed"
             }`}
           />
@@ -50,10 +50,10 @@ function ApplyLayout({ children, tab }) {
           />
         </MenuItem>
       </div>
-      <div className="w-5/6 flex-grow overflow-y-scroll scrollbar-hide">
+      <div className="w-full sm:w-5/6 flex-grow overflow-y-scroll scrollbar-hide">
         {children}
       </div>
-    </EqualHeightFlexContainer>
+    </div>
   );
 }
 

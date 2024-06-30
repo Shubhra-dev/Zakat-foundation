@@ -6,10 +6,10 @@ function ApplyHero() {
       style={{ backgroundImage: `url(${impactHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[5%] text-center">
-        <h2 className="text-primary font-semibold text-[70px] font-pally w-4/5 m-auto leading-tight">
+        <h2 className="text-primary font-semibold text-h3 sm:text-[70px] font-pally w-5/6 sm:w-4/5 m-auto leading-tight">
           Apply for help from Zakat Foundation Bangladesh
         </h2>
-        <p className="text-xl font-light text-primary w-3/4 m-auto py-6">
+        <p className="tyext-s3 sm:text-s2 font-light text-primary w-5/6 sm:w-3/4 m-auto py-2 sm:py-6">
           If you’re a Muslim in need of support, Zakat given through NZF may be
           able to help.
         </p>
