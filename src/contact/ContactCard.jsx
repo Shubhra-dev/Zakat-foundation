@@ -5,7 +5,7 @@ import { LuMail, LuPhoneCall } from "react-icons/lu";
 import { IoLocationOutline } from "react-icons/io5";
 function ContactCard() {
   return (
-    <div className="w-2/5 bg-accentRed rounded-xl p-8 relative overflow-hidden">
+    <div className="w-full sm:w-2/5 bg-accentRed rounded-xl p-8 relative overflow-hidden">
       <H1 font={"font-pally"} add={"pb-4"}>
         Contact Us
       </H1>

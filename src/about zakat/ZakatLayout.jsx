@@ -1,5 +1,4 @@
 import { TbInfoOctagon, TbSettingsQuestion } from "react-icons/tb";
-import { GoPeople } from "react-icons/go";
 import MenuItem from "../calculate/MenuItem";
 // import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 import { PiTargetBold } from "react-icons/pi";
@@ -34,13 +33,6 @@ function ZakatLayout({ children, tab }) {
           <PiTargetBold
             className={`text-3xl ${
               tab === 3 ? "text-primary" : "text-accentRed"
-            }`}
-          />
-        </MenuItem>
-        <MenuItem text={"Community Hub"} active={tab === 4} link={""}>
-          <GoPeople
-            className={`text-3xl ${
-              tab === 4 ? "text-primary" : "text-accentRed"
             }`}
           />
         </MenuItem>

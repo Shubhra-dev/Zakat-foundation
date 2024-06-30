@@ -8,7 +8,7 @@ function WorkingOut() {
     >
       <div className="w-full sm:w-1/2 py-0 sm:py-8">
         <div
-          className={`bg-cover bg-top w-full h-full rounded-t-xl sm:rounded-l-xl`}
+          className={`bg-cover bg-top w-full h-full rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl`}
           style={{ backgroundImage: `url(${donate})` }}
         ></div>
       </div>
