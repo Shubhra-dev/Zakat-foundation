@@ -5,7 +5,7 @@ function ContactInput({ id, placeholder, w, type }) {
       name={id}
       id={id}
       placeholder={placeholder}
-      className={`p-2 font-normal text-s3 sm:text-paragraph border-b border-b-gray-300 ${
+      className={`p-2 font-normal text-s3 tab:text-paragraph border-b border-b-gray-300 ${
         w ? w : "w-full"
       }`}
     />

@@ -26,13 +26,13 @@ export default {
         xsmall: "8px",
       },
       fontFamily: {
-        pally: ["Pally", "sans-serif"],
+        pally: ["Outfit", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
       },
       screens: {
         tab: "770px",
-        laptop: "1024px",
-        large: "1440px",
+        laptop: "1025px",
+        large: "1920px",
       },
     },
   },

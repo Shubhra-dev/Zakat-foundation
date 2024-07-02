@@ -1,10 +1,11 @@
 import Button from "./Button";
+import EqualHeightFlexContainer from "./EqualHeightFlexContainer";
 
 function Explore() {
   return (
     <div className="w-11/12 m-auto flex flex-col tab:flex-row gap-4 items-center mt-2 tab:-mt-12 pb-4 tab:pb-12 px-6 sm:px-0">
-      <div className="w-full tab:w-4/5 flex flex-col tab:flex-row gap-2 tsb:gap-0 items-start tab:h-[320px]">
-        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl bg-primary">
+      <EqualHeightFlexContainer addedClass="w-full tab:w-4/5 flex-col tab:flex-row gap-2 tsb:gap-0 items-start tab:h-[400px] laptop:h-[300px]">
+        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             What is Zakat?
           </h2>
@@ -17,7 +18,7 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Why Give Zakat?
           </h2>
@@ -29,20 +30,19 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Who Receives Zakat?
           </h2>
           <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
-            Zakat is distributed to specific groups including the poor, the
-            needy, those in debt, and other eligible recipients outlined in
-            Islamic law.
+            Zakat is distributed to specific group including the needy, those in
+            debt, and other eligible recipients in Islamic law.
           </p>
           <button className="capitalize text-accentRed text-paragraph sm:text-s2 font-semibold cursor-pointer py-2">
             read more
           </button>
         </div>
-        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Calculating Zakat?
           </h2>
@@ -54,8 +54,8 @@ function Explore() {
             know more
           </button>
         </div>
-      </div>
-      <div className="tab:h-[320px] w-full tab:w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
+      </EqualHeightFlexContainer>
+      <div className="tab:h-[400px] laptop:h-[300px] w-full tab:w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
         <h2 className="font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
           Explore More
         </h2>

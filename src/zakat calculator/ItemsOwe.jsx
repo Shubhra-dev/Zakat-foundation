@@ -13,14 +13,14 @@ function ItemsOwe({ items }) {
         overdue. For businesses, any tax liabilities in relation to a prior
         financial year that are still to be paid can also be deducted.
       </P>
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 px-4">
+      <div className="flex flex-col tab:flex-row gap-2 tab:gap-4 px-4">
         {items.mortgage && (
-          <div className="w-full sm:last:w-1/2 flex-grow">
+          <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput label={"Mortgage"} name={"mortgage"} wd={"w-full"} />
           </div>
         )}
         {items.utility && (
-          <div className="w-full sm:last:w-1/2 flex-grow">
+          <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Utility Bills"}
               name={"utility"}
@@ -29,9 +29,9 @@ function ItemsOwe({ items }) {
           </div>
         )}
       </div>
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 px-4">
+      <div className="flex flex-col tab:flex-row gap-2 tab:gap-4 px-4">
         {items.personal_loans && (
-          <div className="w-full sm:last:w-1/2 flex-grow">
+          <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Personal loans"}
               name={"personal_loans"}
@@ -40,14 +40,14 @@ function ItemsOwe({ items }) {
           </div>
         )}
         {items.overdraft && (
-          <div className="w-full sm:last:w-1/2 flex-grow">
+          <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput label={"Overdraft"} name={"overdraft"} wd={"w-full"} />
           </div>
         )}
       </div>
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 px-4">
+      <div className="flex flex-col tab:flex-row gap-2 tab:gap-4 px-4">
         {items.credit_card && (
-          <div className="w-full sm:last:w-1/2 flex-grow">
+          <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Credit card"}
               name={"credit_card"}
@@ -56,7 +56,7 @@ function ItemsOwe({ items }) {
           </div>
         )}
         {items.businness_liability && (
-          <div className="w-full sm:last:w-1/2 flex-grow">
+          <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Business liabilities"}
               name={"business_liability"}

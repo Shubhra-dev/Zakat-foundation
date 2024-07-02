@@ -4,7 +4,7 @@ import herobg from "../assets/herobg.png";
 function Hero() {
   return (
     <div
-      className="h-[280px] tab:h-[500px] large:h-[750px] w-full bg-cover bg-center"
+      className="h-[280px] sm:h-[350px] tab:h-[400px] laptop:h-[550px] large:h-[700px] w-full bg-cover bg-center"
       style={{ backgroundImage: `url(${herobg})` }}
     >
       <div className="h-full w-full bg-secondary/60 sm:pt-[5%] large:pt-[10%]">
@@ -14,7 +14,7 @@ function Hero() {
             Giving Back to the Community
             <span className="hidden sm:inline">, One Donation at a Time</span>
           </h2>
-          <p className="text-primary text-s3 sm:text-light tab:text-s2 font-light pt-2 pb-4">
+          <p className="text-primary text-s3 sm:text-light laptop:text-s2 font-light pt-2 pb-4">
             Your Zakat transforms lives and supports those in need. Together, we
             can make a difference
           </p>

@@ -44,55 +44,57 @@ function ZakatCalculator() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row sm:h-screen">
-      <div className="w-full sm:w-1/4 py-6 px-4 bg-slate-100 sm:overflow-y-scroll scrollbar-hide">
+    <div className="flex flex-col laptop:flex-row laptop:h-screen">
+      <div className="w-full laptop:w-1/4 py-6 px-4 bg-slate-100 laptop:overflow-y-scroll scrollbar-hide">
         <P add={"text-center"}>
           Please select the options that you think may apply to you. If
           you&apos;re not sure about an option, select it anyway and more
           information will follow to help you decide.
         </P>
-        <div className="border border-green-800 p-3 bg-primary rounded-xl">
-          <H2
-            align={"text-center sm:text-left"}
-            textColor={"text-green-700"}
-            font={"font-pally"}
-          >
-            What I Own
-          </H2>
-          <div className="flex flex-row flex-wrap sm:flex-nowrap gap-2 sm:gap-0 sm:flex-col text-light sm:text-s2">
-            {ownArray.map((item) => (
-              <ZakatCheckBox
-                name={item.name}
-                label={item.label}
-                key={item.name}
-                items={itemsOwn}
-                handleChange={handleChangeOwn}
-              />
-            ))}
+        <div className="tab:flex gap-2 laptop:block">
+          <div className="border tab:w-1/2 laptop:w-auto border-green-800 p-3 bg-primary rounded-xl">
+            <H2
+              align={"text-center laptop:text-left"}
+              textColor={"text-green-700"}
+              font={"font-pally"}
+            >
+              What I Own
+            </H2>
+            <div className="flex flex-row flex-wrap laptop:flex-nowrap gap-2 laptop:gap-0 tab:flex-col text-light laptop:text-s2">
+              {ownArray.map((item) => (
+                <ZakatCheckBox
+                  name={item.name}
+                  label={item.label}
+                  key={item.name}
+                  items={itemsOwn}
+                  handleChange={handleChangeOwn}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="border border-accentRed mt-6 p-3 bg-primary rounded-xl">
-          <H2
-            align={"text-center sm:text-left"}
-            textColor={"text-accentRed"}
-            font={"font-pally"}
-          >
-            What I Owe
-          </H2>
-          <div className=" flex flex-row flex-wrap sm:flex-nowrap gap-2 sm:gap-0 sm:flex-col text-light sm:text-s2">
-            {oweArray.map((item) => (
-              <ZakatCheckBox
-                name={item.name}
-                label={item.label}
-                key={item.name}
-                items={itemsOwe}
-                handleChange={handleChangeOwe}
-              />
-            ))}
+          <div className="border tab:w-1/2 laptop:w-auto border-accentRed laptop:mt-6 p-3 bg-primary rounded-xl">
+            <H2
+              align={"text-center laptop:text-left"}
+              textColor={"text-accentRed"}
+              font={"font-pally"}
+            >
+              What I Owe
+            </H2>
+            <div className=" flex flex-row flex-wrap laptop:flex-nowrap gap-2 laptop:gap-0 tab:flex-col text-light laptop:text-s2">
+              {oweArray.map((item) => (
+                <ZakatCheckBox
+                  name={item.name}
+                  label={item.label}
+                  key={item.name}
+                  items={itemsOwe}
+                  handleChange={handleChangeOwe}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-2/4 p-6 px-8 overflow-y-scroll scrollbar-hide">
+      <div className="w-full laptop:w-2/4 p-6 px-8 overflow-y-scroll scrollbar-hide">
         <H2 textColor={"text-secondary"} font={"font-pally text-center w-full"}>
           I&apos;m ready to work out my Zakat
         </H2>
@@ -114,7 +116,7 @@ function ZakatCalculator() {
           <ItemsOwe items={itemsOwe} />
         )}
       </div>
-      <div className="w-full sm:w-1/4 p-6 px-4 bg-slate-100">
+      <div className="w-full laptop:w-1/4 p-6 px-4 bg-slate-100">
         <div className="rounded-xl bg-green-900 p-4 text-primary">
           <p className="font-semibold text-s2 text-center">
             Calculation between What I own & What I owe
@@ -156,7 +158,7 @@ function ZakatCalculator() {
           </p>
         </div>
         <div className="p-4 w-full">
-          <p className="text-center text-sm text-secondary font-medium">
+          <p className="text-center text-laptop text-secondary font-medium">
             Still Have Questions?
             <span className="cursor-pointer text-accentRed"> Get In Touch</span>
           </p>

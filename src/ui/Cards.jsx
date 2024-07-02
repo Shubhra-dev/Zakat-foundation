@@ -10,12 +10,12 @@ function Cards() {
         Impact Stories
       </h3>
       <div className="flex flex-col sm:flex-row justify-between items-center pb-4 sm:pb-10">
-        <h1 className="text-h3 sm:text-s1 tab:text-title text-center sm:text-left font-pally font-bold text-secondary">
+        <h1 className="text-h3 sm:text-s1 laptop:text-title text-center sm:text-left font-pally font-bold text-secondary">
           How Your Zakat Makes a Difference
         </h1>
         <Button bg={"bg-accentRed"}>view all stories</Button>
       </div>
-      <div className="flex flex-col tab:flex-row justify-between items-center">
+      <div className="flex flex-col laptop:flex-row justify-between items-center">
         <CardItem
           img={story2}
           title={" Story of  Umair"}
