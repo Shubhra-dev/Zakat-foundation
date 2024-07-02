@@ -2,67 +2,66 @@ import Button from "./Button";
 
 function Explore() {
   return (
-    <div className="w-5/6 m-auto flex gap-4 items-center -mt-12 pb-12">
-      <div className="w-4/5 flex gap-0 items-center">
-        <div className="py-4 px-6 shadow-xl rounded-2xl bg-primary">
-          <h2 className="text-secondary font-semibold text-2xl pb-2">
-            Lorem ipsum
+    <div className="w-11/12 m-auto flex flex-col tab:flex-row gap-4 items-center mt-2 tab:-mt-12 pb-4 tab:pb-12 px-6 sm:px-0">
+      <div className="w-full tab:w-4/5 flex flex-col tab:flex-row gap-2 tsb:gap-0 items-start tab:h-[320px]">
+        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl bg-primary">
+          <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
+            What is Zakat?
           </h2>
-          <p className="pb-2 text-sm text-secondary font-normal">
-            Lorem ipsum dolor sit amet consectetur. Vulputate varius egestas
-            gravida non in phasellus. Enim integer nam at maecenas diam
-            elementum at.
+          <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
+            Zakat is a mandatory charitable contribution in Islam, designed to
+            redistribute wealth and support those in need. It is one of the Five
+            Pillars of Islam.
           </p>
-          <button className="capitalize text-accentRed text-lg font-semibold cursor-pointer py-2">
+          <button className="capitalize text-accentRed text-paragraph sm:text-s2 font-semibold cursor-pointer py-2">
             read more
           </button>
         </div>
-        <div className="py-4 px-6 shadow-xl rounded-2xl -ml-2 bg-primary">
-          <h2 className="text-secondary font-semibold text-2xl pb-2">
-            Lorem ipsum
+        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+          <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
+            Why Give Zakat?
           </h2>
-          <p className="pb-2 text-sm text-secondary font-normal">
-            Lorem ipsum dolor sit amet consectetur. Vulputate varius egestas
-            gravida non in phasellus. Enim integer nam at maecenas diam
-            elementum at.
+          <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
+            Giving Zakat purifies your wealth, fosters community solidarity, and
+            provides essential support to those facing hardship.
           </p>
-          <button className="capitalize text-accentRed text-lg font-semibold cursor-pointer py-2">
+          <button className="capitalize text-accentRed text-paragraph sm:text-s2 font-semibold cursor-pointer py-2 flex-grow">
             read more
           </button>
         </div>
-        <div className="py-4 px-6 shadow-xl rounded-2xl -ml-2 bg-primary">
-          <h2 className="text-secondary font-semibold text-2xl pb-2">
-            Lorem ipsum
+        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+          <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
+            Who Receives Zakat?
           </h2>
-          <p className="pb-2 text-sm text-secondary font-normal">
-            Lorem ipsum dolor sit amet consectetur. Vulputate varius egestas
-            gravida non in phasellus. Enim integer nam at maecenas diam
-            elementum at.
+          <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
+            Zakat is distributed to specific groups including the poor, the
+            needy, those in debt, and other eligible recipients outlined in
+            Islamic law.
           </p>
-          <button className="capitalize text-accentRed text-lg font-semibold cursor-pointer py-2">
+          <button className="capitalize text-accentRed text-paragraph sm:text-s2 font-semibold cursor-pointer py-2">
             read more
           </button>
         </div>
-        <div className="py-4 px-6 shadow-xl rounded-2xl -ml-2 bg-primary">
-          <h2 className="text-secondary font-semibold text-2xl pb-2">
-            Lorem ipsum
+        <div className="h-full w-full sm:w-auto py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+          <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
+            Calculating Zakat?
           </h2>
-          <p className="pb-2 text-sm text-secondary font-normal">
-            Lorem ipsum dolor sit amet consectetur. Vulputate varius egestas
-            gravida non in phasellus. Enim integer nam at maecenas diam
-            elementum at.
+          <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
+            Calculating Zakat can be complex. Use our easy-to-follow guide to
+            determine how much Zakat you owe based on your assets.
           </p>
-          <button className="capitalize text-accentRed text-lg font-semibold cursor-pointer py-2">
-            read more
+          <button className="capitalize text-accentRed text-paragraph sm:text-s2 font-semibold cursor-pointer py-2">
+            know more
           </button>
         </div>
       </div>
-      <div className="w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
-        <h2 className="font-semibold text-2xl pb-2">Explore More</h2>
-        <p className="pb-2 text-sm font-normal">
-          Lorem ipsum dolor sit amet consectetur. Vulputate varius egestas
-          gravida non in phasellus. Enim integer nam at maecenas diam elementum
-          at.
+      <div className="tab:h-[320px] w-full tab:w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
+        <h2 className="font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
+          Explore More
+        </h2>
+        <p className="pb-2 text-s3 sm:text-paragraph font-normal">
+          Explore more about Zakat, Sadaqah, Nisab and all. Know more about the
+          importance of Zakat. Find how to calculate and much more.
         </p>
         <Button textColor={"text-accentRed"}>read more</Button>
       </div>

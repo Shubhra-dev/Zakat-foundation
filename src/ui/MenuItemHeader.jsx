@@ -1,17 +1,18 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-function MenuItemHeader({ item }) {
+function MenuItemHeader({ item, setMobMenu }) {
   const [hover, setHover] = useState("");
   const navigate = useNavigate();
   function handleClick(nav) {
     if (nav === "") return;
+    if (setMobMenu) setMobMenu(false);
     navigate(`/${nav}`);
     setHover(() => false);
   }
   return (
     <div
-      className="sm:relative"
+      className="tab:relative"
       onMouseEnter={() => setHover(item.id)}
       onMouseLeave={() => setHover("")}
     >
@@ -22,7 +23,7 @@ function MenuItemHeader({ item }) {
         <RiArrowDropDownLine className="text-xl" />
       </div>
       {hover === item.id && (
-        <div className="sm:absolute bg-gray-800 sm:bg-primary sm:text-secondary w-max rounded-md p-2">
+        <div className="tab:absolute bg-gray-800 sm:bg-primary sm:text-secondary w-max rounded-md p-2">
           {item.subMenu.map((menu, index) => (
             <h4
               key={index}

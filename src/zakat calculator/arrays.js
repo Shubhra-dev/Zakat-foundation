@@ -1,11 +1,10 @@
 const ownArray = [
   { name: "cash", label: "Cash" },
   { name: "pensions", label: "Pensions" },
-  { name: "moneyOwed", label: "Money owed to me" },
-  { name: "goldSilver", label: "Gold & Silver" },
   { name: "shares", label: "Shares" },
+  { name: "goldSilver", label: "Gold & Silver" },
+  { name: "moneyOwed", label: "Money owed to me" },
   { name: "businessAssets", label: "Business Assets" },
-  { name: "isasAndTrusts", label: "ISAs and trusts" },
 ];
 const oweArray = [
   { name: "mortgage", label: "Mortgage" },

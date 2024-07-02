@@ -1,7 +1,7 @@
 import P from "../ui/P";
 function ZakatInput({ label, name, placeholder, grams, wd }) {
   return (
-    <div className={`${wd ? wd : "w-3/4"} m-auto pb-2`}>
+    <div className={`${wd ? wd : "w-full sm:w-3/4"} m-auto pb-2`}>
       {label && (
         <P p={"p-0"} add={"font-semibold"}>
           {label}:
@@ -21,7 +21,7 @@ function ZakatInput({ label, name, placeholder, grams, wd }) {
           name={name}
           id={name}
           placeholder={placeholder ? placeholder : "Enter Amount"}
-          className="w-[80%] h-full p-2 rounded-r-xl text-paragraph"
+          className="w-[80%] h-full p-2 rounded-r-xl text-s3 sm:text-paragraph"
         />
       </div>
     </div>

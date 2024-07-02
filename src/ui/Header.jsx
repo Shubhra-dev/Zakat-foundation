@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import MenuItemHeader from "./MenuItemHeader";
 import { useNavigate } from "react-router-dom";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const menu = [
   {
     id: "1",
@@ -64,7 +64,24 @@ const menu = [
 ];
 function Header() {
   const navigate = useNavigate();
+  const menuRef = useRef(null);
   const [mobMenuOpen, setMobMenuOpen] = useState(false);
+  function handleClick() {
+    setMobMenuOpen(false);
+    navigate("/contact");
+  }
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMobMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
   return (
     <>
       <div className="w-full h-[88px] bg-gray-900 fixed top-0 left-0 z-20">
@@ -77,7 +94,7 @@ function Header() {
               onClick={() => navigate("/")}
             />
           </div>
-          <div className="hidden sm:flex w-4/5 laptop:w-3/5  justify-between items-center text-primary leading-tight">
+          <div className="hidden tab:flex w-4/5 laptop:w-3/5  justify-between items-center text-primary leading-tight">
             {menu.map((item) => (
               <MenuItemHeader item={item} key={item.id} />
             ))}
@@ -92,7 +109,7 @@ function Header() {
             <Button bg={"bg-accentCyan"}>give zakat</Button>
           </div>
           <div
-            className="sm:hidden cursor-pointer"
+            className="tab:hidden cursor-pointer"
             onClick={() => setMobMenuOpen(true)}
           >
             <MdOutlineMenu className="text-3xl" />
@@ -100,17 +117,24 @@ function Header() {
         </div>
       </div>
       {mobMenuOpen && (
-        <div className="fixed w-3/5 top-0 right-0 h-screen z-50 bg-gray-900">
+        <div
+          ref={menuRef}
+          className="fixed overflow-y-scroll w-3/5 sm:w-2/5 top-0 right-0 h-screen z-50 bg-gray-900"
+        >
           <div className="p-3" onClick={() => setMobMenuOpen(false)}>
             <MdClose className="text-3xl text-primary" />
           </div>
           <div className="flex flex-col gap-6 w-full justify-between items-end px-6 py-4 text-primary leading-tight">
             {menu.map((item) => (
-              <MenuItemHeader item={item} key={item.id} />
+              <MenuItemHeader
+                item={item}
+                key={item.id}
+                setMobMenu={setMobMenuOpen}
+              />
             ))}
             <div className="cursor-pointer">
               <h4
-                onClick={() => navigate("/contact")}
+                onClick={handleClick}
                 className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan"
               >
                 Contact Us

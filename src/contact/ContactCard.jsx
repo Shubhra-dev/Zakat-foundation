@@ -15,17 +15,17 @@ function ContactCard() {
       </P>
       <div className="pt-4">
         <IconBox text={"+880 1XXX XXXXXX"}>
-          <LuPhoneCall className="text-3xl text-primary" />
+          <LuPhoneCall className="text-2xl sm:text-3xl text-primary" />
         </IconBox>
         <IconBox text={"example@foundation.com"}>
-          <LuMail className="text-3xl text-primary" />
+          <LuMail className="text-2xl sm:text-3xl text-primary" />
         </IconBox>
         <IconBox text={"Example Street, Dhaka, Bangladesh"}>
-          <IoLocationOutline className="text-3xl text-primary" />
+          <IoLocationOutline className="text-2xl sm:text-3xl text-primary" />
         </IconBox>
       </div>
       <div
-        className={`h-[300px] w-[300px] absolute -bottom-14 -right-14 bg-gradient-to-b from-primary/30 to-accentRed/10 to-900% rounded-full`}
+        className={`h-[300px] w-[300px] absolute -bottom-14 -right-14 bg-gradient-to-b from-primary/30 to-accentRed/10 to-90% rounded-full`}
       ></div>
     </div>
   );

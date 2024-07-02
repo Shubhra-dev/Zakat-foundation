@@ -30,7 +30,8 @@ export default {
         outfit: ["Outfit", "sans-serif"],
       },
       screens: {
-        laptop: "1300px",
+        tab: "770px",
+        laptop: "1024px",
         large: "1440px",
       },
     },
