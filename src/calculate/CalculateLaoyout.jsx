@@ -2,14 +2,13 @@ import { ImCalculator } from "react-icons/im";
 import MenuItem from "./MenuItem";
 import { GoGraph } from "react-icons/go";
 import { PiBookOpenBold } from "react-icons/pi";
-import { FaSwatchbook } from "react-icons/fa";
 import { TbMessage2Question } from "react-icons/tb";
 // import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 
 function CalculateLaoyout({ children, tab }) {
   return (
     <div className="tab:h-screen tab:flex">
-      <div className="overflow-x-scroll flex tab:block gap-2 tab:w-1/6 bg-slate-100 px-2 tab:px-10 pt-3 tab:pt-8 tab:h-full flex-grow tab:overflow-y-scroll scrollbar-hide">
+      <div className="overflow-x-scroll flex items-cente justify-center tab:block gap-2 sm:gap-4 tab:w-1/6 bg-slate-100 px-2 tab:px-4 laptop:px-10 pt-3 tab:pt-8 tab:h-full tab:flex-grow tab:overflow-y-scroll scrollbar-hide">
         <MenuItem text={"Calculator"} active={tab === 1} link={"calculate"}>
           <ImCalculator
             className={`text-2xl ${
@@ -36,13 +35,6 @@ function CalculateLaoyout({ children, tab }) {
           <PiBookOpenBold
             className={`text-3xl ${
               tab === 3 ? "text-primary" : "text-accentRed"
-            }`}
-          />
-        </MenuItem>
-        <MenuItem text={"Knowledge Bank"} active={tab === 4}>
-          <FaSwatchbook
-            className={`text-2xl ${
-              tab === 4 ? "text-primary" : "text-accentRed"
             }`}
           />
         </MenuItem>

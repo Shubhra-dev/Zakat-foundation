@@ -85,16 +85,16 @@ function Header() {
   return (
     <>
       <div className="w-full h-[88px] bg-gray-900 fixed top-0 left-0 z-20">
-        <div className="w-11/12 large:w-5/6 large:m-auto h-full m-auto flex justify-between items-center text-primary">
+        <div className="w-full px-4 laptop:px-0 laptop:w-11/12 large:w-5/6 large:m-auto h-full m-auto flex justify-between items-center text-primary">
           <div className="w-1/5 ">
             <img
               src={logo}
               alt="logo"
-              className="h-[65px] cursor-pointer"
+              className="laptop:h-[65px] cursor-pointer"
               onClick={() => navigate("/")}
             />
           </div>
-          <div className="hidden tab:flex w-4/5 laptop:w-3/5  justify-between items-center text-primary leading-tight">
+          <div className="hidden tab:flex w-[75%] laptop:w-3/5  justify-between items-center text-primary leading-tight">
             {menu.map((item) => (
               <MenuItemHeader item={item} key={item.id} />
             ))}

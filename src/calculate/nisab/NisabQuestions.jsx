@@ -14,15 +14,15 @@ function NisabQuestions() {
   return (
     <div className="px-[3%] pt-[5%]">
       <EqualHeightFlexContainer>
-        <div className="hidden sm:block w-1/3">
+        <div className="hidden tab:block w-1/3">
           <img
             src={nisabQues}
             alt="question mark"
-            className="w-full object-cover h-[80%] rounded-xl"
+            className="w-full object-cover h-[90%] laptop:h-[80%] rounded-xl"
           />
         </div>
-        <div className=" w-full sm:w-2/3 pl-[3%] pb-[5%]">
-          <h2 className="text-secondary font-bold text-h3 sm:text-title font-pally pb-8">
+        <div className=" w-full tab:w-2/3 pl-[3%] pb-[5%]">
+          <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally pb-8">
             Nisab Related Questions
           </h2>
           <div className="flex flex-col justify-between gap-6">

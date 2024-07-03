@@ -7,10 +7,10 @@ function HelpCards({ bg, title, text }) {
         <FiEdit className="hidden sm:block m-auto text-3xl text-primary" />
       </div>
       <div className="w-11/12 py-4 pl-4 pr-[5%]">
-        <h3 className="text-s2 sm:text-[40px] text-secondary font-bold font-pally leading-tight pb-2">
+        <h3 className="text-s2 sm:text-h3 laptop:text-[40px] text-secondary font-bold font-pally leading-tight pb-2">
           {title}
         </h3>
-        <p className="text-small sm:text-s2 text-secondary/60 font-normal">
+        <p className="text-small sm:text-paragraph laptop:text-s2 text-secondary/60 font-normal">
           {text}
         </p>
       </div>

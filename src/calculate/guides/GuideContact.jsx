@@ -12,13 +12,13 @@ function GuideContact() {
           </div>
         </div>
         <div className="py-[5%]">
-          <h2 className="text-secondary font-semibold text-h3 sm:text-title text-center sm:text-left font-pally sm:w-3/4">
+          <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title text-center sm:text-left font-pally sm:w-3/4">
             Do you still have Questions?
           </h2>
-          <p className="text-neutral-800/80 text-light sm:text-s2 text-center sm:text-left font-normal sm:w-3/4 py-6">
+          <p className="text-neutral-800/80 text-light sm:text-paragraph laptop:text-s2 text-center sm:text-left font-normal sm:w-3/4 py-6">
             If you have any other questions about calculating your Zakat or need
             extra support, get in touch to find out how else
-            <strong> Zakat Foundation Bangladesh</strong> can help.
+            <strong> Al-Zakati</strong> can help.
           </p>
           <div className="w-max m-auto sm:m-0">
             <RoundedButton bg={"bg-accentRed"}>Get in Touch</RoundedButton>

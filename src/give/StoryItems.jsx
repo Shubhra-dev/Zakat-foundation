@@ -3,11 +3,12 @@ import helpStory1 from "../assets/helpStory1.png";
 import helpStory2 from "../assets/helpStory2.png";
 import helpStory3 from "../assets/helpStory3.png";
 import helpStory4 from "../assets/helpStory4.png";
+import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 
 function StoryItems() {
   return (
     <>
-      <div className="pb-2 sm:pb-[5%] flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+      <EqualHeightFlexContainer addedClass="pb-2 tab:pb-[5%] flex-col tab:flex-row items-center gap-2 sm:gap-4 tab:gap-4">
         <StoryCardItem
           img={helpStory1}
           alt={"zain"}
@@ -24,8 +25,8 @@ function StoryItems() {
             "Lorem ipsum dolor sit amet consectetur. Mauris ac interdum felis venenatis donec odio leo eleifend integer."
           }
         />
-      </div>
-      <div className="pb-2 sm:py-[3%] flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+      </EqualHeightFlexContainer>
+      <EqualHeightFlexContainer addedClass="pb-2 tab:py-[3%] flex-col tab:flex-row items-center gap-2 sm:gap-4 tab:gap-4">
         <StoryCardItem
           img={helpStory3}
           alt={"alia"}
@@ -42,7 +43,7 @@ function StoryItems() {
             "Lorem ipsum dolor sit amet consectetur. Mauris ac interdum felis venenatis donec odio leo eleifend integer."
           }
         />
-      </div>
+      </EqualHeightFlexContainer>
     </>
   );
 }

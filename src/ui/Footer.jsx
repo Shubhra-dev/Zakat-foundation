@@ -11,8 +11,8 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-full text-primary bg-gray-900 py-[2%] relative mt-2">
-        <div className="w-11/12 flex flex-col gap-2 sm:gap-0 sm:flex-row items-center justify-center sm:items-start m-auto pb-4 border-b border-b-primary">
+      <div className="w-full  text-primary bg-gray-900 py-[2%] relative mt-2">
+        <div className="w-11/12 large:m-auto large:w-5/6 flex flex-col gap-2 sm:gap-0 sm:flex-row items-center justify-center sm:items-start m-auto pb-4 border-b border-b-primary">
           <div className="w-3/4 m-auto sm:m-0 sm:w-1/4">
             <img
               src={logo}

@@ -10,7 +10,7 @@ function FaqItem({ item, handleClickFAQ, active }) {
           <div className="rounded-full w-max p-2 bg-secondary/20 text-2xl text-accentRed">
             <FaAngleDoubleRight className="text-xl" />
           </div>
-          <h3 className="text-light sm:text-h3 font-semibold text-secondary px-4">
+          <h3 className="text-light sm:text-h4 laptop:text-h3 font-semibold text-secondary px-4">
             {item.ques}
           </h3>
         </div>
@@ -24,10 +24,12 @@ function FaqItem({ item, handleClickFAQ, active }) {
             <FaAngleDoubleUp className="text-xl" />
           </div>
           <div className="px-4 text-primary">
-            <h3 className="text-light sm:text-h3 font-semibold pb-4">
+            <h3 className="text-light sm:text-h4 laptop:text-h3 font-semibold pb-4">
               {item.ques}
             </h3>
-            <p className="font-normal text-small sm:text-light">{item.ans}</p>
+            <p className="font-normal text-small sm:text-light laptop:text-paragraph">
+              {item.ans}
+            </p>
           </div>
         </div>
       )}

@@ -4,7 +4,7 @@ import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
 function FourSteps() {
   return (
     <EqualHeightFlexContainer>
-      <div className="rounded-xl hidden sm:block">
+      <div className="rounded-xl hidden tab:block">
         <img
           src={steps}
           alt="steps"
@@ -12,16 +12,16 @@ function FourSteps() {
         />
       </div>
       <div className="px-8 sm:px-[7%] flex-grow sm:h-full flex flex-col gap-3 sm:gap-2 sm:justify-between">
-        <StepItem num={"1"} text={"Work out what you own."} />
-        <StepItem num={"2"} text={"Then take off what you owe."} />
+        <StepItem num={"1"} text={"Determine what your own."} />
+        <StepItem num={"2"} text={"Subtract the amount you need to repay."} />
         <StepItem
           num={"3"}
-          text={"Check the balance to see it’s more than the Nisab value."}
+          text={"Verify the balance exceeds the nisab value."}
         />
         <StepItem
           num={"4"}
           text={
-            "Work out 2.5% of that and there you go, you’ve got your Zakat amount!"
+            "Calculate 2.5% of that balance to determine the Zakat contribution"
           }
         />
       </div>

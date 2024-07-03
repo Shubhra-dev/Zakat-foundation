@@ -25,7 +25,7 @@ function GivingFAQItem({ id, handleClickFAQ, active, ques }) {
           className="px-2 sm:px-[5%] py-[3%] bg-accentRed border border-gray-200 shadow-[1px_1px_25px_1px_rgba(0,0,0,0.15)] rounded-2xl flex items-center justify-between cursor-pointer"
         >
           <div className="px-4 text-primary">
-            <h3 className="v font-semibold pb-4">
+            <h3 className="text-s3 sm:text-s2 font-semibold pb-4">
               {`${
                 ques
                   ? ques
@@ -36,7 +36,7 @@ function GivingFAQItem({ id, handleClickFAQ, active, ques }) {
               {`${
                 ques
                   ? "Answer"
-                  : "I usually give my Zakat abroad, why should I give it here in the Zakat?"
+                  : "There are several beneficial reasons for donating zakat locally, it helps address local needs,it has immediate impact, it helps strengthen local communities, it also helps in following the example created by the prophet (peace be upon him)."
               }`}
             </p>
           </div>

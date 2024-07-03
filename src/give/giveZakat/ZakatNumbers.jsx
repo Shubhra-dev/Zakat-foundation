@@ -17,7 +17,7 @@ function ZakatNumbers() {
             prefix="৳ "
             duration={3}
             end={112908}
-            className="text-accentRed text-s2 sm:text-6xl font-bold"
+            className="text-accentRed text-h4 sm:text-h2 laptop:text-6xl font-bold"
           />
         </CounterCardItem>
 
@@ -28,7 +28,7 @@ function ZakatNumbers() {
           <CountUp
             duration={3}
             end={1606}
-            className="text-accentRed text-s2 sm:text-6xl font-bold"
+            className="text-accentRed text-h4 sm:text-h2 laptop:text-6xl font-bold"
           />
         </CounterCardItem>
         <CounterCardItem
@@ -38,7 +38,7 @@ function ZakatNumbers() {
           <CountUp
             duration={3}
             end={3382}
-            className="text-accentRed text-s2 sm:text-6xl font-bold"
+            className="text-accentRed text-h4 sm:text-h2 laptop:text-6xl font-bold"
           />
         </CounterCardItem>
       </EqualHeightFlexContainer>

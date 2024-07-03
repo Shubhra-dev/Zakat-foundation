@@ -10,9 +10,9 @@ function Pensions() {
       </H2>
       <P add={"text-center"} p={"px-4 pb-2"}>
         If you have a defined contribution pension scheme, Zakat is due on
-        specific assets in the fund. If you don't know which assets are in the
-        fund, select the type of pension and the calculator will work out the
-        amount on which Zakat is payable.
+        specific assets in the fund. If you don&apos;t know which assets are in
+        the fund, select the type of pension and the calculator will work out
+        the amount on which Zakat is payable.
       </P>
       <ZakatInput name={"capital_gain"} />
     </div>

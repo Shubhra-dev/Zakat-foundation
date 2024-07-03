@@ -4,15 +4,14 @@ import EqualHeightFlexContainer from "./EqualHeightFlexContainer";
 function Explore() {
   return (
     <div className="w-11/12 m-auto flex flex-col tab:flex-row gap-4 items-center mt-2 tab:-mt-12 pb-4 tab:pb-12 px-6 sm:px-0">
-      <EqualHeightFlexContainer addedClass="w-full tab:w-4/5 flex-col tab:flex-row gap-2 tsb:gap-0 items-start tab:h-[400px] laptop:h-[300px]">
+      <EqualHeightFlexContainer addedClass="w-full tab:w-4/5 flex-col tab:flex-row gap-2 tab:gap-0 items-start">
         <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             What is Zakat?
           </h2>
           <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
-            Zakat is a mandatory charitable contribution in Islam, designed to
-            redistribute wealth and support those in need. It is one of the Five
-            Pillars of Islam.
+            Zakat is mandatory charitable contribution to redistribute wealth
+            and support those in need. It is one of the Five Pillars of Islam.
           </p>
           <button className="capitalize text-accentRed text-paragraph sm:text-s2 font-semibold cursor-pointer py-2">
             read more
@@ -55,7 +54,7 @@ function Explore() {
           </button>
         </div>
       </EqualHeightFlexContainer>
-      <div className="tab:h-[400px] laptop:h-[300px] w-full tab:w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
+      <div className="w-full tab:w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
         <h2 className="font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
           Explore More
         </h2>

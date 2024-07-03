@@ -8,7 +8,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 function ApplyLayout({ children, tab }) {
   return (
     <div className="sm:h-screen sm:flex">
-      <div className="overflow-x-scroll flex sm:block gap-2 sm:w-1/6 bg-slate-100 px-2 sm:px-10 pt-3 sm:pt-8 sm:h-full flex-grow sm:overflow-y-scroll scrollbar-hide">
+      <div className="overflow-x-scroll flex sm:block gap-2 sm:w-1/6 bg-slate-100 px-2 tab:px-4 laptop:px-10 pt-3 sm:pt-8 sm:h-full flex-grow sm:overflow-y-scroll scrollbar-hide">
         <MenuItem text={"Apply"} active={tab === 1} link={"apply_help"}>
           <RiMailSendFill
             className={`text-xl sm:text-2xl ${

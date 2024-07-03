@@ -7,12 +7,13 @@ function SadaqahHero() {
       style={{ backgroundImage: `url(${sadaqahHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[7%] text-center">
-        <h2 className="text-primary font-semibold text-h3 w-5/6 sm:w-full m-auto sm:text-[70px] font-pally">
-          Bring Zakat to life where you live
+        <h2 className="text-primary font-bold text-h3 w-5/6 laptop:w-full m-auto sm:text-title laptop:text-[70px] font-pally">
+          Make an impact by donating Zakat in your community.
         </h2>
-        <p className="text-small sm:text-s2 font-light text-primary w-5/6 sm:w-1/2 m-auto pb-6">
-          Every £1 in Sadaqah enables us to raise £6 in Zakat. Make a one-off
-          donation or automate it across the upcoming months.
+        <p className="text-small sm:text-s2 font-light text-primary w-5/6 laptop:w-1/2 m-auto pb-6">
+          Your donation of ৳1 in Sadaqah and help us generate ৳6 in Zakat. Make
+          a single contribution or set up recurring donations for the months
+          ahead.
         </p>
         <RoundedButton bg={"bg-accentPurple"} textColor={"text-primary"}>
           Donate

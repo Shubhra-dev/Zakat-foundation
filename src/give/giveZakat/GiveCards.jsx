@@ -4,22 +4,22 @@ function GiveCards() {
     <div className="pb-4">
       <GIveCardItem
         text={
-          "Choose how to allocate your Zakat across three funds: Hardship Relief, Housing & Work/Education."
+          "You can select how to distribute your Zakat across three funds: Hardship Relief, Housing & Work/Education."
         }
       />
       <GIveCardItem
         text={
-          "Choose to pay a small add-on to cover distribution costs so that 100% of your Zakat goes directly to the recipient."
+          "You can select to contribute a small extra amount to cover distribution expenses, ensuring that 100% of your Zakat reaches the recipient directly."
         }
       />
       <GIveCardItem
         text={
-          "Choose to make a donation of Sadaqah or Riba to help us cover our running costs so that we can spread the message of our work and raise more Zakat funds."
+          "You can consider donating Sadaqah or Riba to support our operational costs, enabling us to expand our outreach and raise more Zakat funds.."
         }
       />
       <GIveCardItem
         text={
-          "Our ZakaTracker will keep you up to date on when your Zakat is given out and update you on how it’s helping to change the lives of fellow Muslims here in the Bangladesh."
+          "Stay informed with our ZakaTracker, which provides real-time updates on the distribution and impact of your Zakat, transforming the lives of Muslims in Bangladesh."
         }
       />
     </div>

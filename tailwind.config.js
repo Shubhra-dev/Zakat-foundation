@@ -31,7 +31,7 @@ export default {
       },
       screens: {
         tab: "770px",
-        laptop: "1025px",
+        laptop: "1300px",
         large: "1920px",
       },
     },

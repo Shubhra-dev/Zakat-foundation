@@ -4,10 +4,10 @@ import ApplyCard from "./ApplyCard";
 
 function ApplyCardContainer() {
   return (
-    <div className="px-6 pb-6 flex flex-col sm:flex-row justify-between gap-4 sm:gap-6 overflow-x-scroll scrollbar-hide">
+    <div className="px-6 pb-6 flex flex-col tab:flex-row justify-between gap-4 sm:gap-6 overflow-x-scroll scrollbar-hide">
       <ApplyCard>
         <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl relative px-4 py-3">
-          <div className="bg-primary w-[110%] h-[50%] absolute -bottom-7 right-0 rotate-[3deg]"></div>
+          <div className="bg-primary hidden tab:absolute w-[110%] h-[50%]  -bottom-7 right-0 rotate-[3deg]"></div>
           <FaMoneyBillTrendUp className="text-3xl sm:text-4xl text-primary" />
         </div>
         <div className="h-[70%] py-2 px-4">
@@ -65,7 +65,7 @@ function ApplyCardContainer() {
       </ApplyCard>
       <ApplyCard>
         <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl relative px-4 py-3">
-          <div className="bg-primary w-[110%] h-[50%] absolute -bottom-7 left-0 -rotate-[3deg]"></div>
+          <div className="bg-primary w-[110%] h-[50%] tab:absolute -bottom-7 left-0 -rotate-[3deg]"></div>
           <IoSchoolSharp className="text-3xl sm:text-4xl text-primary" />
         </div>
         <div className="h-[70%] py-2 px-4">
