@@ -9,12 +9,13 @@ function ImageCard({
   bg,
   rounded,
   padding,
+  bgPosition,
 }) {
   return (
     <EqualHeightFlexContainer
       addedClass={`${
         padding ? padding : "pb-0"
-      } flex-col sm:flex-row bg-gray-300 rounded-xl`}
+      } flex-col sm:flex-row bg-gray-300 ${rounded ? "rounded-xl" : ""}`}
     >
       {(imgPosition === "right" || !imgPosition) && (
         <>
@@ -25,7 +26,7 @@ function ImageCard({
           <div
             className={`${w2 ? w2 : "w-full sm:w-1/2"} ${
               rounded ? "rounded-xl" : ""
-            } bg-cover bg-center sm:bg-top`}
+            } bg-cover ${bgPosition ? bgPosition : "bg-center"}`}
             style={{ backgroundImage: `url(${img})` }}
           ></div>
         </>
@@ -35,7 +36,7 @@ function ImageCard({
           <div
             className={`${w2 ? w2 : "w-full sm:w-1/2"} ${
               rounded ? "rounded-xl" : ""
-            } bg-cover bg-top`}
+            } bg-cover ${bgPosition ? bgPosition : "bg-center"}`}
             style={{ backgroundImage: `url(${img})` }}
           ></div>
           <div className={`${bg ? bg : ""} p-8 ${w1 ? w1 : "w-1/2"}`}>

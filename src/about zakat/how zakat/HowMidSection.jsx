@@ -1,13 +1,13 @@
-import Title from "../../ui/Title";
+import H1 from "../../ui/H1";
 import Purpose from "../../assets/Purpose.png";
 
 function HowMidsection() {
   return (
     <div className="py-[3%] px-6 sm:px-0">
-      <Title textColor={"text-secondary"} add={"text-center"}>
+      <H1 textColor={"text-secondary"} add={"text-center"}>
         Who should be getting Zakat?
-      </Title>
-      <p className="w-full sm:w-4/6 m-auto list-disc pt-4 font-normal text-s3 sm:text-paragraph text-secondary/80">
+      </H1>
+      <p className="w-full text-center laptop:text-left laptop:w-4/6 laptop:m-auto list-disc pt-4 font-normal text-s3 sm:text-paragraph text-secondary/80">
         The Qur’an tells us eight groups of people who should be given Zakat:
       </p>
       <div className="w-full sm:w-5/6 m-auto flex flex-col sm:flex-row items-end">

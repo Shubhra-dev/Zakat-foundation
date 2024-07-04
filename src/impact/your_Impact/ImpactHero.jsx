@@ -7,13 +7,12 @@ function ImpactHero() {
       style={{ backgroundImage: `url(${impactHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[7%] text-center">
-        <h2 className="text-primary font-semibold text-h3 sm:text-[70px] font-pally w-4/5 m-auto">
-          Your Zakat is changing lives, right now
+        <h2 className="text-primary font-semibold text-h3 sm:text-title laptop:text-[70px] font-pally w-4/5 m-auto">
+          Your Zakat is helping the Muslim Ummah
         </h2>
-        <p className="text-s3 sm:text-s2 font-light text-primary w-5/6 sm:w-3/4 m-auto py-3 sm:py-6">
-          ZF BD gets your Zakat to Muslims in need across the UK, every single
-          day. Last year, you helped over 17,000 Muslims facing hardship &
-          desperation
+        <p className="text-s3 sm:text-paragraph laptop:text-s2 font-light text-primary w-5/6 laptop:w-3/4 m-auto py-3 sm:py-6">
+          AL_ZAKATI gets your Zakat to Muslims in need across Bangladesh, every
+          single day.
         </p>
       </div>
     </div>

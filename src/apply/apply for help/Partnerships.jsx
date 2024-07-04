@@ -10,17 +10,17 @@ function Partnerships() {
         w2={"w-full sm:w-[40%]"}
         rounded={true}
       >
-        <h4 className="text-black text-s3 sm:text-s2 uppercase font-normal">
+        <h4 className="text-black text-s3 sm:text-paragraph laptop:text-s2 uppercase font-normal">
           Partnerships
         </h4>
-        <h2 className="text-h3 sm:text-title text-secondary font-bold font-pally">
-          Let&apos;s work together
+        <h2 className="text-h3 sm:text-s1 laptop:text-title text-secondary font-bold font-pally">
+          Let&apos;s collaborate
         </h2>
         <p className="text-s3 sm:text-paragraph text-secondary/60 font-normal">
-          We’re keen to work with other organisations, businesses and charities
-          to help bring Zakat to life in the Bangladesh. If you&apos;re
-          interested in partnering with Zakat Foundation Bangladesh (ZF BD) we
-          want to hear from you now.
+          We&apos;re eager to partner with other organizations, businesses, and
+          charities to effectively distribute Zakat in Bangladesh. If
+          you&apos;re interested in joining forces with AL-Zakati, we encourage
+          you to reach out to us.
         </p>
       </ImageCard>
     </div>

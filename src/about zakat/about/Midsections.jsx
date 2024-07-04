@@ -1,7 +1,7 @@
 import abz1 from "../../assets/abz1.jpg";
 import abz2 from "../../assets/abz2.jpg";
 import abz3 from "../../assets/abz3.jpg";
-import Title from "../../ui/Title";
+import H1 from "../../ui/H1";
 import ImageCard from "../../ui/ImageCard";
 import P from "../../ui/P";
 function Midsections() {
@@ -17,7 +17,7 @@ function Midsections() {
           w2={"w-full sm:w-[40%]"}
           padding={"pb-0"}
         >
-          <Title textColor={"text-secondary"}>What is Zakat</Title>
+          <H1 textColor={"text-secondary"}>What is Zakat</H1>
           <P>
             Zakat is the third pillar of Islam, and a key part of the Islamic
             socio-economic system. By giving part of their wealth as Zakat,
@@ -37,7 +37,7 @@ function Midsections() {
           w2={"w-full sm:w-[40%] hidden sm:block"}
           padding={"pb-0"}
         >
-          <Title textColor={"text-secondary"}>Purpose of Zakat</Title>
+          <H1 textColor={"text-secondary"}>Purpose of Zakat</H1>
           <P>
             Zakat is not just random charity, it’s a unique form of religious
             social welfare with specific guidelines about who should receive it
@@ -60,7 +60,7 @@ function Midsections() {
           w2={"w-full sm:w-[40%]"}
           padding={"pb-0"}
         >
-          <Title textColor={"text-secondary"}>How Zakat Works</Title>
+          <H1 textColor={"text-secondary"}>How Zakat Works</H1>
           <P>
             To make sure Zakat achieves its purpose, is used in the right way to
             help those who should be receiving it, Zakat needs to be

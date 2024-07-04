@@ -5,37 +5,35 @@ import needImage3 from "../../assets/needImage3.jpg";
 function ProblemAndSolution() {
   return (
     <>
-      <div className="pt-[4%] px-[3%]">
+      <div className="pt-[4%] px-[3%] mb-6 laptop:mb-10">
         <ImageCard
           img={needImage1}
           w1={"w-full sm:w-[65%]"}
           w2={"w-full sm:w-[35%]"}
           bg={"bg-secondary/10"}
         >
-          <h2 className="font-bold text-center sm:text-left text-h3 sm:text-title font-pally leading-tight pb-4 text-secondary">
+          <h2 className="font-bold text-center sm:text-left text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
             The problem
           </h2>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60 pb-4">
-            Despite Zakat being a fundamental tenet of Islam, its impact in
-            Bangladesh isn&apos;t as significant as it could be. There are
-            numerous Muslims throughout the country who have the means to
-            contribute Zakat but might not be aware of the necessity to do so in
-            their local context.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
+            Despite Zakat being a fundamental pillar of Islam, its impact in
+            Bangladesh falls short of its potential. Many Muslims across the
+            country have the means to contribute Zakat but may not fully
+            understand its local importance.
           </p>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60">
-            Many Muslims in Bangladesh are grappling with poverty, hindering
-            their ability to thrive. Nearly half of the Muslim population in
-            Bangladesh is living below the poverty line, which is significantly
-            higher than the national average of 21%*. Moreover, there&apos;s
-            concern as a significant portion of the population perceives Islam
-            as a threat to the traditional way of life in Bangladesh.
-            Unfortunately, emerging religious leaders and other community
-            influencers, who could potentially drive positive change, are often
-            constrained by financial limitations.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60">
+            In Bangladesh, a substantial portion of the Muslim population faces
+            poverty, significantly exceeding the national average. Nearly half
+            of Bangladeshi Muslims live below the poverty line. Additionally,
+            there is apprehension among some sectors about Islam&apos;s
+            compatibility with traditional Bangladeshi culture. This perception
+            poses challenges, especially for emerging religious leaders and
+            community influencers who could drive positive social change but
+            often lack adequate financial support.
           </p>
         </ImageCard>
       </div>
-      <div className="pb-[4%] px-[3%]">
+      <div className="pb-[4%] px-[3%] mb-6 laptop:mb-10">
         <ImageCard
           img={needImage2}
           w1={"w-full sm:w-[65%]"}
@@ -43,50 +41,55 @@ function ProblemAndSolution() {
           bg={"bg-secondary/10"}
           imgPosition={"left"}
         >
-          <h2 className="font-bold text-center sm:text-left text-h3 sm:text-title font-pally leading-tight pb-4 text-secondary">
+          <h2 className="font-bold text-center sm:text-left text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
             The solution
           </h2>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60 pb-4">
-            Zakat holds immense promise, and it&apos;s our collective
-            responsibility to ensure it fulfills that promise.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
+            Zakat holds tremendous potential, and it is our collective
+            responsibility to ensure it realizes that potential.
           </p>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60 pb-4">
-            We provide Muslims with a means to actualize Zakat, directing it to
-            those who are rightfully entitled to receive it in Bangladesh.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
+            We enable Muslims to fulfill their Zakat obligations by directing it
+            to those rightfully entitled to receive it in Bangladesh.
           </p>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60 pb-4">
-            We&apos;re building the first national network dedicated to
-            delivering Zakat to those in need within our country. Additionally,
-            we offer an online platform for calculating and giving Zakat that
-            aligns with our faith.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
+            We are establishing the first national network dedicated to
+            distributing Zakat to those in need across our country.
+            Additionally, we provide an online platform for calculating and
+            donating Zakat that adheres to our faith principles.
           </p>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60 pb-4">
-            You&apos;ll have the opportunity to specify how your Zakat is
-            allocated. With our personalized approach, you can trust that your
-            Zakat will reach its intended recipients and be utilized
-            appropriately, right here in Bangladesh.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
+            You will have the opportunity to specify how your Zakat is
+            allocated. Through our personalized approach, you can be confident
+            that your Zakat will reach its intended recipients and be used
+            effectively right here in Bangladesh
           </p>
         </ImageCard>
+      </div>
+      <div className="pb-[4%] px-[3%] mb-6 laptop:mb-10">
         <ImageCard
           img={needImage3}
           w1={"w-full sm:w-2/3"}
           w2={"w-full sm:w-1/3"}
           bg={"bg-secondary/10"}
         >
-          <h2 className="font-bold text-center sm:text-left text-h3 sm:text-title font-pally leading-tight pb-4 text-secondary">
+          <h2 className="font-bold text-center sm:text-left text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
             Your role
           </h2>
-          <p className="font-light text-s3 sm:text-paragraph text-secondary/60 pb-4">
-            By giving Zakat through ZF BD, you’re part of the solution.
+          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
+            By giving Zakat through AL-ZAKATI, you’re part of the solution.
           </p>
-          <ul className="px-6 list-disc font-light text-s3 sm:text-paragraph text-secondary/60">
-            <li>You re helping people unlock their potential.</li>
+          <ul className="px-6 list-disc font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60">
             <li>
-              You’re helping create a thriving, closer Muslim community around
-              Britain.
+              You&apos;re assisting individuals in realizing their potential.
             </li>
             <li>
-              And you’re part of an exciting movement for positive change.
+              You&apos;re fostering a vibrant, cohesive Muslim community across
+              Bangladesh.
+            </li>
+            <li>
+              And you&apos;re actively participating in an inspiring movement
+              for positive change.
             </li>
           </ul>
         </ImageCard>

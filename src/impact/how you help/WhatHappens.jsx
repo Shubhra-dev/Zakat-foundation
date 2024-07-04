@@ -1,24 +1,24 @@
 function WhatHappens() {
   return (
     <div className="pb-[2%] bg-primary px-[3%]">
-      <h2 className="text-center w-5/6 sm:w-4/5 m-auto text-secondary font-semibold text-h3 sm:text-title font-pally pb-4">
+      <h2 className="text-center w-5/6 laptop:w-4/5 m-auto text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally pb-4">
         What happens next
       </h2>
-      <p className="font-normal twxt-s3 sm:text-s2 text-secondary/80 ">
-        Once a person has applied to one of the funds using our online form, our
-        team checks over all the information they have shared to find out if:
+      <p className="font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 ">
+        After an individual applies to one of our funds using our online form,
+        our team carefully reviews all the information provided to determine:
       </p>
-      <ul className="px-4 sm:px-[2%] list-disc font-normal twxt-s3 sm:text-s2 text-secondary/80 py-4">
-        <li>The person can be given Zakat</li>
-        <li>The person is eligible for the grant they’ve applied for</li>
+      <ul className="px-4 sm:px-8 laptop:px-[2%] list-disc font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 py-4">
+        <li>Eligibility for receiving Zakat</li>
+        <li>Eligibility for the specific grant applied for</li>
       </ul>
-      <p className=" font-normal twxt-s3 sm:text-s2 text-secondary/80 pb-[3%]">
-        A decision will be made in a matter of days if all the information we
-        need is provided, and we’ll then get in touch to let them know the
-        decision. If we can help, the Zakat grant will either be paid straight
-        into their bank account, or we’ll send them a voucher or pay one of our
-        delivery partners directly if the person will benefit more from a
-        non-cash grant.
+      <p className=" font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 pb-[3%]">
+        If all necessary information is provided, a decision will typically be
+        made within a few days. We will then contact the applicant to
+        communicate the decision. If approved, the Zakat grant will be disbursed
+        directly into their bank account. Alternatively, if a non-cash grant
+        such as a voucher or payment to a delivery partner is deemed more
+        beneficial, we will arrange for that.
       </p>
     </div>
   );

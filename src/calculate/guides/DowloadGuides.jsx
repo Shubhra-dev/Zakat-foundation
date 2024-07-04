@@ -3,7 +3,7 @@ import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
 function DowloadGuides() {
   return (
     <div className="py-[5%] bg-slate-100">
-      <h2 className="px-4 text-secondary font-bold text-h3 sm:text-h4 laptop:text-s1 laptop:text-title font-pally text-center pb-[3%]">
+      <h2 className="px-4 text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally text-center pb-[3%]">
         Download your FREE Zakat Guide
       </h2>
       <EqualHeightFlexContainer addedClass={"px-[2%] gap-8"}>

@@ -1,12 +1,12 @@
-import Title from "../../ui/Title";
+import H1 from "../../ui/H1";
 import Purpose from "../../assets/Purpose.png";
 
 function Midsection() {
   return (
     <div className="py-[3%]">
-      <Title textColor={"text-secondary"} add={"text-center"}>
+      <H1 textColor={"text-secondary"} add={"text-center"}>
         What is the purpose of Zakat
-      </Title>
+      </H1>
       <ul className="w-5/6 m-auto list-disc pt-4">
         <li className="font-normal text-s3 sm:text-paragraph text-secondary/80">
           The purpose of Zakat is ultimately to increase faith and devotion to

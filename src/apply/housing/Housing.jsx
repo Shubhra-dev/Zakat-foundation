@@ -15,13 +15,14 @@ function Housing() {
         title="Get Help with Housing Costs"
       >
         <p className="w-11/12 sm:w-4/5 m-auto font-normal text-s3 sm:text-paragraph text-secondary/80 pb-2">
-          The Housing Fund gives Zakat grants to help Muslims in the UK who need
-          support to live in affordable, liveable and safe accommodation.
+          The Housing Fund provides Zakat grants to assist Muslims in Bangladesh
+          who require support to secure affordable, livable, and safe
+          accommodation.
         </p>
         <p className="w-11/12 sm:w-4/5 m-auto font-normal text-s3 sm:text-paragraph text-secondary/80">
-          This is a two-step process, please press the button below to register
-          your interest in Zakat. You will receive an email within 3-6 weeks
-          about whether you can apply for Zakat.
+          This process involves two steps. Please click the button below to
+          express your interest in Zakat. You will receive an email within 3-6
+          weeks to confirm if you are eligible to apply for Zakat.
         </p>
       </TitleSection>
       <div className="py-4 px-[3%]">
@@ -32,12 +33,12 @@ function Housing() {
           img={housing1}
           rounded={true}
         >
-          <h1 className="text-h3 sm:text-title text-secondary font-pally font-bold pb-4">
-            Keeping families safe and secure in their homes
+          <h1 className="text-h3 sm:text-s1 laptop:text-title text-secondary font-pally font-bold pb-4">
+            Keeping families safe under a roof
           </h1>
           <p className="font-normal text-s3 sm:text-paragraph text-secondary/80 pb-2">
-            The Housing Fund provides support with Council Tax, Rent arrears,
-            and Moving-in support to help with household needs.
+            The Housing Fund offers assistance with Council Tax, rent arrears,
+            and moving-in support to address household needs.
           </p>
         </ImageCard>
       </div>

@@ -6,3 +6,6 @@
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
+.trans {
+  transition: 0.5s;
+}

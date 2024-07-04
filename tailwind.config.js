@@ -34,6 +34,9 @@ export default {
         laptop: "1300px",
         large: "1920px",
       },
+      transitionProperty: {
+        top: "top",
+      },
     },
   },
   plugins: [

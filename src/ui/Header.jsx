@@ -66,6 +66,18 @@ function Header() {
   const navigate = useNavigate();
   const menuRef = useRef(null);
   const [mobMenuOpen, setMobMenuOpen] = useState(false);
+  const [stickyMenu, setStickyMenu] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setStickyMenu(window.scrollY > 100); // Adjust the scroll value as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   function handleClick() {
     setMobMenuOpen(false);
     navigate("/contact");
@@ -84,7 +96,11 @@ function Header() {
 
   return (
     <>
-      <div className="w-full h-[88px] bg-gray-900 fixed top-0 left-0 z-20">
+      <div
+        className={`w-full h-[65px] tab:h-[88px] bg-gray-900 ${
+          stickyMenu ? "fixed shadow-md top-0" : "-top-[65px] tab:-top-[88px]"
+        } left-0 z-20 transition-top duration-500 ease-in-out`}
+      >
         <div className="w-full px-4 laptop:px-0 laptop:w-11/12 large:w-5/6 large:m-auto h-full m-auto flex justify-between items-center text-primary">
           <div className="w-1/5 ">
             <img

@@ -1,7 +1,7 @@
 import GIveCardItem from "./GIveCardItem";
 function GiveCards() {
   return (
-    <div className="pb-4">
+    <div className="pb-4 relative -z-10">
       <GIveCardItem
         text={
           "You can select how to distribute your Zakat across three funds: Hardship Relief, Housing & Work/Education."

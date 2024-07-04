@@ -5,7 +5,7 @@ function ImpactLastSection() {
   return (
     <div className="py-4 sm:py-[5%] px-[4%]">
       <ImageCard img={StorySub}>
-        <h2 className="font-bold text-h3 sm:text-title font-pally leading-tight pb-4 text-secondary">
+        <h2 className="font-bold text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
           Zakat is more than just a payment
         </h2>
         <p className="font-light text-s3 sm:text-paragraph text-secondary/60">
