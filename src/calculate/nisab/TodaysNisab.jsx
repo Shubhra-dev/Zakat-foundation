@@ -1,4 +1,14 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchGoldRate } from "../../features/nisab/nisabSlice";
+
 function TodaysNisab() {
+  const nisabRate = useSelector((state) => state.nisabRate);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchGoldRate());
+  }, [dispatch]);
+  console.log(nisabRate);
   return (
     <div className="text-center">
       <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally pb-4">
@@ -15,10 +25,16 @@ function TodaysNisab() {
             Gold
           </h2>
           <h4 className="text-secondary font-semibold text-s2 sm:text-s1 font-pally pb-2">
-            ৳ 1,12,908
+            ৳{" "}
+            {nisabRate.isLoading
+              ? " loading..."
+              : nisabRate.isError
+              ? nisabRate.errorMsg
+              : Math.ceil(nisabRate.goldRate * 11.667 * 117)}
           </h4>
           <p className="w-3/5 m-auto font-normal text-small sm:text-s2 text-secondary/80">
-            Based on the gold price of ৳ 9,680 per gram
+            Based on the gold price of ৳ {Math.ceil(nisabRate.goldRate * 117)}{" "}
+            per gram
           </p>
         </div>
         <div className="bg-silver px-[2%] py-[3%] rounded-xl">
