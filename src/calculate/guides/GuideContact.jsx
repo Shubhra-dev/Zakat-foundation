@@ -1,8 +1,10 @@
 import RoundedButton from "../../ui/RoundedButton";
 import ques from "../../assets/touch.png";
 import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
+import { useNavigate } from "react-router-dom";
 
 function GuideContact() {
+  const navigate = useNavigate();
   return (
     <EqualHeightFlexContainer addedClass="p-[4%] items-start flex-col sm:flex-row">
       <div className="w-full sm:w-3/4">
@@ -21,7 +23,12 @@ function GuideContact() {
             <strong> Al-Zakati</strong> can help.
           </p>
           <div className="w-max m-auto sm:m-0">
-            <RoundedButton bg={"bg-accentRed"}>Get in Touch</RoundedButton>
+            <RoundedButton
+              bg={"bg-accentRed"}
+              onClick={() => navigate("/contact")}
+            >
+              Get in Touch
+            </RoundedButton>
           </div>
         </div>
       </div>

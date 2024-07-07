@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import ques from "../../assets/Group.png";
 import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
 import RoundedButton from "../../ui/RoundedButton";
 function ContactUs({ textColor, buttonBg, bg }) {
+  const navigate = useNavigate();
   return (
     <EqualHeightFlexContainer
       addedClass={`${bg ? bg : "bg-accentCyan/15"} p-[4%] items-center`}
@@ -20,7 +22,10 @@ function ContactUs({ textColor, buttonBg, bg }) {
           <strong> Al-Zakati</strong> so that we can provide our help.
         </p>
         <div className="w-max m-auto sm:w-auto">
-          <RoundedButton bg={buttonBg ? buttonBg : ""}>
+          <RoundedButton
+            bg={buttonBg ? buttonBg : ""}
+            onClick={() => navigate("/contact")}
+          >
             Contact Us
           </RoundedButton>
         </div>

@@ -1,6 +1,8 @@
 import Button from "./Button";
 import about from "../assets/about.png";
+import { useNavigate } from "react-router-dom";
 function AboutZakatSection() {
+  const nav = useNavigate();
   return (
     <div className="py-4 sm:py-12 w-full px-4 sm:px-0 sm:w-5/6 m-auto flex flex-col sm:flex-row justify-between sm:items-center">
       <div className="w-full sm:w-3/5">
@@ -21,6 +23,7 @@ function AboutZakatSection() {
           <Button
             bg={"bg-primary shadow-xl"}
             textColor={"text-accentCyan border border-gray-200 "}
+            onClick={() => nav("/zakat/give")}
           >
             give zakat
           </Button>

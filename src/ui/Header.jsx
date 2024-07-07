@@ -122,7 +122,12 @@ function Header() {
                 Contact Us
               </h4>
             </div>
-            <Button bg={"bg-accentCyan"}>give zakat</Button>
+            <Button
+              bg={"bg-accentCyan"}
+              onClick={() => navigate("/zakat/give")}
+            >
+              give zakat
+            </Button>
           </div>
           <div
             className="tab:hidden cursor-pointer"
@@ -156,7 +161,12 @@ function Header() {
                 Contact Us
               </h4>
             </div>
-            <Button bg={"bg-accentCyan"}>give zakat</Button>
+            <Button
+              bg={"bg-accentCyan"}
+              onClick={() => navigate("/zakat/give")}
+            >
+              give zakat
+            </Button>
           </div>
         </div>
       )}

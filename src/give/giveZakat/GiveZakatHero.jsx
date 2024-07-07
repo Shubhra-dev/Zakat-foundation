@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import giveHero from "../../assets/giveHero.png";
 import RoundedButton from "../../ui/RoundedButton";
 function GiveZakatHero() {
+  const navigate = useNavigate();
   return (
     <div
       className="bg-cover bg-top w-full"
@@ -13,7 +15,12 @@ function GiveZakatHero() {
         <p className="text-small sm:text-s2 font-light text-primary laptop:w-1/2 m-auto pb-6">
           Your contribution to Zakat can make a difference. Donate today.
         </p>
-        <RoundedButton bg={"bg-accentCyan"}>Give Zakat</RoundedButton>
+        <RoundedButton
+          onClick={() => navigate("/zakat/give")}
+          bg={"bg-accentCyan"}
+        >
+          Give Zakat
+        </RoundedButton>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ function Footer() {
             <img
               src={logo}
               alt="logo"
-              className="h-[65px] cursor-pointer w-max m-auto"
+              className="h-[55px] tab:h-[65px] cursor-pointer w-max m-auto sm:m-0"
               onClick={() => navigate("/")}
             />
             <p className="py-2 w-full text-center sm:text-left sm:w-3/4 text-light font-light">
@@ -36,7 +36,7 @@ function Footer() {
               <h5 className="text-light font-light">+880 1XXX XXXXXX</h5>
             </div>
           </div>
-          <div className="hidden sm:block w-1/4">
+          <div className="hidden sm:block w-1/4 pl-2">
             <h1 className="text-primary text-s2 font-semibold leading-relaxed">
               Quick Links
             </h1>
@@ -135,9 +135,9 @@ function Footer() {
               data and use it to send you emails around latest news and events.
               Read more about how we store your data
             </p>
-            <div className="w-full flex items-center justify-between pt-2">
+            <div className="w-full flex sm:flex-col tab:flex-row items-center justify-between pt-2">
               <h2 className="text-s2 font-semibold">Follow Us On</h2>
-              <div className="flex items-center justify-end gap-2">
+              <div className="flex items-center justify-end  gap-2">
                 <FaYoutube className="py2 px-1 rounded-md bg-accentRed text-4xl cursor-pointer" />
                 <FaFacebook className="py2 px-1 rounded-md bg-accentRed text-4xl cursor-pointer" />
                 <FaInstagram className="py2 px-1 rounded-md bg-accentRed text-4xl cursor-pointer" />

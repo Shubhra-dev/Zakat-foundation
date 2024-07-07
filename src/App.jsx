@@ -21,6 +21,7 @@ import PurposeOfZakat from "./about zakat/purpose/PurposeOfZakat";
 import HowZakatWorks from "./about zakat/how zakat/HowZakatWorks";
 import Contact from "./contact/Contact";
 import ZakatCalculator from "./zakat calculator/ZakatCalculator";
+import GiveZakatModal from "./give zakat/GiveZakatModal";
 
 const router = createBrowserRouter([
   {
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
       {
         path: "/zakat_calculator",
         element: <ZakatCalculator />,
+      },
+      {
+        path: "/zakat/give",
+        element: <GiveZakatModal />,
       },
     ],
   },

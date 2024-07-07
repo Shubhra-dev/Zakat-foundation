@@ -1,5 +1,5 @@
 import P from "../ui/P";
-function ZakatInput({ label, name, placeholder, grams, wd }) {
+function ZakatInput({ label, name, placeholder, grams, wd, value, setData }) {
   return (
     <div className={`${wd ? wd : "w-full sm:w-3/4"} m-auto pb-2`}>
       {label && (
@@ -20,6 +20,8 @@ function ZakatInput({ label, name, placeholder, grams, wd }) {
           type="number"
           name={name}
           id={name}
+          value={value}
+          onChange={(e) => setData(e.target.value)}
           placeholder={placeholder ? placeholder : "Enter Amount"}
           className="w-[80%] h-full p-2 rounded-r-xl text-s3 sm:text-paragraph"
         />

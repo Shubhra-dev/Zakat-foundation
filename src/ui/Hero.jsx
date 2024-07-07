@@ -1,7 +1,9 @@
 import Button from "./Button";
 import herobg from "../assets/herobg.png";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
   return (
     <div
       className="h-[280px] sm:h-[350px] tab:h-[400px] laptop:h-[550px] large:h-[700px] w-full bg-cover bg-center"
@@ -18,7 +20,9 @@ function Hero() {
             Your Zakat transforms lives and supports those in need. Together, we
             can make a difference
           </p>
-          <Button bg={"bg-accentCyan"}>give zakat</Button>
+          <Button bg={"bg-accentCyan"} onClick={() => navigate("/zakat/give")}>
+            give zakat
+          </Button>
         </div>
       </div>
     </div>
