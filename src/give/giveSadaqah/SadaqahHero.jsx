@@ -9,7 +9,7 @@ function SadaqahHero() {
       style={{ backgroundImage: `url(${sadaqahHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[7%] text-center">
-        <h2 className="text-primary font-bold text-h3 w-5/6 laptop:4/5 m-auto sm:text-title laptop:text-[70px] font-pally">
+        <h2 className="text-primary font-bold text-h3 w-5/6 laptop:4/5 m-auto sm:text-title laptop:text-bigTitle leading-tight font-pally">
           Make an impact by donating Zakat in your community.
         </h2>
         <p className="text-small sm:text-s2 font-light text-primary w-5/6 laptop:w-1/2 m-auto pb-6">

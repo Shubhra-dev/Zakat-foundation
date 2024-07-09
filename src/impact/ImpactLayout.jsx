@@ -88,6 +88,7 @@ function ImpactLayout({ children, tab }) {
             }`}
           />
         </MenuItem>
+        <div className="bg-inherit py-[80px] hidden tab:block"></div>
       </div>
       <div className="w-full h-full tab:w-5/6 tab:flex-grow overflow-y-scroll scrollbar-hide">
         {children}

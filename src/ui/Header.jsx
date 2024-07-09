@@ -8,25 +8,14 @@ const menu = [
   {
     id: "1",
     title: "calculate",
-    subMenu: [
-      "calculator",
-      "today's nisab",
-      "zakat guides",
-      "knowledge bank",
-      "ask a question",
-    ],
-    link: ["calculate", "todays_nisab", "zakat_guides", "", "ask_a_question"],
+    subMenu: ["calculator", "today's nisab", "zakat guides", "ask a question"],
+    link: ["calculate", "todays_nisab", "zakat_guides", "ask_a_question"],
   },
   {
     id: "2",
     title: "give",
-    subMenu: [
-      "give zakat",
-      "give sadaqah",
-      "give by bank & check",
-      "giving faq's",
-    ],
-    link: ["give_zakat", "give_sadaqah", "", "giving_faq"],
+    subMenu: ["give zakat", "give sadaqah", "giving faq's"],
+    link: ["give_zakat", "give_sadaqah", "giving_faq"],
   },
   {
     id: "3",
@@ -53,13 +42,8 @@ const menu = [
   {
     id: "5",
     title: "about zakat",
-    subMenu: [
-      "aboout zakat",
-      "purpose of zakat",
-      "how zakat works",
-      "community hub",
-    ],
-    link: ["about_zakat", "zakat_purpose", "how_it_works", ""],
+    subMenu: ["aboout zakat", "purpose of zakat", "how zakat works"],
+    link: ["about_zakat", "zakat_purpose", "how_it_works"],
   },
 ];
 function Header() {
@@ -97,7 +81,7 @@ function Header() {
   return (
     <>
       <div
-        className={`w-full h-[65px] tab:h-[88px] bg-gray-900 ${
+        className={`w-full h-[65px] tab:h-[88px] bg-primary ${
           stickyMenu ? "fixed shadow-md top-0" : "-top-[65px] tab:-top-[88px]"
         } left-0 z-20 transition-top duration-500 ease-in-out`}
       >
@@ -106,11 +90,11 @@ function Header() {
             <img
               src={logo}
               alt="logo"
-              className="laptop:h-[65px] cursor-pointer"
+              className="tab:h-[45px] cursor-pointer"
               onClick={() => navigate("/")}
             />
           </div>
-          <div className="hidden tab:flex w-[75%] laptop:w-3/5  justify-between items-center text-primary leading-tight">
+          <div className="hidden tab:flex w-[75%] laptop:w-3/5  justify-between items-center text-secondary leading-tight">
             {menu.map((item) => (
               <MenuItemHeader item={item} key={item.id} />
             ))}

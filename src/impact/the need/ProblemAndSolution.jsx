@@ -10,7 +10,7 @@ function ProblemAndSolution() {
           img={needImage1}
           w1={"w-full sm:w-[65%]"}
           w2={"w-full sm:w-[35%]"}
-          bg={"bg-secondary/10"}
+          bg={"bg-ash/10"}
         >
           <h2 className="font-bold text-center sm:text-left text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
             The problem
@@ -38,7 +38,7 @@ function ProblemAndSolution() {
           img={needImage2}
           w1={"w-full sm:w-[65%]"}
           w2={"w-full sm:w-[35%] hidden sm:block"}
-          bg={"bg-secondary/10"}
+          bg={"bg-ash/10"}
           imgPosition={"left"}
         >
           <h2 className="font-bold text-center sm:text-left text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
@@ -71,7 +71,7 @@ function ProblemAndSolution() {
           img={needImage3}
           w1={"w-full sm:w-2/3"}
           w2={"w-full sm:w-1/3"}
-          bg={"bg-secondary/10"}
+          bg={"bg-ash/10"}
         >
           <h2 className="font-bold text-center sm:text-left text-h3 sm:text-s1 laptop:text-title font-pally leading-tight pb-4 text-secondary">
             Your role

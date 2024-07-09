@@ -9,7 +9,7 @@ function CalculatorHero() {
       style={{ backgroundImage: `url(${heroCal})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[8%] text-center">
-        <h2 className="text-primary font-semibold  text-h3 sm:text-title laptop:text-[70px] font-pally">
+        <h2 className="text-primary font-semibold  text-h3 sm:text-title laptop:text-bigTitle leading-tight font-pally">
           Zakat Calculator
         </h2>
         <p className="text-small sm:text-s2 font-light text-primary w-1/2 m-auto pb-6">

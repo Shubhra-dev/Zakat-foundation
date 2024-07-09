@@ -4,7 +4,7 @@ import Button from "./Button";
 function CardItem({ img, title, text }) {
   const navigate = useNavigate();
   return (
-    <div className="p-4 w-full laptop:w-[30%] h-[350px] sm:h-[450px] laptop:h-[600px] shadow-[10px_35px_60px_5px_rgba(0,0,0,0.15)] rounded-xl">
+    <div className="p-4 w-full laptop:w-[30%] h-[350px] sm:h-[450px] laptop:h-[700px] shadow-[10px_35px_60px_5px_rgba(0,0,0,0.15)] rounded-xl">
       <div className="h-[50%] sm:h-[60%] w-full">
         <img
           className="object-cover w-full h-full rounded-xl"

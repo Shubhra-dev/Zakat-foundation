@@ -1,4 +1,4 @@
-import askHero from "../../assets/askHero.png";
+import askHero from "../../assets/faqGiveHero.png";
 function AskHero() {
   return (
     <div
@@ -6,7 +6,7 @@ function AskHero() {
       style={{ backgroundImage: `url(${askHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[8%] text-center">
-        <h2 className="text-primary font-semibold text-h3 sm:text-title laptop:text-[70px] font-pally py-[2.5%]">
+        <h2 className="text-primary font-semibold text-h3 sm:text-title laptop:text-bigTitle leading-tight font-pally py-[2.5%]">
           Ask a Question
         </h2>
       </div>

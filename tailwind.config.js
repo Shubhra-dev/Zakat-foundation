@@ -11,8 +11,10 @@ export default {
         accentRed: "#FD3F30",
         gold: "#FFD700",
         silver: "#C0C0C0",
+        ash: "#212121",
       },
       fontSize: {
+        bigTitle: "70px",
         title: "50px",
         s1: "34px",
         s2: "20px",

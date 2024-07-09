@@ -6,6 +6,7 @@ import P from "../ui/P";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DonorInfo from "./DonorInfo";
+import ThanksGiving from "./ThanksGiving";
 const initialState = {
   amount: 0,
   name: null,
@@ -20,15 +21,17 @@ function GiveZakatModal() {
   return (
     <div className="w-full sm:w-5/6 laptop:w-4/6 h-full m-auto rounded-sm">
       <div className="w-5/6 rounded-md m-auto border border-gray-200 bg-slate-100 my-8">
-        <div className="pt-8 pb-4">
-          <H2 textColor={"text-secondary"} add={"text-center"}>
-            Zakat
-          </H2>
-          {/* <FaQuestionCircle
+        {page !== 3 && (
+          <div className="pt-8 pb-4">
+            <H2 textColor={"text-secondary"} add={"text-center"}>
+              Zakat
+            </H2>
+            {/* <FaQuestionCircle
             className="text-s2 cursor-pointer"
             onClick={() => setQuesZakat(true)}
           /> */}
-        </div>
+          </div>
+        )}
         {page === 1 && (
           <>
             <h3
@@ -94,6 +97,7 @@ function GiveZakatModal() {
             setPage={setPage}
           />
         )}
+        {page === 3 && <ThanksGiving />}
       </div>
     </div>
   );
