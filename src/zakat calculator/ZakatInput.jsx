@@ -20,8 +20,8 @@ function ZakatInput({ label, name, placeholder, grams, wd, value, setData }) {
           type="number"
           name={name}
           id={name}
-          value={value}
-          onChange={(e) => setData(e.target.value)}
+          value={value == 0 ? "" : value}
+          onChange={(e) => setData(Number(e.target.value))}
           placeholder={placeholder ? placeholder : "Enter Amount"}
           className="w-[80%] h-full p-2 rounded-r-xl text-s3 sm:text-paragraph"
         />
