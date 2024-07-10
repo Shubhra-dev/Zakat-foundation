@@ -5,7 +5,7 @@ import ApplyCard from "./ApplyCard";
 function ApplyCardContainer() {
   return (
     <div className="px-6 pb-6 flex flex-col tab:flex-row justify-between gap-4 sm:gap-6 overflow-x-scroll scrollbar-hide">
-      <ApplyCard>
+      <ApplyCard link={"hardship_relief"}>
         <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl relative px-4 py-3">
           <div className="bg-primary w-[110%] h-[50%] tab:absolute -bottom-7 right-0 rotate-[3deg]"></div>
           <FaMoneyBillTrendUp className="text-3xl sm:text-4xl text-primary" />
@@ -33,7 +33,7 @@ function ApplyCardContainer() {
           </ul>
         </div>
       </ApplyCard>
-      <ApplyCard>
+      <ApplyCard link={"housing_fund"}>
         <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl px-4 py-3">
           <FaHouse className="text-3xl sm:text-4xl text-primary" />
         </div>
@@ -61,7 +61,7 @@ function ApplyCardContainer() {
           </ul>
         </div>
       </ApplyCard>
-      <ApplyCard>
+      <ApplyCard link={"work_and_education"}>
         <div className="h-[15%] bg-accentRed overflow-hidden rounded-t-xl relative px-4 py-3">
           <div className="bg-primary w-[110%] h-[50%] tab:absolute -bottom-7 left-0 -rotate-[3deg]"></div>
           <IoSchoolSharp className="text-3xl sm:text-4xl text-primary" />

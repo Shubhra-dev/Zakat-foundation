@@ -2,8 +2,10 @@ import CountUp from "react-countup";
 import CounterCardItem from "../give/giveZakat/CounterCardItem";
 import EqualHeightFlexContainer from "../ui/EqualHeightFlexContainer";
 import RoundedButton from "../ui/RoundedButton";
+import { useNavigate } from "react-router-dom";
 
 function ImpactNumbers({ bg }) {
+  const navigate = useNavigate();
   return (
     <div className={`py-[3.5%] ${bg ? bg : "bg-primary"}`}>
       <h2 className="text-secondary font-semibold text-h3 sm:text-s1 laptop:text-title font-pally pb-4 text-center">
@@ -46,7 +48,11 @@ function ImpactNumbers({ bg }) {
         </CounterCardItem>
       </EqualHeightFlexContainer>
       <div className="flex justify-center items-center m-auto pt-[3%]">
-        <RoundedButton bg={"bg-accentCyan"} textColor={"text-primary"}>
+        <RoundedButton
+          bg={"bg-accentCyan"}
+          textColor={"text-primary"}
+          onClick={() => navigate("/how_you_help")}
+        >
           How You Help
         </RoundedButton>
       </div>

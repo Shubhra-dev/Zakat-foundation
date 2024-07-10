@@ -1,7 +1,10 @@
 import { getGoldRAte } from "./getApi";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 const initialState = {
-  goldRate: 0,
+  goldRate: {
+    buying_price: 0,
+    selling_price: 0,
+  },
   isLoading: false,
   isError: false,
   errorMsg: null,
@@ -10,7 +13,7 @@ export const fetchGoldRate = createAsyncThunk(
   "nisab/fetchGoldRate",
   async () => {
     const goldRate = await getGoldRAte();
-    return goldRate.price_gram_22k;
+    return goldRate;
   }
 );
 

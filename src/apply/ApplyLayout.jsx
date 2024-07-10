@@ -4,12 +4,56 @@ import { RiMailSendFill } from "react-icons/ri";
 import { BsFillFileSpreadsheetFill } from "react-icons/bs";
 import { PiHouseLine } from "react-icons/pi";
 import { IoSchoolSharp } from "react-icons/io5";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function ApplyLayout({ children, tab }) {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSecondNav, setShowSecondNav] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
+  const contentRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const content = contentRef.current;
+    const container = containerRef.current;
+
+    const handleWheel = (event) => {
+      const deltaY = event.deltaY;
+      const contentHeight = content.scrollHeight;
+      const contentVisibleHeight = content.clientHeight;
+      const contentScrollTop = content.scrollTop;
+
+      if (deltaY < 0) {
+        // Scrolling up
+        if (window.scrollY > 0) {
+          // Prevent default scrolling of content
+          event.preventDefault();
+          // Scroll main page instead
+          window.scrollBy(0, deltaY);
+        } else if (contentScrollTop > 0) {
+          // Allow content to scroll if main page is at the top
+          content.scrollBy(0, deltaY);
+        }
+      } else {
+        // Scrolling down
+        if (contentScrollTop + contentVisibleHeight < contentHeight) {
+          // Allow content to scroll
+          content.scrollBy(0, deltaY);
+        } else {
+          // Prevent default scrolling of content
+          event.preventDefault();
+          // Scroll main page instead
+          window.scrollBy(0, deltaY);
+        }
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel);
+
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
   useEffect(() => {
     const handleScroll = () => {
       setStickyMenu(window.scrollY > 80); // Adjust the scroll value as needed
@@ -42,7 +86,7 @@ function ApplyLayout({ children, tab }) {
     };
   }, [lastScrollY]);
   return (
-    <div className="tab:h-screen tab:flex">
+    <div ref={containerRef} className="tab:h-screen tab:flex">
       <div
         className={`overflow-x-scroll flex justify-center ${
           stickyMenu
@@ -94,7 +138,10 @@ function ApplyLayout({ children, tab }) {
         </MenuItem>
         <div className="bg-inherit py-[80px] hidden tab:block laptop:hidden"></div>
       </div>
-      <div className="w-full h-full tab:w-5/6 tab:flex-grow overflow-y-scroll scrollbar-hide">
+      <div
+        ref={contentRef}
+        className="w-full h-full tab:w-5/6 tab:flex-grow overflow-y-scroll scrollbar-hide"
+      >
         {children}
       </div>
     </div>

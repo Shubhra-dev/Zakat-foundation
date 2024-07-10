@@ -2,7 +2,9 @@ import CountUp from "react-countup";
 import CounterCardItem from "./CounterCardItem";
 import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
 import RoundedButton from "../../ui/RoundedButton";
+import { useNavigate } from "react-router-dom";
 function ZakatNumbers() {
+  const navigate = useNavigate();
   return (
     <div className="py-[3.5%] bg-accentRed/10">
       <h2 className="text-secondary font-semibold text-h3 sm:text-title font-pally pb-4  text-center">
@@ -46,6 +48,7 @@ function ZakatNumbers() {
         <RoundedButton
           bg={"bg-primary border border-accentRed"}
           textColor={"text-accentRed"}
+          onClick={() => navigate("/impact_stories")}
         >
           Find out more about Zakat is helping
         </RoundedButton>

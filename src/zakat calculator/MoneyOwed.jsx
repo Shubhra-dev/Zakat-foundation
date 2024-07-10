@@ -1,8 +1,29 @@
+import { useDispatch, useSelector } from "react-redux";
 import H2 from "../ui/H2";
 import P from "../ui/P";
 import ZakatInput from "./ZakatInput";
+import {
+  updateOwnMoneOwedExpected,
+  updateOwnMoneOwedLoan,
+} from "../features/calculate/calculateSlice";
 
 function MoneyOwed() {
+  const dispatch = useDispatch();
+  const moneyOwed = useSelector((state) => state.calculate.own.moneOwed);
+  function handleLoan(num) {
+    if (isNaN(num)) {
+      alert(`Input should be a number`);
+      return;
+    }
+    dispatch(updateOwnMoneOwedLoan(num));
+  }
+  function handleSale(num) {
+    if (isNaN(num)) {
+      alert(`Input should be a number`);
+      return;
+    }
+    dispatch(updateOwnMoneOwedExpected(num));
+  }
   return (
     <div className="w-full laptop:w-11/12 m-auto mt-4 py-2 px-4 laptop:px-0 bg-slate-100 rounded-xl">
       <H2 textColor={"text-green-700 pb-2 text-center"} font={"font-pally"}>
@@ -13,8 +34,18 @@ function MoneyOwed() {
         or you’ve sold something and are due to receive payment, you need to pay
         Zakat on these amounts.
       </P>
-      <ZakatInput label={"Loan"} name={"loan"} />
-      <ZakatInput label={"Money Extpected from a sale"} name={"sale"} />
+      <ZakatInput
+        label={"Loan"}
+        name={"loan"}
+        value={moneyOwed.loan}
+        setData={handleLoan}
+      />
+      <ZakatInput
+        label={"Money Extpected from a sale"}
+        name={"sale"}
+        value={moneyOwed.expected}
+        setData={handleSale}
+      />
     </div>
   );
 }

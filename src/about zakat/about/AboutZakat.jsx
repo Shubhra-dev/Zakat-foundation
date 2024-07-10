@@ -8,7 +8,12 @@ function AboutZakat() {
     <ZakatLayout tab={1}>
       <AboutZakatHero />
       <Midsections />
-      <GetTouch button1={"Give zakat"} button2={"Apply for help"} />
+      <GetTouch
+        button1={"Give zakat"}
+        button2={"Apply for help"}
+        b1link={"zakat/give"}
+        b2link={"apply_help"}
+      />
     </ZakatLayout>
   );
 }

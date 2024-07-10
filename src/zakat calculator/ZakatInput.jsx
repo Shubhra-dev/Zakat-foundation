@@ -1,5 +1,5 @@
 import P from "../ui/P";
-function ZakatInput({ label, name, placeholder, grams, wd, value, setData }) {
+function ZakatInput({ label, name, placeholder, vori, wd, value, setData }) {
   return (
     <div className={`${wd ? wd : "w-full sm:w-3/4"} m-auto pb-2`}>
       {label && (
@@ -14,10 +14,10 @@ function ZakatInput({ label, name, placeholder, grams, wd, value, setData }) {
           }
           p={"py-2"}
         >
-          {grams ? "g" : "৳"}
+          {vori ? "Vori" : "৳"}
         </P>
         <input
-          type="number"
+          type="text"
           name={name}
           id={name}
           value={value == 0 ? "" : value}

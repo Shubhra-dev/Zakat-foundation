@@ -1,7 +1,9 @@
 import RoundedButton from "../../ui/RoundedButton";
 import zakatNeed from "../../assets/zakatNeed.png";
 import EqualHeightFlexContainer from "../../ui/EqualHeightFlexContainer";
+import { useNavigate } from "react-router-dom";
 function WhyNeed() {
+  const navigate = useNavigate();
   return (
     <EqualHeightFlexContainer addedClass="flex-col sm:flex-row bg-primary p-[4%] items-center">
       <div className="w-5/6 sm:w-3/5 px-[3%]">
@@ -20,7 +22,11 @@ function WhyNeed() {
           its potential.
         </p>
         <div className="w-max m-auto sm:m-0 py-2">
-          <RoundedButton bg={"bg-accentCyan"} padding={"px-6 py-4"}>
+          <RoundedButton
+            bg={"bg-accentCyan"}
+            padding={"px-6 py-4"}
+            onClick={() => navigate("/zakat_purpose")}
+          >
             Find out more
           </RoundedButton>
         </div>

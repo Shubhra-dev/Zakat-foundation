@@ -1,8 +1,18 @@
 export const calculateTotalOwn = (own) => {
-  return Object.values(own).reduce((acc, category) => {
+  const omitKey = "goldAndSilverVori"; // Hard-coded key to be omitted
+  return Object.entries(own).reduce((acc, [key, category]) => {
+    if (key === omitKey) {
+      return acc; // Skip this key
+    }
     if (typeof category === "object") {
       return (
-        acc + Object.values(category).reduce((sum, value) => sum + value, 0)
+        acc +
+        Object.entries(category).reduce((sum, [subKey, value]) => {
+          if (subKey === omitKey) {
+            return sum; // Skip this sub-key
+          }
+          return sum + value;
+        }, 0)
       );
     }
     return acc + category;

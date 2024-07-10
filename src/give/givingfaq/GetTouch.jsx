@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import RoundedButton from "../../ui/RoundedButton";
 
-function GetTouch({ my, button1, button2 }) {
+function GetTouch({ my, button1, button2, b1link, b2link }) {
+  const navigate = useNavigate();
   return (
     <div
       className={`bg-accentPurple py-[5%] mx-[4%] ${
@@ -17,11 +19,19 @@ function GetTouch({ my, button1, button2 }) {
         Do you still have questions? Get in touch with our team
       </h2>
       <div className="w-max m-auto flex items-center gap-6 relative">
-        <RoundedButton bg={"bg-primary"} textColor={"text-accentPurple"}>
+        <RoundedButton
+          bg={"bg-primary"}
+          textColor={"text-accentPurple"}
+          onClick={() => navigate(`/${b1link ? b1link : "contact"}`)}
+        >
           {`${button1 ? button1 : "Get in Touch"}`}
         </RoundedButton>
         {button2 && (
-          <RoundedButton bg={"bg-primary"} textColor={"text-accentPurple"}>
+          <RoundedButton
+            bg={"bg-primary"}
+            textColor={"text-accentPurple"}
+            onClick={() => navigate(`/${b2link}`)}
+          >
             {button2}
           </RoundedButton>
         )}

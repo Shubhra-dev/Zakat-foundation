@@ -21,9 +21,11 @@ function Footer() {
               onClick={() => navigate("/")}
             />
             <p className="py-2 w-full text-center sm:text-left sm:w-3/4 text-light font-light">
-              Lorem ipsum dolor sit amet consectetur. Est gravida vitae leo
-              nulla magna ut. Viverra ultricies sit quis facilisi id id
-              tristique tempus. Sit elementum sed lacus integer.
+              Al-Zakati offers precise and easy-to-use tools for calculating
+              Zakat, ensuring your almsgiving aligns with Islamic principles.
+              Our comprehensive guidance and support help you confidently
+              fulfill your religious obligations, making a significant impact
+              through your charitable contributions.
             </p>
             <div className="flex gap-2 items-center justify-center sm:justify-normal pt-2">
               <IoLocationOutline className="text-s2 text-accentRed" />
@@ -41,18 +43,19 @@ function Footer() {
               Quick Links
             </h1>
             {[
-              "zakat calculator",
-              "today's nisab",
-              "give zakat",
-              "zakat guides",
-              "impact stories",
-              "purpose of zakat",
+              { name: "zakat calculator", link: "calculate" },
+              { name: "today's nisab", link: "todays_nisab" },
+              { name: "give zakat", link: "give_zakat" },
+              { name: "zakat guides", link: "zakat_guides" },
+              { name: "impact stories", link: "impact_stories" },
+              { name: "purpose of zakat", link: "zakat_purpose" },
             ].map((item) => (
               <h5
                 className="text-light cursor-pointer font-normal pt-2 capitalize"
-                key={item}
+                key={item.name}
+                onClick={() => navigate(`/${item.link}`)}
               >
-                {item}
+                {item.name}
               </h5>
             ))}
           </div>
@@ -61,16 +64,17 @@ function Footer() {
               Support Links
             </h1>
             {[
-              "terms & conditions",
-              "privacy policy",
-              "cookie policy",
-              "get in touch",
+              { name: "privacy policy", link: "" },
+              { name: "terms & conditions", link: "" },
+              { name: "cookie policy", link: "" },
+              { name: "get in touch", link: "contact" },
             ].map((item) => (
               <h5
                 className="text-light cursor-pointer font-normal pt-2 capitalize"
-                key={item}
+                key={item.name}
+                onClick={() => navigate(`/${item.link}`)}
               >
-                {item}
+                {item.name}
               </h5>
             ))}
           </div>

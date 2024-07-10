@@ -54,7 +54,7 @@ function ZakatCalculator() {
           information will follow to help you decide.
         </P>
         <div className="tab:flex gap-2 laptop:block">
-          <div className="border tab:w-1/2 laptop:w-auto border-green-800 p-3 bg-primary rounded-xl">
+          <div className="mb-4 tab:mb-0 border tab:w-1/2 laptop:w-auto border-green-800 p-3 bg-primary rounded-xl">
             <H2
               align={"text-center laptop:text-left"}
               textColor={"text-green-700"}
@@ -108,17 +108,23 @@ function ZakatCalculator() {
           </span>
         </P>
         {itemsOwn.cash && <Cash />}
-        {itemsOwn.moneyOwed && <MoneyOwed />}
-        {itemsOwn.goldSilver && <GoldSilver />}
-        {itemsOwn.shares && <Shares />}
         {itemsOwn.pensions && <Pensions />}
+        {itemsOwn.shares && <Shares />}
+        {itemsOwn.goldSilver && <GoldSilver />}
+        {itemsOwn.moneyOwed && <MoneyOwed />}
         {itemsOwn.businessAssets && <BusinessAsset />}
 
         {Object.values(itemsOwe).some((value) => value === true) && (
           <ItemsOwe items={itemsOwe} />
         )}
+        <div className="py-8 px-4 hidden laptop:block">
+          <CalculationBlock />
+        </div>
+        {/* <div className="tab:h-[120px]"></div> */}
       </div>
-      <CalculationBlock />
+      <div className="w-full laptop:w-1/4 p-6 px-4 bg-slate-100">
+        <CalculationBlock />
+      </div>
     </div>
   );
 }

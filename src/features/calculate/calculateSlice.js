@@ -14,6 +14,10 @@ const initialState = {
       gold: 0,
       silver: 0,
     },
+    goldAndSilverVori: {
+      goldVori: 0,
+      silverVori: 0,
+    },
     share: {
       capitalGain: 0,
       other: 0,
@@ -56,6 +60,12 @@ const nisabSlice = createSlice({
     },
     updateOwnSilver: (state, action) => {
       state.own.goldAndSilver.silver = action.payload;
+    },
+    updateOwnGoldVori: (state, action) => {
+      state.own.goldAndSilverVori.goldVori = action.payload;
+    },
+    updateOwnSilverVori: (state, action) => {
+      state.own.goldAndSilverVori.silverVori = action.payload;
     },
     updateOwnShareCapitalGain: (state, action) => {
       state.own.share.capitalGain = action.payload;
@@ -115,8 +125,8 @@ export const {
   updateOweUtilityBill,
   updateOweOverdraft,
   updateOweBusinessLiabilities,
-  calculateTotalOwn,
-  calculateTotalOwe,
+  updateOwnGoldVori,
+  updateOwnSilverVori,
 } = nisabSlice.actions;
 
 export default nisabSlice.reducer;
