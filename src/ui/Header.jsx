@@ -62,9 +62,9 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  function handleClick() {
+  function handleClick(link) {
     setMobMenuOpen(false);
-    navigate("/contact");
+    navigate(`/${link}`);
   }
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -117,7 +117,7 @@ function Header() {
             className="tab:hidden cursor-pointer"
             onClick={() => setMobMenuOpen(true)}
           >
-            <MdOutlineMenu className="text-3xl" />
+            <MdOutlineMenu className="text-3xl text-secondary" />
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@ function Header() {
             ))}
             <div className="cursor-pointer">
               <h4
-                onClick={handleClick}
+                onClick={() => handleClick("contact")}
                 className="text-sm uppercase font-normal tracking-wide hover:text-accentCyan"
               >
                 Contact Us
@@ -147,7 +147,7 @@ function Header() {
             </div>
             <Button
               bg={"bg-accentCyan"}
-              onClick={() => navigate("/zakat/give")}
+              onClick={() => handleClick("zakat/give")}
             >
               give zakat
             </Button>

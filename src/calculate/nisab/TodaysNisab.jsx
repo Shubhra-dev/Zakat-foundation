@@ -3,11 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchGoldRate } from "../../features/nisab/nisabSlice";
 
 function TodaysNisab() {
-  const nisabRate = useSelector((state) => state.nisabRate);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchGoldRate());
   }, [dispatch]);
+  const nisabRate = useSelector((state) => state.nisabRate);
+  console.log(nisabRate);
   return (
     <div className="text-center">
       <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally pb-4">
@@ -30,10 +31,10 @@ function TodaysNisab() {
         <div className="flex flex-col sm:flex-row justify-between laptop:justify-around px-8 laptop:px-0 gap-4 laptop:gap-0 py-8">
           <div className="bg-gold px-[2%] py-[3%] rounded-xl">
             <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally">
-              Gold{" "}
-              <span className="text-h4 sm:text-s2 laptop:text-paragraph">
-                (Buy)
-              </span>
+              Gold
+              {/* <span className="text-h4 sm:text-s2 laptop:text-paragraph">
+                
+              </span> */}
             </h2>
             <h4 className="text-secondary font-semibold text-s2 sm:text-s1 font-pally pb-2">
               ৳{" "}
@@ -41,19 +42,19 @@ function TodaysNisab() {
                 ? " loading..."
                 : nisabRate.isError
                 ? nisabRate.errorMsg
-                : (nisabRate.goldRate.buying_price * 11.67).toFixed(2)}
+                : (nisabRate.goldRate.xau.selling_price * 87.48).toFixed(2)}
             </h4>
             <p className="w-3/5 m-auto font-normal text-small sm:text-s2 text-secondary/80">
               Based on the gold price of ৳{" "}
-              {nisabRate.goldRate.buying_price.toFixed(2)} per gram
+              {nisabRate.goldRate.xau.selling_price.toFixed(2)} per gram
             </p>
           </div>
-          <div className="bg-gold px-[2%] py-[3%] rounded-xl">
+          <div className="bg-silver px-[2%] py-[3%] rounded-xl">
             <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally">
-              Gold{" "}
-              <span className="text-h4 sm:text-s2 laptop:text-paragraph">
+              Silver
+              {/* <span className="text-h4 sm:text-s2 laptop:text-paragraph">
                 (Sell)
-              </span>
+              </span> */}
             </h2>
             <h4 className="text-secondary font-semibold text-s2 sm:text-s1 font-pally pb-2">
               ৳{" "}
@@ -61,11 +62,11 @@ function TodaysNisab() {
                 ? " loading..."
                 : nisabRate.isError
                 ? nisabRate.errorMsg
-                : (nisabRate.goldRate.selling_price * 11.67).toFixed(2)}
+                : (nisabRate.goldRate.xag.selling_price * 612.36).toFixed(2)}
             </h4>
             <p className="w-3/5 m-auto font-normal text-small sm:text-s2 text-secondary/80">
-              Based on the gold price of ৳{" "}
-              {nisabRate.goldRate.selling_price.toFixed(2)} per gram
+              Based on the silver price of ৳{" "}
+              {nisabRate.goldRate.xag.selling_price.toFixed(2)} per gram
             </p>
           </div>
         </div>

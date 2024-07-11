@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 function CalculationBlock() {
   const navigate = useNavigate();
-  const nisabRate = useSelector((state) => state.nisabRate.goldRate);
+  const nisabRate = useSelector((state) => state.nisabRate);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchGoldRate());
@@ -18,9 +18,10 @@ function CalculationBlock() {
   const owe = useSelector((state) => state.calculate.owe);
   const totalOwn = calculateTotalOwn(own);
   const totalOwe = calculateTotalOwe(owe);
-  const todaysNisab = (nisabRate.selling_price * 87.48).toFixed(2);
+  const todaysNisab = nisabRate.goldRate
+    ? (nisabRate.goldRate.xag.selling_price * 612.36).toFixed(2)
+    : 0;
   const zakat = ((totalOwn - totalOwe - todaysNisab) * 0.025).toFixed(2);
-  console.log(zakat);
   return (
     <>
       <div className="rounded-xl bg-green-900 p-4 text-primary">
@@ -57,7 +58,11 @@ function CalculationBlock() {
           <p className="w-[40%]">Today&apos;s Nisab is</p>
           <p className="w-[60%] text-right">
             <span>৳</span>
-            {todaysNisab}
+            {nisabRate.isLoading
+              ? " loading..."
+              : nisabRate.isError
+              ? nisabRate.errorMsg
+              : todaysNisab}
           </p>
         </div>
       </div>

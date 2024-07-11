@@ -3,7 +3,7 @@ import impactHero from "../../assets/impactHero.png";
 function ImpactHero() {
   return (
     <div
-      className="bg-cover bg-top w-full"
+      className="bg-cover bg-center w-full"
       style={{ backgroundImage: `url(${impactHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[7%] text-center">

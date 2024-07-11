@@ -1,11 +1,33 @@
+import P from "../ui/P";
 import RoundedButton from "../ui/RoundedButton";
 
-function DonorInfo({ userData, setData, setPage }) {
+function DonorInfo({
+  userData,
+  setData,
+  setPage,
+  responses,
+  isLoading,
+  handleSubmit,
+}) {
   return (
     <div className="px-4">
       <h3 className="text-h4 font-semibold py-3 text-center text-secondary">
         Your Basic Informations
       </h3>
+      {responses.validationError && (
+        <div className="bg-accentRed rounded-md text-center w-11/12 m-auto mb-2">
+          <P textColor={"text-primary"} p={"py-2"}>
+            {responses.validationError}
+          </P>
+        </div>
+      )}
+      {responses.error && (
+        <div className="bg-accentRed rounded-md text-center w-11/12 m-auto mb-2">
+          <P textColor={"text-primary"} p={"py-2"}>
+            {responses.error}
+          </P>
+        </div>
+      )}
       <div className="flex flex-col sm:flex-row gap-4 pb-6">
         <input
           id="name"
@@ -47,14 +69,14 @@ function DonorInfo({ userData, setData, setPage }) {
           padding={"px-10 py-2"}
           onClick={() => setPage(1)}
         >
-          Back
+          Update Amount
         </RoundedButton>
         <RoundedButton
           bg={"bg-accentCyan"}
           padding={"px-10 py-2"}
-          onClick={() => setPage(3)}
+          onClick={handleSubmit}
         >
-          Submit
+          {isLoading ? "Submitting..." : "Submit"}
         </RoundedButton>
       </div>
     </div>

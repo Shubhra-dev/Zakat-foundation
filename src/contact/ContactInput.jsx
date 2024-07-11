@@ -15,7 +15,7 @@ function ContactInput({
       id={id}
       required={required ? required : null}
       value={value}
-      onChange={(e) => setData(e.target.value)}
+      onChange={setData}
       placeholder={placeholder}
       className={`p-2 font-normal text-s3 tab:text-paragraph border-b border-b-gray-300 ${
         w ? w : "w-full"
