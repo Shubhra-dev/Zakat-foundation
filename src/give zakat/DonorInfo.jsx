@@ -6,7 +6,7 @@ function DonorInfo({
   setData,
   setPage,
   responses,
-  isLoading,
+  isloading,
   handleSubmit,
 }) {
   return (
@@ -15,7 +15,7 @@ function DonorInfo({
         Your Basic Informations
       </h3>
       {responses.validationError && (
-        <div className="bg-accentRed rounded-md text-center w-11/12 m-auto mb-2">
+        <div className="bg-accentPurple rounded-md text-center w-11/12 m-auto mb-2">
           <P textColor={"text-primary"} p={"py-2"}>
             {responses.validationError}
           </P>
@@ -76,7 +76,7 @@ function DonorInfo({
           padding={"px-10 py-2"}
           onClick={handleSubmit}
         >
-          {isLoading ? "Submitting..." : "Submit"}
+          {isloading ? "Submitting..." : "Submit"}
         </RoundedButton>
       </div>
     </div>

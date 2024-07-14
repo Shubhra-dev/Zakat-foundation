@@ -19,7 +19,12 @@ function Cards() {
         <h1 className="text-h3 sm:text-s1 laptop:text-title text-center sm:text-left font-pally font-bold text-secondary">
           How Your Zakat Makes a Difference
         </h1>
-        <Button bg={"bg-accentRed"}>view all stories</Button>
+        <Button
+          bg={"bg-accentRed"}
+          onClick={() => window.open(`https://blog.alzakati.com`, "_blank")}
+        >
+          view all stories
+        </Button>
       </div>
       <div className="flex flex-col laptop:flex-row gap-4 laptop:gap-0 justify-between items-center">
         {posts &&

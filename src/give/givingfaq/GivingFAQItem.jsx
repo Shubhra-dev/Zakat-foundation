@@ -1,5 +1,9 @@
 import { FaAngleDoubleRight, FaAngleDoubleUp } from "react-icons/fa";
-function GivingFAQItem({ id, handleClickFAQ, active, ques }) {
+import RoundedButton from "../../ui/RoundedButton";
+import { useNavigate } from "react-router-dom";
+
+function GivingFAQItem({ id, handleClickFAQ, active, ques, answer, button }) {
+  const navigate = useNavigate();
   return (
     <div className="pb-2 sm:pb-4">
       {active !== id && (
@@ -32,13 +36,20 @@ function GivingFAQItem({ id, handleClickFAQ, active, ques }) {
                   : "I usually give my Zakat abroad, why should I give it here in the Zakat?"
               }`}
             </h3>
-            <p className="font-normal text-small sm:text-light">
-              {`${
-                ques
-                  ? "Answer"
-                  : "There are several beneficial reasons for donating zakat locally, it helps address local needs,it has immediate impact, it helps strengthen local communities, it also helps in following the example created by the prophet (peace be upon him)."
-              }`}
-            </p>
+            <p
+              className="font-normal text-small sm:text-light laptop:text-paragraph"
+              dangerouslySetInnerHTML={{ __html: answer }}
+            />
+            {button && (
+              <RoundedButton
+                bg={"bg-primary"}
+                textColor={"text-accentRed"}
+                padding={"py-1.5 px-3 mt-2"}
+                onClick={() => navigate("/contact")}
+              >
+                Send Message
+              </RoundedButton>
+            )}
           </div>
           <div className="rounded-full w-max p-2 bg-primary text-2xl text-accentRed">
             <FaAngleDoubleUp className="text-xl" />

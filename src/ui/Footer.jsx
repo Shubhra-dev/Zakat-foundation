@@ -64,8 +64,8 @@ function Footer() {
               Support Links
             </h1>
             {[
-              { name: "privacy policy", link: "" },
-              { name: "terms & conditions", link: "" },
+              { name: "privacy policy", link: "privacy_policy" },
+              { name: "terms & conditions", link: "terms_and_conditions" },
               { name: "cookie policy", link: "" },
               { name: "get in touch", link: "contact" },
             ].map((item) => (
@@ -84,18 +84,19 @@ function Footer() {
                 Quick Links
               </h1>
               {[
-                "zakat calculator",
-                "today's nisab",
-                "give zakat",
-                "zakat guides",
-                "impact stories",
-                "purpose of zakat",
+                { name: "zakat calculator", link: "calculate" },
+                { name: "today's nisab", link: "todays_nisab" },
+                { name: "give zakat", link: "give_zakat" },
+                { name: "zakat guides", link: "zakat_guides" },
+                { name: "impact stories", link: "impact_stories" },
+                { name: "purpose of zakat", link: "zakat_purpose" },
               ].map((item) => (
                 <h5
-                  className="text-light text-center sm:text-left cursor-pointer font-normal pt-2 capitalize"
-                  key={item}
+                  className="text-light text-center cursor-pointer font-normal pt-2 capitalize"
+                  key={item.name}
+                  onClick={() => navigate(`/${item.link}`)}
                 >
-                  {item}
+                  {item.name}
                 </h5>
               ))}
             </div>
@@ -104,16 +105,17 @@ function Footer() {
                 Support Links
               </h1>
               {[
-                "terms & conditions",
-                "privacy policy",
-                "cookie policy",
-                "get in touch",
+                { name: "privacy policy", link: "privacy_policy" },
+                { name: "terms & conditions", link: "terms_and_conditions" },
+                { name: "cookie policy", link: "" },
+                { name: "get in touch", link: "contact" },
               ].map((item) => (
                 <h5
                   className="text-light text-center sm:text-left cursor-pointer font-normal pt-2 capitalize"
-                  key={item}
+                  key={item.name}
+                  onClick={() => navigate(`/${item.link}`)}
                 >
-                  {item}
+                  {item.name}
                 </h5>
               ))}
             </div>

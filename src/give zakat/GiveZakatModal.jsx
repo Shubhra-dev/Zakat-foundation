@@ -10,7 +10,6 @@ const initialState = {
   name: "",
   phone: "",
   donation: "",
-  message: "",
   email: "",
   address: "",
 };
@@ -24,6 +23,7 @@ function GiveZakatModal() {
   const [success, setSuccess] = useState(null);
   const handleSubmit = async () => {
     setIsloading(true);
+    console.log(formData);
     try {
       const response = await fetch(
         "https://admin.alzakati.com/api/v1/contact-store",
@@ -32,6 +32,7 @@ function GiveZakatModal() {
           headers: {
             "Content-Type": "application/json",
             "X-Requested-With": "XMLHttpRequest",
+            Accept: "application/json",
           },
           body: JSON.stringify(formData),
         }
@@ -40,6 +41,7 @@ function GiveZakatModal() {
         if (response.status === 422) {
           const errorData = await response.json();
           setError(null);
+          console.log(errorData);
           setValidationError(errorData.message);
         } else {
           throw new Error("Something went wrong");
@@ -48,11 +50,12 @@ function GiveZakatModal() {
         const data = await response.json();
         setError(null);
         setValidationError(null);
-        setSuccess(data.message);
-        setPage(3);
+        setSuccess(data);
         setFormData(initialState);
+        setPage(3);
       }
     } catch (error) {
+      console.log(error);
       setValidationError(null);
       setError(error.message);
     } finally {
@@ -90,19 +93,19 @@ function GiveZakatModal() {
             <div className="flex py-6 items-center justify-center w-5/6 gap-2 m-auto">
               <NumberBlock
                 num={"1000"}
-                onclick={() => setFormData({ ...formData, donation: 1000 })}
+                onclick={() => setFormData({ ...formData, donation: "1000" })}
               />
               <NumberBlock
                 num={"2000"}
-                onclick={() => setFormData({ ...formData, donation: 2000 })}
+                onclick={() => setFormData({ ...formData, donation: "2000" })}
               />
               <NumberBlock
                 num={"3000"}
-                onclick={() => setFormData({ ...formData, donation: 3000 })}
+                onclick={() => setFormData({ ...formData, donation: "3000" })}
               />
               <NumberBlock
                 num={"4000"}
-                onclick={() => setFormData({ ...formData, donation: 4000 })}
+                onclick={() => setFormData({ ...formData, donation: "4000" })}
               />
             </div>
             <P padding={"py-8"} add={"text-center font-semibold"}>
@@ -126,7 +129,7 @@ function GiveZakatModal() {
                   onChange={(e) =>
                     setFormData({
                       ...formData,
-                      donation: Number(e.target.value),
+                      donation: String(e.target.value),
                     })
                   }
                   placeholder="Enter Amount"
@@ -166,7 +169,7 @@ function GiveZakatModal() {
             handleSubmit={handleSubmit}
           />
         )}
-        {success && <ThanksGiving />}
+        {page === 3 && <ThanksGiving response={success} />}
       </div>
     </div>
   );

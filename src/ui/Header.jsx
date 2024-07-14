@@ -124,7 +124,7 @@ function Header() {
       {mobMenuOpen && (
         <div
           ref={menuRef}
-          className="fixed overflow-y-scroll w-3/5 sm:w-2/5 top-0 right-0 h-screen z-50 bg-gray-900"
+          className="fixed overflow-y-scroll w-3/5 sm:w-2/5 top-0 right-0 h-screen z-[100] bg-gray-900"
         >
           <div className="p-3" onClick={() => setMobMenuOpen(false)}>
             <MdClose className="text-3xl text-primary" />

@@ -1,21 +1,7 @@
 import { useState } from "react";
 import GivingFAQItem from "../give/givingfaq/GivingFAQItem";
-const ques1 = [
-  { id: 1, ques: "What can I get help with?" },
-  { id: 2, ques: "How much help can I get?" },
-  { id: 3, ques: "What happens once I have applied?" },
-  { id: 4, ques: "What information and documents do I need to give?" },
-  { id: 5, ques: "What if I am not happy with your service?" },
-];
-const ques2 = [
-  { id: 6, ques: "Can I apply?" },
-  { id: 27, ques: "How long will it take to get help?" },
-  { id: 38, ques: "How many times can I apply?" },
-  { id: 49, ques: "How will the help be given?" },
-  { id: 50, ques: "How can I get more information?" },
-];
 
-function FAQSection() {
+function FAQSection({ ques1, ques2 }) {
   const [openFaqId, setOpenFaqId] = useState("");
   function handleClickFAQ(id) {
     if (openFaqId) {
@@ -34,7 +20,8 @@ function FAQSection() {
             <GivingFAQItem
               key={item.id}
               id={item.id}
-              ques={item.ques}
+              ques={item.question}
+              answer={item.answer}
               active={openFaqId}
               handleClickFAQ={handleClickFAQ}
             />
@@ -45,11 +32,22 @@ function FAQSection() {
             <GivingFAQItem
               key={item.id}
               id={item.id}
-              ques={item.ques}
+              ques={item.question}
+              answer={item.answer}
               active={openFaqId}
               handleClickFAQ={handleClickFAQ}
             />
           ))}
+          <GivingFAQItem
+            id={"lastFaq"}
+            ques={"How can I get more information?"}
+            answer={
+              "For more information on applying on this fund, please send us a message"
+            }
+            active={openFaqId}
+            button={true}
+            handleClickFAQ={handleClickFAQ}
+          />
         </div>
       </div>
     </div>

@@ -13,9 +13,9 @@ function Tomorrow() {
         </div>
         <div className="w-full tab:w-3/5 pt-[8%]">
           <h2 className="text-light sm:text-s2 tab:text-h4 text-accentCyan font font-semibold">
-            About Zakat
+            About Al Zakati
           </h2>
-          <h1 className="text-secondary text-h3 sm:text-s1 tab:text-title font-bold font-pally w-full tab:w-3/4 tab:leading-[70px] py-4">
+          <h1 className="text-secondary text-h3 sm:text-s1 tab:text-title font-bold font-pally w-full tab:w-3/4 laptop:leading-[70px] py-4">
             You Have The Power To Change Tomorrow
           </h1>
           <p className="text-secondary text-s3 sm:text-light tab:text-s2 font-normal w-full tab:w-3/4 pb-[6%]">

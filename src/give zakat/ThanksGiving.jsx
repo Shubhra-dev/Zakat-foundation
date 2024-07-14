@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import RoundedButton from "../ui/RoundedButton";
 
-function ThanksGiving() {
+function ThanksGiving({ response }) {
   const navigate = useNavigate();
   return (
     <div
@@ -14,7 +14,7 @@ function ThanksGiving() {
         className={`h-[150px] laptop:h-[350px] w-[150px] laptop:w-[350px] absolute -top-14 -right-14 bg-gradient-to-b from-accentPurple to-primary/20 rounded-full`}
       ></div>
       <h2 className="w-5/6 laptop:w-3/5 m-auto text-center text-primary text-s2 sm:text-h4 laptop:text-h3 font-bold font-pally py-6 relative">
-        Thank you for your interest.
+        {`Thank you ${response.data.name} for your interest`}
       </h2>
       <h2 className="w-5/6 laptop:w-4/5 m-auto text-center text-primary text-paragraph sm:text-s2 laptop:text-h4 font-light font-pally py-6 relative">
         As our payment gateway is still under development you are not able to

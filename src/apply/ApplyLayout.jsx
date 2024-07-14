@@ -56,7 +56,7 @@ function ApplyLayout({ children, tab }) {
   }, []);
   useEffect(() => {
     const handleScroll = () => {
-      setStickyMenu(window.scrollY > 80); // Adjust the scroll value as needed
+      setStickyMenu(window.scrollY > 120); // Adjust the scroll value as needed
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -88,11 +88,11 @@ function ApplyLayout({ children, tab }) {
   return (
     <div ref={containerRef} className="tab:h-screen tab:flex">
       <div
-        className={`overflow-x-scroll flex justify-center ${
+        className={`overflow-x-scroll flex justify-center z-50 tab:z-0 ${
           stickyMenu
             ? showSecondNav
               ? "fixed w-full m-auto top-[56px] tab:top-0 tab:relative"
-              : "fixed w-full m-auto z-50 tab:z-0 top-0 tab:relative"
+              : "fixed w-full m-auto tab:z-0 top-0 tab:relative"
             : ""
         } tab:block gap-2 sm:gap-4 tab:w-1/6 bg-slate-100/90 tab:bg-slate-100 px-4 tab:px-4 laptop:px-10 pt-3 tab:pt-8 tab:h-full tab:flex-grow tab:overflow-y-scroll scrollbar-hide`}
       >
@@ -140,7 +140,9 @@ function ApplyLayout({ children, tab }) {
       </div>
       <div
         ref={contentRef}
-        className="w-full h-full tab:w-5/6 tab:flex-grow overflow-y-scroll scrollbar-hide"
+        className={`w-full h-full tab:w-5/6 tab:flex-grow overflow-y-scroll scrollbar-hide ${
+          stickyMenu ? "mt-[120px] tab:mt-0" : ""
+        }`}
       >
         {children}
       </div>

@@ -24,6 +24,7 @@ function ContactForm() {
           headers: {
             "Content-Type": "application/json",
             "X-Requested-With": "XMLHttpRequest",
+            Accept: "application/json",
           },
           body: JSON.stringify(formData),
         }
@@ -52,7 +53,7 @@ function ContactForm() {
   };
   return (
     <div className="w-full sm:w-3/5 relative">
-      <h2 className="text-center py-4 text-h3 tab:text-title font-pally font-bold text-secondary">
+      <h2 className="text-center py-4 text-h3 laptop:text-title font-pally font-bold text-secondary">
         Want to get in touch?
       </h2>
       {validationError && (

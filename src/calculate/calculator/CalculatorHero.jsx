@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import heroCal from "../../assets/heroCal.png";
+import calculateHero from "../../assets/calculateHero.png";
 import RoundedButton from "../../ui/RoundedButton";
 function CalculatorHero() {
   const navigate = useNavigate();
   return (
     <div
       className="bg-cover bg-center w-full"
-      style={{ backgroundImage: `url(${heroCal})` }}
+      style={{ backgroundImage: `url(${calculateHero})` }}
     >
       <div className="h-full w-full bg-black/55 pt-[10%] pb-[8%] text-center">
         <h2 className="text-primary font-semibold  text-h3 sm:text-title laptop:text-bigTitle leading-tight font-pally">

@@ -10,17 +10,20 @@ function ContactCard() {
         Contact Us
       </H1>
       <P textColor={"text-primary"}>
-        Lorem ipsum dolor sit amet consectetur. Feugiat a hendrerit eget etiam
-        in nunc morbi et.
+        You can send us your thoughts, messages or suggestion anytime from
+        anywhere. We would love to hear from you.
       </P>
       <div className="pt-4">
         <IconBox text={"+880 1XXX XXXXXX"}>
           <LuPhoneCall className="text-2xl tab:text-3xl text-primary" />
         </IconBox>
-        <IconBox text={"example@foundation.com"}>
+        <IconBox text={"info@alzakati.com"}>
           <LuMail className="text-2xl tab:text-3xl text-primary" />
         </IconBox>
-        <IconBox text={"Example Street, Dhaka, Bangladesh"}>
+        <IconBox text={"support@alzakati.com"}>
+          <LuMail className="text-2xl tab:text-3xl text-primary" />
+        </IconBox>
+        <IconBox text={"House#32, Road#19, Banani Dhaka-1213"}>
           <IoLocationOutline className="text-2xl tab:text-3xl text-primary" />
         </IconBox>
       </div>
