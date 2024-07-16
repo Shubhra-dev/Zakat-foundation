@@ -23,7 +23,7 @@ function MenuItemHeader({ item, setMobMenu }) {
         <RiArrowDropDownLine className="text-xl" />
       </div>
       {hover === item.id && (
-        <div className="tab:absolute bg-gray-800 sm:bg-primary sm:text-secondary w-max rounded-md p-2">
+        <div className="tab:absolute bg-gray-800 sm:bg-primary sm:text-secondary w-max rounded-md p-2 z-50">
           {item.subMenu.map((menu, index) => (
             <h4
               key={index}

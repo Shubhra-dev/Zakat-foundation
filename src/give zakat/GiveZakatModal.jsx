@@ -2,8 +2,8 @@ import H2 from "../ui/H2";
 import RoundedButton from "../ui/RoundedButton";
 import NumberBlock from "./NumberBlock";
 import P from "../ui/P";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import DonorInfo from "./DonorInfo";
 import ThanksGiving from "./ThanksGiving";
 const initialState = {
@@ -21,6 +21,13 @@ function GiveZakatModal() {
   const [error, setError] = useState(null);
   const [isloading, setIsloading] = useState(false);
   const [success, setSuccess] = useState(null);
+  const { donation } = useParams();
+
+  useEffect(function () {
+    if (donation) {
+      setFormData({ ...formData, donation: donation });
+    }
+  }, []);
   const handleSubmit = async () => {
     setIsloading(true);
     console.log(formData);

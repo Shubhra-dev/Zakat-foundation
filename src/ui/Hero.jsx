@@ -12,7 +12,7 @@ function Hero() {
       <div className="h-full w-full bg-secondary/60 sm:pt-[5%] large:pt-[10%]">
         <div className="h-1/4 hidden laptop:block"></div>
         <div className="h-1/3 w-11/12 sm:w-3/5 m-auto text-center py-8 sm:py-0">
-          <h2 className="text-primary font-semibold text-h3 sm:text-title laptop:text-bigTitle font-pally">
+          <h2 className="text-primary font-semibold text-h3 sm:text-title laptop:text-[55px] large:text-bigTitle leading-tight font-pally">
             Giving Back to the Community
             <span className="hidden sm:inline">, One Donation at a Time</span>
           </h2>

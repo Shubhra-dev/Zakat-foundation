@@ -21,7 +21,10 @@ function CalculationBlock() {
   const todaysNisab = nisabRate.goldRate
     ? (nisabRate.goldRate.xag.selling_price * 612.36).toFixed(2)
     : 0;
-  const zakat = ((totalOwn - totalOwe - todaysNisab) * 0.025).toFixed(2);
+  const zakat =
+    totalOwn - totalOwe >= todaysNisab
+      ? ((totalOwn - totalOwe) * 0.025).toFixed(2)
+      : 0.0;
   return (
     <>
       <div className="rounded-xl bg-green-900 p-4 text-primary">
@@ -59,7 +62,7 @@ function CalculationBlock() {
           <p className="w-[60%] text-right">
             <span>৳</span>
             {nisabRate.isLoading
-              ? " loading..."
+              ? " Calculating..."
               : nisabRate.isError
               ? nisabRate.errorMsg
               : todaysNisab}
@@ -69,9 +72,42 @@ function CalculationBlock() {
       <div className="flex items-center w-full text-green-900 p-4">
         <p className="w-[40%] text-s2 font-semibold">Zakat (2.5%) is:</p>
         <p className="w-[65%] text-right text-s2 font-semibold">
-          <span>৳ {zakat < 1 ? "0.00" : zakat}</span>
+          <span>৳ {zakat}</span>
         </p>
       </div>
+      {zakat > 1 && (
+        <div className="w-full">
+          <p
+            className={"text-secondary text-h4 text-center mont font-semibold"}
+          >
+            Round Up Your Zakat:
+          </p>
+          <div className="flex flex-wrap justify-center items-center">
+            {[
+              ...new Set([
+                Math.floor(zakat) - (Math.floor(zakat) % 10),
+                Math.ceil(zakat) + (10 - (Math.ceil(zakat) % 10)),
+                Math.floor(zakat) - (Math.floor(zakat) % 100),
+                Math.ceil(zakat) + (100 - (Math.ceil(zakat) % 100)),
+              ]),
+            ].map((item) => (
+              <div
+                onClick={() => navigate(`/zakat/give/${item}`)}
+                className="w-max px-4 m-auto bg-green-900 cursor-pointer mt-2 rounded-md text-center text-primary font-medium text-paragraph"
+                key={item}
+              >
+                {`Give ৳ ${item}`}
+              </div>
+            ))}
+            <div
+              onClick={() => navigate(`/zakat/give/${zakat}`)}
+              className="w-max px-4 m-auto bg-green-900 cursor-pointer mt-2 rounded-md text-center text-primary font-medium text-paragraph"
+            >
+              {`Give exact  ৳ ${zakat}`}
+            </div>
+          </div>
+        </div>
+      )}
       <div className="p-4 w-full">
         <p className="text-center text-laptop text-secondary font-medium">
           Still Have Questions?

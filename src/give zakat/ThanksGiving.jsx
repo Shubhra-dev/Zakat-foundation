@@ -5,7 +5,7 @@ function ThanksGiving({ response }) {
   const navigate = useNavigate();
   return (
     <div
-      className={`bg-accentPurple py-[5%] mx-[4%] my-[4%] rounded-xl relative overflow-hidden`}
+      className={`bg-accentPurple py-[5%] mx-[4%] my-[4%] rounded-xl relative overflow-hidden `}
     >
       <div
         className={`h-[150px] laptop:h-[350px] w-[150px] laptop:w-[350px] absolute -bottom-14 -left-14 bg-gradient-to-t from-accentPurple to-primary/20 rounded-full`}

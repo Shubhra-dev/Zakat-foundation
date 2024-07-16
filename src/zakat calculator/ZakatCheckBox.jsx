@@ -8,7 +8,12 @@ function ZakatCheckBox({ name, label, items, handleChange }) {
         onChange={handleChange}
         className="accent-slate-500"
       />
-      <label className="capitalize">{label}</label>
+      <label
+        className="capitalize"
+        onClick={() => handleChange({ name, checked: !items[name] })}
+      >
+        {label}
+      </label>
     </div>
   );
 }

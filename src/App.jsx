@@ -114,7 +114,7 @@ const router = createBrowserRouter([
         element: <ZakatCalculator />,
       },
       {
-        path: "/zakat/give",
+        path: "/zakat/give/:donation?",
         element: <GiveZakatModal />,
       },
       {

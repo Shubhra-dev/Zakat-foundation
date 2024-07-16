@@ -11,8 +11,10 @@ import ZakatCheckBox from "./ZakatCheckBox";
 import BusinessAsset from "./BusinessAsset";
 import ItemsOwe from "./ItemsOwe";
 import CalculationBlock from "./CalculationBlock";
+import { useNavigate } from "react-router-dom";
 
 function ZakatCalculator() {
+  const navigate = useNavigate();
   const [itemsOwn, setItemsOwn] = useState({
     cash: false,
     pensions: false,
@@ -31,14 +33,14 @@ function ZakatCalculator() {
   });
 
   const handleChangeOwn = (event) => {
-    const { name, checked } = event.target;
+    const { name, checked } = event.target || event;
     setItemsOwn((prevItemsOwn) => ({
       ...prevItemsOwn,
       [name]: checked,
     }));
   };
   const handleChangeOwe = (event) => {
-    const { name, checked } = event.target;
+    const { name, checked } = event.target || event;
     setItemsOwe((prevItemsOwe) => ({
       ...prevItemsOwe,
       [name]: checked,
@@ -103,7 +105,10 @@ function ZakatCalculator() {
         <P add={"text-center"} p={"p-0"}>
           Use our step-by-step calculator to make sure you get it right. Or if
           you know how much to give already, just skip to
-          <span className="text-accentPurple cursor-pointer font-semibold pl-2">
+          <span
+            onClick={() => navigate("/zakat/give")}
+            className="text-accentPurple cursor-pointer font-semibold pl-2"
+          >
             Give Zakat
           </span>
         </P>
