@@ -1,18 +1,18 @@
 const ownArray = [
   { name: "cash", label: "Cash" },
-  { name: "pensions", label: "Pensions" },
-  { name: "shares", label: "Shares" },
-  { name: "goldSilver", label: "Gold & Silver" },
-  { name: "moneyOwed", label: "Money owed to me" },
-  { name: "businessAssets", label: "Business Assets" },
+  { name: "pension", label: "Pensions" },
+  { name: "share", label: "Shares" },
+  { name: "goldAndSilver", label: "Gold & Silver" },
+  { name: "moneOwed", label: "Money owed to me" },
+  { name: "businessAsset", label: "Business Assets" },
 ];
 const oweArray = [
   { name: "mortgage", label: "Mortgage" },
-  { name: "personal_loans", label: "Personal loans" },
-  { name: "credit_card", label: "Credit card" },
-  { name: "utility", label: "Utility bills" },
+  { name: "personalLoan", label: "Personal loans" },
+  { name: "creditCard", label: "Credit card" },
+  { name: "utilityBill", label: "Utility bills" },
   { name: "overdraft", label: "Overdraft" },
-  { name: "businness_liability", label: "Businness liabilities" },
+  { name: "businessLiabilities", label: "Businness liabilities" },
 ];
 
 export { oweArray, ownArray };

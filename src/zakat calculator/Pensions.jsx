@@ -27,7 +27,7 @@ function Pensions() {
       </P>
       <ZakatInput
         name={"capital_gain"}
-        value={pension}
+        value={pension.value}
         setData={handlePension}
       />
     </div>

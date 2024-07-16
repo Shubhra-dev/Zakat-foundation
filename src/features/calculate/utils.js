@@ -8,8 +8,8 @@ export const calculateTotalOwn = (own) => {
       return (
         acc +
         Object.entries(category).reduce((sum, [subKey, value]) => {
-          if (subKey === omitKey) {
-            return sum; // Skip this sub-key
+          if (subKey === "active") {
+            return sum; // Skip the active property
           }
           return sum + value;
         }, 0)
@@ -20,5 +20,7 @@ export const calculateTotalOwn = (own) => {
 };
 
 export const calculateTotalOwe = (owe) => {
-  return Object.values(owe).reduce((acc, value) => acc + value, 0);
+  return Object.values(owe).reduce((acc, category) => {
+    return acc + category.value;
+  }, 0);
 };

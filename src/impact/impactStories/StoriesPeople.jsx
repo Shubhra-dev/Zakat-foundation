@@ -8,7 +8,6 @@ function StoriesPeople() {
     dispatch(fetchPost());
   }, [dispatch]);
   const posts = useSelector((state) => state.post.post.blogs);
-  console.log(posts);
   return (
     <div className="text-center py-[4%] bg-primary px-[3%]">
       <h2 className="w-5/6 laptop:w-4/5 m-auto text-secondary font-semibold text-h3 sm:text-s1 laptop:text-title font-pally pb-4">

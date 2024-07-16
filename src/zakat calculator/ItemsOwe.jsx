@@ -67,73 +67,73 @@ function ItemsOwe({ items }) {
         financial year that are still to be paid can also be deducted.
       </P>
       <div className="flex flex-col tab:flex-row gap-2 tab:gap-4 px-4">
-        {items.mortgage && (
+        {items.mortgage.active && (
           <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Mortgage"}
               name={"mortgage"}
               wd={"w-full"}
               setData={handleMortgage}
-              value={itemsOwe.mortgage}
+              value={itemsOwe.mortgage.value}
             />
           </div>
         )}
-        {items.utility && (
+        {items.utilityBill.active && (
           <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Utility Bills"}
               name={"utility"}
               wd={"w-full"}
               setData={handleUtility}
-              value={itemsOwe.utilityBill}
+              value={itemsOwe.utilityBill.value}
             />
           </div>
         )}
       </div>
       <div className="flex flex-col tab:flex-row gap-2 tab:gap-4 px-4">
-        {items.personal_loans && (
+        {items.personalLoan.active && (
           <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Personal loans"}
               name={"personal_loans"}
               wd={"w-full"}
               setData={handlePersonalLoan}
-              value={itemsOwe.personalLoan}
+              value={itemsOwe.personalLoan.value}
             />
           </div>
         )}
-        {items.overdraft && (
+        {items.overdraft.active && (
           <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Overdraft"}
               name={"overdraft"}
               wd={"w-full"}
               setData={handleOverdraft}
-              value={itemsOwe.overdraft}
+              value={itemsOwe.overdraft.value}
             />
           </div>
         )}
       </div>
       <div className="flex flex-col tab:flex-row gap-2 tab:gap-4 px-4">
-        {items.credit_card && (
+        {items.creditCard.active && (
           <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Credit card"}
               name={"credit_card"}
               wd={"w-full"}
               setData={handleCreditCard}
-              value={itemsOwe.creditCard}
+              value={itemsOwe.creditCard.value}
             />
           </div>
         )}
-        {items.businness_liability && (
+        {items.businessLiabilities.active && (
           <div className="w-full tab:w-1/2 flex-grow">
             <ZakatInput
               label={"Business liabilities"}
               name={"business_liability"}
               wd={"w-full"}
               setData={handleBusinessLiability}
-              value={itemsOwe.businnessLiabilities}
+              value={itemsOwe.businessLiabilities.value}
             />
           </div>
         )}

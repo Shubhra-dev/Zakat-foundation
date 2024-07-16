@@ -9,7 +9,6 @@ function Cards() {
     dispatch(fetchPost());
   }, [dispatch]);
   const posts = useSelector((state) => state.post.post.blogs);
-  console.log(posts);
   return (
     <div className="w-full sm:w-5/6 m-auto px-4 sm:px-0 py-4 sm:py-12 mb-10">
       <h3 className="text-accentCyan text-center sm:text-left text-light sm:text-paragraph tab:text-h4 font-semibold py-2">

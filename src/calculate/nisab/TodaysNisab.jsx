@@ -8,7 +8,7 @@ function TodaysNisab() {
     dispatch(fetchGoldRate());
   }, [dispatch]);
   const nisabRate = useSelector((state) => state.nisabRate);
-  console.log(nisabRate);
+
   return (
     <div className="text-center">
       <h2 className="text-secondary font-bold text-h3 sm:text-s1 laptop:text-title font-pally pb-4">

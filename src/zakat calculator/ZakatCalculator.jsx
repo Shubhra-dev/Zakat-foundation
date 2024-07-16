@@ -1,4 +1,3 @@
-import { useState } from "react";
 import H2 from "../ui/H2";
 import P from "../ui/P";
 import { oweArray, ownArray } from "./arrays";
@@ -12,39 +11,23 @@ import BusinessAsset from "./BusinessAsset";
 import ItemsOwe from "./ItemsOwe";
 import CalculationBlock from "./CalculationBlock";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  updateActive,
+  updateOweActive,
+} from "../features/calculate/calculateSlice";
 
 function ZakatCalculator() {
   const navigate = useNavigate();
-  const [itemsOwn, setItemsOwn] = useState({
-    cash: false,
-    pensions: false,
-    moneyOwed: false,
-    goldSilver: false,
-    shares: false,
-    businessAssets: false,
-  });
-  const [itemsOwe, setItemsOwe] = useState({
-    mortgage: false,
-    personal_loans: false,
-    credit_card: false,
-    utility: false,
-    overdraft: false,
-    business_liability: false,
-  });
+  const dispatch = useDispatch();
+  const itemOwn = useSelector((state) => state.calculate.own);
+  const itemOwe = useSelector((state) => state.calculate.owe);
 
-  const handleChangeOwn = (event) => {
-    const { name, checked } = event.target || event;
-    setItemsOwn((prevItemsOwn) => ({
-      ...prevItemsOwn,
-      [name]: checked,
-    }));
+  const handleChangeOwn = (key) => {
+    dispatch(updateActive(key));
   };
-  const handleChangeOwe = (event) => {
-    const { name, checked } = event.target || event;
-    setItemsOwe((prevItemsOwe) => ({
-      ...prevItemsOwe,
-      [name]: checked,
-    }));
+  const handleChangeOwe = (key) => {
+    dispatch(updateOweActive(key));
   };
 
   return (
@@ -70,8 +53,8 @@ function ZakatCalculator() {
                   name={item.name}
                   label={item.label}
                   key={item.name}
-                  items={itemsOwn}
-                  handleChange={handleChangeOwn}
+                  item={itemOwn}
+                  handleChange={() => handleChangeOwn(item.name)}
                 />
               ))}
             </div>
@@ -90,8 +73,8 @@ function ZakatCalculator() {
                   name={item.name}
                   label={item.label}
                   key={item.name}
-                  items={itemsOwe}
-                  handleChange={handleChangeOwe}
+                  item={itemOwe}
+                  handleChange={() => handleChangeOwe(item.name)}
                 />
               ))}
             </div>
@@ -112,15 +95,15 @@ function ZakatCalculator() {
             Give Zakat
           </span>
         </P>
-        {itemsOwn.cash && <Cash />}
-        {itemsOwn.pensions && <Pensions />}
-        {itemsOwn.shares && <Shares />}
-        {itemsOwn.goldSilver && <GoldSilver />}
-        {itemsOwn.moneyOwed && <MoneyOwed />}
-        {itemsOwn.businessAssets && <BusinessAsset />}
+        {itemOwn.cash.active && <Cash />}
+        {itemOwn.pension.active && <Pensions />}
+        {itemOwn.share.active && <Shares />}
+        {itemOwn.goldAndSilver.active && <GoldSilver />}
+        {itemOwn.moneOwed.active && <MoneyOwed />}
+        {itemOwn.businessAsset.active && <BusinessAsset />}
 
-        {Object.values(itemsOwe).some((value) => value === true) && (
-          <ItemsOwe items={itemsOwe} />
+        {Object.values(itemOwe).some((category) => category.active) && (
+          <ItemsOwe items={itemOwe} />
         )}
         <div className="py-8 px-4 hidden laptop:block">
           <CalculationBlock />
