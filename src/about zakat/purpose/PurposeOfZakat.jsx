@@ -7,7 +7,12 @@ function PurposeOfZakat() {
     <ZakatLayout tab={2}>
       <PurposeHero />
       <Midsection />
-      <GetTouch button1={"Give zakat"} button2={"Apply for help"} />
+      <GetTouch
+        button1={"Give zakat"}
+        b1link={"zakat/give"}
+        b2link={"apply_help"}
+        button2={"Apply for help"}
+      />
     </ZakatLayout>
   );
 }

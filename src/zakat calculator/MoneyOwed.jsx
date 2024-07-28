@@ -11,17 +11,11 @@ function MoneyOwed() {
   const dispatch = useDispatch();
   const moneyOwed = useSelector((state) => state.calculate.own.moneOwed);
   function handleLoan(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOwnMoneOwedLoan(num));
   }
   function handleSale(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOwnMoneOwedExpected(num));
   }
   return (

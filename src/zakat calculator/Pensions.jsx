@@ -8,10 +8,7 @@ function Pensions() {
   const dispatch = useDispatch();
   const pension = useSelector((state) => state.calculate.own.pension);
   function handlePension(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOwnPension(num));
   }
   return (

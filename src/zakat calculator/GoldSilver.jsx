@@ -20,20 +20,14 @@ function GoldSilver() {
   );
   const metalRate = useSelector((state) => state.nisabRate.goldRate);
   function handleGold(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     if (vori) {
       dispatch(updateOwnGold(num * (metalRate.xau.selling_price * 11.67)));
       dispatch(updateOwnGoldVori(num));
     } else dispatch(updateOwnGold(num));
   }
   function handleSilver(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     if (vori) {
       dispatch(updateOwnSilver(num * (metalRate.xag.selling_price * 11.67)));
       dispatch(updateOwnSilverVori(num));

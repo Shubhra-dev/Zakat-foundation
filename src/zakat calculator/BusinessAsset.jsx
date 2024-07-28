@@ -13,6 +13,7 @@ function BusinessAsset() {
     (state) => state.calculate.own.businessAsset
   );
   function handleCash(num) {
+    num = parseFloat(num);
     if (isNaN(num)) {
       alert(`Input should be a number`);
       return;
@@ -20,6 +21,7 @@ function BusinessAsset() {
     dispatch(updateOwnBusinessAssetCash(num));
   }
   function handleReceivable(num) {
+    num = parseFloat(num);
     if (isNaN(num)) {
       alert(`Input should be a number`);
       return;
@@ -27,10 +29,7 @@ function BusinessAsset() {
     dispatch(updateOwnBusinessAssetReceivable(num));
   }
   function handleStock(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOwnBusinessAssetStock(num));
   }
   return (

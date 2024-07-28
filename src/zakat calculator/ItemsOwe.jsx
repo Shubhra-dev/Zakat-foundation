@@ -14,45 +14,27 @@ function ItemsOwe({ items }) {
   const dispatch = useDispatch();
   const itemsOwe = useSelector((state) => state.calculate.owe);
   function handleMortgage(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOweMortgage(num));
   }
   function handlePersonalLoan(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOwePersonalLoan(num));
   }
   function handleCreditCard(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOweCreditCard(num));
   }
   function handleUtility(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOweUtilityBill(num));
   }
   function handleOverdraft(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOweOverdraft(num));
   }
   function handleBusinessLiability(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOweBusinessLiabilities(num));
   }
   return (

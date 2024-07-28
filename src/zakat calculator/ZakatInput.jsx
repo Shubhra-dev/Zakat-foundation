@@ -1,5 +1,20 @@
+import { useState } from "react";
 import P from "../ui/P";
 function ZakatInput({ label, name, placeholder, vori, wd, value, setData }) {
+  const [input, setInput] = useState(value > 0 ? value : "");
+  const handleChange = (e) => {
+    const value = e.target.value;
+    const isValidNumber = /^\d*\.?\d*$/.test(value);
+    if (isValidNumber) {
+      if (!value.endsWith(".") && value !== "") {
+        setData(value);
+      }
+      if (value === "") {
+        setData(0);
+      }
+      setInput(value);
+    } else alert(`Input should be a positive number`);
+  };
   return (
     <div className={`${wd ? wd : "w-full sm:w-3/4"} m-auto pb-2`}>
       {label && (
@@ -20,8 +35,8 @@ function ZakatInput({ label, name, placeholder, vori, wd, value, setData }) {
           type="text"
           name={name}
           id={name}
-          value={value == 0 ? "" : value}
-          onChange={(e) => setData(Number(e.target.value))}
+          value={input}
+          onChange={handleChange}
           placeholder={placeholder ? placeholder : "Enter Amount"}
           className="w-[80%] h-full p-2 rounded-r-xl text-s3 sm:text-paragraph"
         />

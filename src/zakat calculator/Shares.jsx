@@ -11,6 +11,7 @@ function Shares() {
   const dispatch = useDispatch();
   const share = useSelector((state) => state.calculate.own.share);
   function handleCapitalgain(num) {
+    num = parseFloat(num);
     if (isNaN(num)) {
       alert(`Input should be a number`);
       return;
@@ -18,10 +19,7 @@ function Shares() {
     dispatch(updateOwnShareCapitalGain(num));
   }
   function handleother(num) {
-    if (isNaN(num)) {
-      alert(`Input should be a number`);
-      return;
-    }
+    num = parseFloat(num);
     dispatch(updateOwnShareOther(num));
   }
   return (
