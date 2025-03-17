@@ -5,9 +5,9 @@ import EqualHeightFlexContainer from "./EqualHeightFlexContainer";
 function Explore() {
   const navigate = useNavigate();
   return (
-    <div className="w-11/12 m-auto flex flex-col tab:flex-row gap-4 items-center mt-2 tab:-mt-12 pb-4 tab:pb-12 px-6 sm:px-0">
-      <EqualHeightFlexContainer addedClass="w-full tab:w-4/5 flex-col tab:flex-row gap-2 tab:gap-0 items-start">
-        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl bg-primary">
+    <div className="w-11/12 mx-auto mt-2 tab:-mt-12 pb-4 tab:pb-12 px-6 sm:px-0">
+      <EqualHeightFlexContainer addedClass="w-full flex-col tab:flex-row gap-4 tab:gap-8 items-start">
+        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             What is Zakat?
           </h2>
@@ -22,7 +22,7 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Why Give Zakat?
           </h2>
@@ -37,7 +37,9 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+      </EqualHeightFlexContainer>
+      <EqualHeightFlexContainer addedClass="w-full my-8 flex-col tab:flex-row gap-4 tab:gap-8 items-start">
+        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Who Receives Zakat?
           </h2>
@@ -52,7 +54,7 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="tab:h-full w-full sm:W-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Calculating Zakat?
           </h2>
@@ -68,7 +70,7 @@ function Explore() {
           </button>
         </div>
       </EqualHeightFlexContainer>
-      <div className="w-full tab:w-1/5 py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
+      <div className="w-full text-center py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
         <h2 className="font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
           Explore More
         </h2>
