@@ -15,9 +15,9 @@ function TodaysNisab() {
         Today&apos;s Nisab
       </h2>
       <p className="w-5/6 laptop:w-345 m-auto font-normal text-small sm:text-s2 text-secondary/80 pb-2 sm:pb-6">
-        Daily Nisab rates on gold&apos;s buying and selling price. Our Nisab
-        values are updated daily. It&apos;s calculation based on international
-        gold rate and conversion rate. For more accurate rate{" "}
+        Our daily Nisab rates are calculated based on the current international
+        gold price and conversion rates. These values are updated regularly to
+        ensure accuracy and reliability.{" "}
         <span
           onClick={() =>
             window.open(`https://www.bajus.org/gold-price`, "_blank")

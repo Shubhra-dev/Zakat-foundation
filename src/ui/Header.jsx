@@ -42,7 +42,7 @@ const menu = [
   {
     id: "5",
     title: "about zakat",
-    subMenu: ["aboout zakat", "purpose of zakat", "how zakat works"],
+    subMenu: ["about zakat", "purpose of zakat", "how zakat works"],
     link: ["about_zakat", "zakat_purpose", "how_it_works"],
   },
 ];

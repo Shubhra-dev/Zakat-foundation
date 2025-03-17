@@ -18,7 +18,7 @@ function FaqItem({ item, handleClickFAQ, active }) {
       {active === item.id && (
         <div
           onClick={() => handleClickFAQ(item.id)}
-          className="px-[5%] py-[3%] bg-accentRed border border-gray-200 shadow-[1px_1px_25px_1px_rgba(0,0,0,0.15)] rounded-2xl flex items-center cursor-pointer"
+          className="px-[5%] py-[3%] bg-red-600 border border-gray-200 shadow-[1px_1px_25px_1px_rgba(0,0,0,0.15)] rounded-2xl flex items-center cursor-pointer"
         >
           <div className="rounded-full w-max p-2 bg-primary text-accentRed">
             <FaAngleDoubleUp className="text-xl" />

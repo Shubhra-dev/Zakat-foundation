@@ -15,10 +15,14 @@ function Nisab() {
           What is Nisab?
         </h2>
         <p className="w-5/6 laptop:w-3/5 m-auto font-normal text-small sm:text-s2 text-secondary/80 pb-2 sm:pb-6">
-          Zakat is an obligatory act of worship for Muslims who meet a certain
-          wealth threshold, where they are required to give a percentage of
-          their wealth, usually 2.5%, to those who are eligible. This minimum
-          threshold is known as Nisab(sometimes also spelled niṣāb).
+          Zakat is a mandatory act of worship for Muslims whose wealth exceeds a
+          specific threshold, known as Nisab (sometimes spelled niṣāb). Those
+          who meet this threshold are required to give 2.5% of their wealth to
+          eligible recipients as Zakat.
+          <br /> <br /> Nisab serves as the minimum amount of wealth a Muslim
+          must possess to be obligated to pay Zakat. It ensures that Zakat is
+          only paid by those who have the financial means to do so, while also
+          providing a clear benchmark for calculating contributions.
         </p>
       </div>
       <TodaysNisab />

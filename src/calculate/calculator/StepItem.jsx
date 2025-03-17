@@ -1,6 +1,6 @@
 function StepItem({ num, text }) {
   return (
-    <div className="flex justify-start py-2 sm:py-0 items-center bg-accentCyan rounded-xl">
+    <div className="flex justify-start py-2 sm:py-4 items-center bg-accentCyan rounded-xl">
       <h1 className="text-primary/20 text-[50px] sm:text-[70px] laptop:text-[100px] font-black px-6 leading-tight w-1/6">
         {num}
       </h1>

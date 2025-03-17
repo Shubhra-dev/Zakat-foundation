@@ -7,13 +7,13 @@ function Explore() {
   return (
     <div className="w-11/12 mx-auto mt-2 tab:-mt-12 pb-4 tab:pb-12 px-6 sm:px-0">
       <EqualHeightFlexContainer addedClass="w-full flex-col tab:flex-row gap-4 tab:gap-8 items-start">
-        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl bg-primary">
+        <div className="text-center tab:h-full w-full sm:w-1/4 py-4 px-6 shadow-xl rounded-2xl bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             What is Zakat?
           </h2>
           <p className="pb-2 text-s3 sm:text-paragraph text-secondary font-normal">
             Zakat is mandatory charitable contribution to redistribute wealth
-            and support those in need. It is one of the Five Pillars of Islam.
+            and support. It is one of the Five Pillars of Islam.
           </p>
           <button
             onClick={() => navigate("/about_zakat")}
@@ -22,7 +22,7 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="text-center tab:h-full w-full sm:w-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Why Give Zakat?
           </h2>
@@ -37,9 +37,7 @@ function Explore() {
             read more
           </button>
         </div>
-      </EqualHeightFlexContainer>
-      <EqualHeightFlexContainer addedClass="w-full my-8 flex-col tab:flex-row gap-4 tab:gap-8 items-start">
-        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="text-center tab:h-full w-full sm:w-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Who Receives Zakat?
           </h2>
@@ -54,7 +52,7 @@ function Explore() {
             read more
           </button>
         </div>
-        <div className="text-center tab:h-full w-full sm:w-1/2 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
+        <div className="text-center tab:h-full w-full sm:w-1/4 py-4 px-6 shadow-xl rounded-2xl sm:-ml-2 bg-primary">
           <h2 className="text-secondary font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
             Calculating Zakat?
           </h2>
@@ -70,7 +68,7 @@ function Explore() {
           </button>
         </div>
       </EqualHeightFlexContainer>
-      <div className="w-full text-center py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary">
+      <div className="w-full text-center py-4 px-6 bg-accentRed rounded-xl shadow-xl text-primary mt-8">
         <h2 className="font-semibold text-paragraph sm:text-s2 large:text-h4 pb-2">
           Explore More
         </h2>
