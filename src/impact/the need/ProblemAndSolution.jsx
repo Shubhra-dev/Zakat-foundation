@@ -16,20 +16,16 @@ function ProblemAndSolution() {
             The problem
           </h2>
           <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
-            Despite Zakat being a fundamental pillar of Islam, its impact in
-            Bangladesh falls short of its potential. Many Muslims across the
-            country have the means to contribute Zakat but may not fully
-            understand its local importance.
-          </p>
-          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60">
-            In Bangladesh, a substantial portion of the Muslim population faces
-            poverty, significantly exceeding the national average. Nearly half
-            of Bangladeshi Muslims live below the poverty line. Additionally,
-            there is apprehension among some sectors about Islam&apos;s
-            compatibility with traditional Bangladeshi culture. This perception
-            poses challenges, especially for emerging religious leaders and
-            community influencers who could drive positive social change but
-            often lack adequate financial support.
+            Despite Zakat being a fundamental pillar of Islam, its potential
+            impact in Bangladesh remains largely untapped. Many Muslims who have
+            the means to contribute Zakat may not fully understand its local
+            importance or how to distribute it effectively. In Bangladesh, a
+            significant portion of the Muslim population lives in poverty, with
+            nearly half struggling below the poverty line. Additionally, there
+            are misconceptions about Islam’s compatibility with traditional
+            Bangladeshi culture, creating challenges for emerging religious
+            leaders and community influencers who lack the financial support
+            needed to drive positive change.
           </p>
         </ImageCard>
       </div>
@@ -45,25 +41,33 @@ function ProblemAndSolution() {
             The solution
           </h2>
           <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
-            Zakat holds tremendous potential, and it is our collective
-            responsibility to ensure it realizes that potential.
+            Zakat has the power to transform lives, and it’s our collective
+            responsibility to ensure it reaches its full potential. At
+            AL-ZAKATI, we:
           </p>
-          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
-            We enable Muslims to fulfill their Zakat obligations by directing it
-            to those rightfully entitled to receive it in Bangladesh.
-          </p>
-          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
-            We are establishing the first national network dedicated to
-            distributing Zakat to those in need across our country.
-            Additionally, we provide an online platform for calculating and
-            donating Zakat that adheres to our faith principles.
-          </p>
-          <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
-            You will have the opportunity to specify how your Zakat is
-            allocated. Through our personalized approach, you can be confident
-            that your Zakat will reach its intended recipients and be used
-            effectively right here in Bangladesh
-          </p>
+          <ul className="px-4 space-y-2 sm:px-8 laptop:px-[2%] list-disc font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 py-4">
+            <li>
+              <span className="font-bold text-black/70">
+                Enable Muslims to Fulfill Their Zakat Obligations:{" "}
+              </span>
+              By providing a trusted platform to calculate and distribute Zakat
+              in accordance with Islamic principles.
+            </li>
+            <li>
+              <span className="font-bold text-black/70">
+                Build a National Network:{" "}
+              </span>
+              Establishing the first nationwide system to distribute Zakat to
+              those in need across Bangladesh.
+            </li>
+            <li>
+              <span className="font-bold text-black/70">
+                Offer a Personalized Approach:{" "}
+              </span>
+              Allowing you to specify how your Zakat is allocated, ensuring it
+              reaches its intended recipients and creates maximum impact.
+            </li>
+          </ul>
         </ImageCard>
       </div>
       <div className="pb-[4%] px-[3%] mb-6 laptop:mb-10">
@@ -78,18 +82,28 @@ function ProblemAndSolution() {
           </h2>
           <p className="font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60 pb-4">
             By giving Zakat through AL-ZAKATI, you’re part of the solution.
+            You’re:
           </p>
-          <ul className="px-6 list-disc font-light text-s3 sm:text-light laptop:text-paragraph text-secondary/60">
+          <ul className="px-4 space-y-2 sm:px-8 laptop:px-[2%] list-disc font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 py-4">
             <li>
-              You&apos;re assisting individuals in realizing their potential.
+              <span className="font-bold text-black/70">
+                Helping Individuals Realize Their Potential:{" "}
+              </span>
+              Providing them with the resources and opportunities they need to
+              succeed.
             </li>
             <li>
-              You&apos;re fostering a vibrant, cohesive Muslim community across
-              Bangladesh.
+              <span className="font-bold text-black/70">
+                Building a Stronger Community:{" "}
+              </span>
+              Fostering unity and cohesion among Muslims across Bangladesh.
             </li>
             <li>
-              And you&apos;re actively participating in an inspiring movement
-              for positive change.
+              <span className="font-bold text-black/70">
+                Driving Positive Change:{" "}
+              </span>
+              Contributing to a movement that uplifts lives, strengthens faith,
+              and creates a brighter future for all.
             </li>
           </ul>
         </ImageCard>

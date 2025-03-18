@@ -9,17 +9,17 @@ function GiveCards() {
       />
       <GIveCardItem
         text={
-          "You can select to contribute a small extra amount to cover distribution expenses, ensuring that 100% of your Zakat reaches the recipient directly."
+          "You have the option to contribute a small additional amount to cover administrative and distribution costs. This ensures that every penny of your Zakat goes directly to those in need, maximizing its impact."
         }
       />
       <GIveCardItem
         text={
-          "You can consider donating Sadaqah or Riba to support our operational costs, enabling us to expand our outreach and raise more Zakat funds.."
+          "Consider donating Sadaqah or Riba to help cover our operational expenses. These contributions enable us to expand our outreach, raise more Zakat funds, and assist even more people in need."
         }
       />
       <GIveCardItem
         text={
-          "Stay informed with our ZakaTracker, which provides real-time updates on the distribution and impact of your Zakat, transforming the lives of Muslims in Bangladesh."
+          "Our ZakaTracker tool provides real-time updates on the distribution and impact of your Zakat. From the moment your contribution is received to the lives it transforms, you’ll have complete transparency and peace of mind."
         }
       />
     </div>

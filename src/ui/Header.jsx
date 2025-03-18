@@ -4,6 +4,7 @@ import MenuItemHeader from "./MenuItemHeader";
 import { useNavigate } from "react-router-dom";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
 import { useEffect, useRef, useState } from "react";
+import MenuItemHeaderMobile from "./MenuItemHeaderMobile";
 const menu = [
   {
     id: "1",
@@ -49,6 +50,7 @@ const menu = [
 function Header() {
   const navigate = useNavigate();
   const menuRef = useRef(null);
+  const [activeMenu, setActiveMenu] = useState("");
   const [mobMenuOpen, setMobMenuOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
   useEffect(() => {
@@ -131,10 +133,12 @@ function Header() {
           </div>
           <div className="flex flex-col gap-6 w-full justify-between items-end px-6 py-4 text-primary leading-tight">
             {menu.map((item) => (
-              <MenuItemHeader
+              <MenuItemHeaderMobile
                 item={item}
                 key={item.id}
                 setMobMenu={setMobMenuOpen}
+                activeMenu={activeMenu}
+                setActiveMenu={setActiveMenu}
               />
             ))}
             <div className="cursor-pointer">

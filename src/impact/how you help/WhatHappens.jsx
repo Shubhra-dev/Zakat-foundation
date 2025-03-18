@@ -9,16 +9,27 @@ function WhatHappens() {
         our team carefully reviews all the information provided to determine:
       </p>
       <ul className="px-4 sm:px-8 laptop:px-[2%] list-disc font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 py-4">
-        <li>Eligibility for receiving Zakat</li>
-        <li>Eligibility for the specific grant applied for</li>
+        <li>
+          <span className="font-bold text-black/70">
+            Eligibility for receiving Zakat:{" "}
+          </span>
+          Whether the applicant qualifies under the eight categories outlined in
+          the Quran.
+        </li>
+        <li>
+          <span className="font-bold text-black/70">
+            Eligibility for the specific grant applied for:{" "}
+          </span>
+          Whether the applicant qualifies under the eight categories outlined in
+          the Quran.
+        </li>
       </ul>
       <p className=" font-normal text-s3 sm:text-paragraph laptop:text-s2 text-secondary/80 pb-[3%]">
-        If all necessary information is provided, a decision will typically be
-        made within a few days. We will then contact the applicant to
-        communicate the decision. If approved, the Zakat grant will be disbursed
-        directly into their bank account. Alternatively, if a non-cash grant
-        such as a voucher or payment to a delivery partner is deemed more
-        beneficial, we will arrange for that.
+        If all necessary information is provided, a decision is typically made
+        within a few days. We then contact the applicant to communicate the
+        outcome. If approved, the Zakat grant is disbursed directly into their
+        bank account or provided as a non-cash grant (e.g., vouchers or payments
+        to service providers) if deemed more beneficial.
       </p>
     </div>
   );

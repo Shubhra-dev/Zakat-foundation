@@ -98,6 +98,14 @@ function Housing() {
             The Housing Fund offers assistance with Council Tax, rent arrears,
             and moving-in support to address household needs.
           </p>
+          <h3 className="text-s2 text-secondary font-semibold">Process:</h3>
+          <ul className="font-normal text-s3 sm:text-paragraph text-secondary/80 list-disc pl-4">
+            <li>Click the button below to express interest in Zakat.</li>
+            <li>
+              You’ll receive an email within <strong>3-6</strong> weeks to
+              confirm eligibility.
+            </li>
+          </ul>
         </ImageCard>
       </div>
       <FAQSection ques1={ques1} ques2={ques2} />

@@ -54,24 +54,31 @@ function HowImageCard() {
           Muslims eligible for Zakat can apply for assistance through four
           distinct funds.
         </p>
-        <ul className="px-4 sm:px-[6%] text-s3 sm:text-light laptop:text-paragraph font-light text-secondary/60 py-2 list-disc">
+        <ul className="px-4 sm:px-[6%] text-s3 sm:text-light laptop:text-paragraph font-light text-secondary/60 py-2 list-disc list-inside space-y-2">
           <li>
-            Hardship Relief: Aid Muslims facing acute difficulties by providing
-            swift access to funds for essential living expenses like food and
-            clothing
+            <span className="font-bold text-black/60">Hardship Relief:</span>{" "}
+            Provides swift access to funds for essential living expenses like
+            food, clothing, and medical care, helping families in acute
+            difficulty.
           </li>
           <li>
-            Housing: Support Muslims in achieving stability by facilitating
-            access to secure and affordable housing.
+            <span className="font-bold text-black/60">Housing:</span>
+            Supports Muslims in achieving stability by facilitating access to
+            secure and affordable housing, ensuring they have a safe place to
+            call home.
+          </li>
+
+          <li>
+            <span className="font-bold text-black/60">Employment:</span>
+            Assists individuals in securing employment and regaining
+            independence by offering vocational training, job placement support,
+            and financial assistance.
           </li>
           <li>
-            Employment: Assist Muslims in securing employment and regaining
-            independence by offering necessary support.
-          </li>
-          <li>
-            Education: Foster community growth by investing in the education and
-            development of emerging Muslim religious leaders and community
-            advocates.
+            <span className="font-bold text-black/60">Education:</span>
+            Invests in the education and development of emerging Muslim
+            religious leaders and community advocates, fostering long-term
+            growth and positive change.
           </li>
         </ul>
       </ImageCard>

@@ -15,9 +15,9 @@ function ApplyCardContainer() {
             Hardship Relief
           </h3>
           <p className="text-s3 sm:text-light font-normal text-secondary/60 py-2">
-            This fund provides grants for essential expenses and assistance with
-            small debts to vulnerable Muslims in Bangladesh who cannot afford
-            basic living costs.
+            This fund offers grants to help vulnerable Muslims in Bangladesh who
+            are unable to afford basic living expenses. It provides financial
+            support for essential needs and assists with small debts.
           </p>
           <ul className="text-s3 sm:text-light font-normal text-secondary/60 list-decimal pl-4">
             <li>Funded by charities, government, and community donations.</li>
